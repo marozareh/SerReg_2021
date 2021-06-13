@@ -49,8 +49,8 @@ public class BaseClass extends BasePage implements ISystemProperties{
 
     @BeforeClass
     public static void beforeTestClass() {
-
-        String driverName = "chromedriver.exe";
+        String driverName = "chromedriver";
+        //String driverName = "chromedriver.exe";
         if(OS.contains("Mac")) {
             driverName = "chromedriver";
         }
