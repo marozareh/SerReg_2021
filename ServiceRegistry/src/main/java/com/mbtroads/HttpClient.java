@@ -59,7 +59,7 @@ public class HttpClient implements ISystemProperties {
             try {
                 CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 //              //  HttpGet request = new HttpGet("http://localhost:8443/serviceregistry/echo");
-                HttpGet request = new HttpGet(url);
+                HttpGet request = new HttpGet("http://128.130.39.42:8443/serviceregistry/echo");
 
                 request.setHeader("Accept", "application/json");
                 request.setHeader("Content-type", "application/json");
@@ -91,7 +91,7 @@ public class HttpClient implements ISystemProperties {
         try {
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 //            HttpGet request = new HttpGet("http://localhost:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
-            HttpGet request = new HttpGet(url);
+            HttpGet request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
 
             request.setHeader("Accept", "application/json");
             request.setHeader("Content-type", "application/json");
@@ -123,7 +123,7 @@ public class HttpClient implements ISystemProperties {
         try {
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
             //HttpGet request = new HttpGet("http://localhost:8443/serviceregistry/mgmt/"+id);
-            HttpGet request = new HttpGet(url+id);
+            HttpGet request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt/"+id);
 
             request.setHeader("Accept", "application/json");
             request.setHeader("Content-type", "application/json");
@@ -157,7 +157,7 @@ public class HttpClient implements ISystemProperties {
             StringEntity entity = new StringEntity(payload);
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         //    HttpPost request = new HttpPost("http://localhost:8443/serviceregistry/mgmt");
-            HttpPost request = new HttpPost("http://localhost:8443/serviceregistry/mgmt");
+            HttpPost request = new HttpPost("http://128.130.39.42:8443/serviceregistry/mgmt/");
 
             request.setHeader("Accept", "application/json");
             request.setHeader("Content-type", "application/json");
