@@ -21,8 +21,8 @@ public class Test_ServiceREgistery extends BaseClass {
                 SomeSmallTest.class
         );
 
-      //  WebSocketServer server = new WebSocketServer(8887, executor.getMachine());
-        //server.start();
+        WebSocketServer server = new WebSocketServer(8887, executor.getMachine());
+        server.start();
 
        // driver.get("file:///users/marokrikoor/Desktop/ProjectFinal/lib/index.html?wsURI=localhost:8887");
      //   driver.get("file:///D:/ArrowheadTest_Graphwalker/lib/index.html?wsURI=localhost:8887");
