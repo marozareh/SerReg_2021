@@ -62,8 +62,8 @@ public class BaseClass extends BasePage implements ISystemProperties{
 
             String headless = System.getProperty("Headless");
 
-         //   System.setProperty("webdriver.chrome.driver", currentDir + pathSeperator + "Drivers" + pathSeperator + driverName);
-/*
+            System.setProperty("webdriver.chrome.driver", currentDir + pathSeperator + "Drivers" + pathSeperator + driverName);
+
             ChromeOptions options = new ChromeOptions();
             if(String.valueOf(headless).equalsIgnoreCase("true")) {
                 Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -79,7 +79,7 @@ public class BaseClass extends BasePage implements ISystemProperties{
 
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
-*/
+
         } catch(Exception e) {
             e.printStackTrace();
             ExtentReport.test.fail(e);
@@ -110,7 +110,7 @@ public class BaseClass extends BasePage implements ISystemProperties{
     @AfterClass
     public static void afterTestClass() {
         ExtentReport.flushReport();
-    //   driver.quit();
+       driver.quit();
     }
 
 

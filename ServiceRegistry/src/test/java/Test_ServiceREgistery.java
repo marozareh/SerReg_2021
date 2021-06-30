@@ -22,7 +22,7 @@ public class Test_ServiceREgistery extends BaseClass {
         );
 
         WebSocketServer server = new WebSocketServer(8887, executor.getMachine());
-        server.start();
+    //    server.start();
 
        // driver.get("file:///users/marokrikoor/Desktop/ProjectFinal/lib/index.html?wsURI=localhost:8887");
      //   driver.get("file:///D:/ArrowheadTest_Graphwalker/lib/index.html?wsURI=localhost:8887");
@@ -42,14 +42,14 @@ public class Test_ServiceREgistery extends BaseClass {
             ExtentReport.createAndGetNodeInstance("GraphWalker Summery");
             ExtentReport.node.fail("Graphwalker Result: [vertexCoverage " + substringAfter(result.getResults().toString(5), "vertexCoverage") + "]");
             ExtentReport.createAndGetNodeInstance("Service Registry Graph Coverage");
-          //  ExtentReport.reportError();
+            ExtentReport.reportError();
         }
         else {
             System.out.println("Done: [" + result.getResults().toString(2) + "]");
             ExtentReport.createAndGetNodeInstance("GraphWalker Result PASS");
             ExtentReport.node.pass("Done: [" + result.getResults().toString(5) + "]");
             StrSplit(result.getResults().toString(2));
-         //   ExtentReport.reportImage();
+           // ExtentReport.reportImage();
         }
        // delayInMillis(9000);
         //server.stop();
