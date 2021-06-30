@@ -76,4 +76,10 @@ public class BasePage extends ExecutionContext {
     }
 
 
+    public void extendReport(String info)
+    {
+        ExtentReport.createAndGetNodeInstance(info);
+
+}
+
 }

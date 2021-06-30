@@ -54,7 +54,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
     ExtentReport.createAndGetNodeInstance("Moving Through: e_InvaledServiceRegisteryForm");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with invalid Payload");
 
-        response =  httpClient.sendPost(InvaledServiceRegistery);
+        response =  httpClient.sendPost(InvaledServiceRegistery, "http://localhost:8443/serviceregistry/mgmt");
         HttpEntity entity1 = response.getEntity();
         try {
           content = EntityUtils.toString(entity1);
@@ -85,7 +85,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   public void e_validServiceRegisteryForm() {
     ExtentReport.createAndGetNodeInstance("Moving Through: e_validServiceRegisteryForm");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload");
-    response =  httpClient.sendPost(ValidServiceRegistery_Payload);
+    response =  httpClient.sendPost(ValidServiceRegistery_Payload,"http://localhost:8443/serviceregistry/mgmt");
     HttpEntity entity1 = response.getEntity();
     try {
       content = EntityUtils.toString(entity1);
@@ -112,7 +112,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
 
     ExtentReport.createAndGetNodeInstance("Moving Through: e_SerrviceDefinationNotExist");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist");
-    response =  httpClient.sendPost(NewService);
+    response =  httpClient.sendPost(NewService,"http://localhost:8443/serviceregistry/mgmt");
     HttpEntity entity1 = response.getEntity();
     try {
       content = EntityUtils.toString(entity1);
@@ -185,7 +185,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
     ExtentReport.createAndGetNodeInstance("Moving Through: e_SerrviceDefinationtExist");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Exist");
 
-    response =  httpClient.sendPost(EXISTService);
+    response =  httpClient.sendPost(EXISTService, "http://localhost:8443/serviceregistry/mgmt");
     HttpEntity entity1 = response.getEntity();
     try {
       content = EntityUtils.toString(entity1);

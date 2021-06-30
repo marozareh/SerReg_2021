@@ -1,10 +1,12 @@
 com\mbtroads\BasePage.class
-com\mbtroads\CustomException.class
 com\mbtroads\Runner.class
 com\mbtroads\SomeSmallTest.class
+com\mbtroads\SericeRegistry1.class
+com\mbtroads\ISystemProperties.class
+com\mbtroads\SericeQuery.class
+com\mbtroads\CustomException.class
+com\mbtroads\QueryService.class
 com\mbtroads\TestData.class
 com\mbtroads\ExtentReport.class
-com\mbtroads\SericeRegistry1.class
 com\mbtroads\HttpClient.class
-com\mbtroads\ISystemProperties.class
 com\mbtroads\BaseClass.class
