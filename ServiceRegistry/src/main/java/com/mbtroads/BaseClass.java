@@ -49,10 +49,11 @@ public class BaseClass extends BasePage implements ISystemProperties{
 
     @BeforeClass
     public static void beforeTestClass() {
-        String driverName = "chromedriver";
+     /*   String driverName = "chromedriver";
         if(OS.contains("Windows")) {
             driverName = "chromedriver.exe";
         }
+       */
         ExtentReport.createReportInstance(currentDir + pathSeperator + "Reports" + pathSeperator + "Report.html");
         ExtentReport.createTestInstance("Test Environment Preparation");
 
@@ -62,23 +63,23 @@ public class BaseClass extends BasePage implements ISystemProperties{
 
             String headless = System.getProperty("Headless");
 
-            System.setProperty("webdriver.chrome.driver", currentDir + pathSeperator + "Drivers" + pathSeperator + driverName);
+         //   System.setProperty("webdriver.chrome.driver", currentDir + pathSeperator + "Drivers" + pathSeperator + driverName);
 
-            ChromeOptions options = new ChromeOptions();
-            if(String.valueOf(headless).equalsIgnoreCase("true")) {
-                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-                int h = screenSize.height;
-                int w = screenSize.width;
+            //ChromeOptions options = new ChromeOptions();
+            //if(String.valueOf(headless).equalsIgnoreCase("true")) {
+              //  Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                //int h = screenSize.height;
+                //int w = screenSize.width;
 
-                options.setHeadless(true);
-                options.addArguments("window-size=" + w +"," + h);
-
-
-            }
+             //   options.setHeadless(true);
+               // options.addArguments("window-size=" + w +"," + h);
 
 
-            driver = new ChromeDriver(options);
-            driver.manage().window().maximize();
+            //}
+
+
+            //driver = new ChromeDriver(options);
+            //driver.manage().window().maximize();
 
         } catch(Exception e) {
             e.printStackTrace();
@@ -110,7 +111,7 @@ public class BaseClass extends BasePage implements ISystemProperties{
     @AfterClass
     public static void afterTestClass() {
         ExtentReport.flushReport();
-       driver.quit();
+       //driver.quit();
     }
 
 
