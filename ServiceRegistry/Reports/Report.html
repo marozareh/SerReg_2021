@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 18, 2021 01:29:02 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 18, 2021 03:12:51 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testExecutor</p>
             <p class="text-sm">
-              <span>13:29:03 pm</span> / <span>00:00:05:180</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>15:12:53 pm</span> / <span>00:00:05:494</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testExecutor</h5>
-<span class='badge badge-success'>07.18.2021 13:29:03</span>
-<span class='badge badge-danger'>07.18.2021 13:29:09</span>
-<span class='badge badge-default'>00:00:05:180</span>
+<h5 class="test-status text-pass">testExecutor</h5>
+<span class='badge badge-success'>07.18.2021 15:12:53</span>
+<span class='badge badge-danger'>07.18.2021 15:12:58</span>
+<span class='badge badge-default'>00:00:05:494</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 </div>
 </div>
@@ -100,7 +100,7 @@
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="3">v_Start</div>
+            <div class="node" id="3">in Running: v_Start  </div>
             <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
             <div class="node-time">
               <span class='badge badge-default'>00:00:000</span>
@@ -113,214 +113,7 @@
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="4">e_start</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:076</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: e_start
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Running ServiceAvailable API http://localhost:8443/serviceregistry/echo
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in:  v_QueryService
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: Got it!
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="5">e_InvaledServiceQuerForm</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:026</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: e_InvaledServiceQuerForm
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Running : The API /serviceregistry/query with invalid Payload
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_BadPayloadException
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 400
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: BAD_PAYLOAD
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="6">e_back_QueryService</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:001</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: Moving Through: e_back_QueryService
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in:  v_QueryService
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="7">e_validServiceQueryForm</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:061</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: Moving Through: e_validServiceQueryForm
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Running : The API /serviceregistry/query with valid Payload
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_ValidPayload
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: BAD_PAYLOAD
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="8">e_QueryInterfaceNotDefined</div>
+            <div class="node" id="4">Moving Through: e_start</div>
             <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
             <div class="node-time">
               <span class='badge badge-default'>00:00:067</span>
@@ -336,51 +129,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
+        <td>15:12:58</td>
         <td>
-          Moving Through: e_QueryInterfaceNotDefined
+          Running ServiceAvailable API http://localhost:8443/serviceregistry/echo
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
+        <td>15:12:58</td>
         <td>
-          Running : The API /serviceregistry/query with valid Payload and Not defined Interface
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_ServiceQueryInterfaceNotDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: serviceQueryData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: []
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: indoortemperature
+          Responce Content = Got it!
         </td>
       </tr>
   </tbody>
@@ -391,10 +149,46 @@
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="9">e_QueryInterfaceDefined</div>
+            <div class="node" id="5">in Running: v_RegisterService</div>
             <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
             <div class="node-time">
-              <span class='badge badge-default'>00:00:072</span>
+              <span class='badge badge-default'>00:00:000</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success Equal for Field: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success for Field Contains: Got it!
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="6">Moving Through: e_InvaledServiceRegisteryForm</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:018</span>
             </div>
             <div class="node-attr">
             </div>
@@ -407,51 +201,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
+        <td>15:12:58</td>
         <td>
-          Moving Through: e_QueryInterfaceNotDefined
+          Running : The API http://localhost:8443/serviceregistry/mgmt with invalid Payload
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
+        <td>15:12:58</td>
         <td>
-          Running : The API /serviceregistry/query with valid Payload and Not defined Interface
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_FilterOnInterface
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: serviceQueryData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: []
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: indoortemperature
+          Responce Content = {"errorMessage":"Service definition is null or blank","errorCode":400,"exceptionType":"BAD_PAYLOAD","origin":"/mgmt"}
         </td>
       </tr>
   </tbody>
@@ -462,7 +221,170 @@
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="10">e_back_ValidPayload</div>
+            <div class="node" id="7">in Running: v_BadPayloadException</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:000</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success Equal for Field: 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success for Field Contains: BAD_PAYLOAD
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="8">Moving Through: e_back_RegisterService</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:000</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="9">in Running: v_RegisterService</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:000</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="10">Moving Through: e_validServiceRegisteryForm</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:022</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
+        <td>
+          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
+        <td>
+          Responce Content = {"errorMessage":"Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="11">in Running: v_ValidPayload</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:000</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success for Field don ot Contain: BAD_PAYLOAD
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="12">Moving Through: e_SerrviceDefinationNotExist</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:071</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
+        <td>
+          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
+        <td>
+          Responce Content = {"id":111,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":32,"systemName":"insecuretemperaturesensor_2021-12-18-03-12-58","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-18 13:12:58","updatedAt":"2021-07-18 13:12:58"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 13:12:58","updatedAt":"2021-07-18 13:12:58"}
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="13">in Running: v_RegisteredService</div>
             <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
             <div class="node-time">
               <span class='badge badge-default'>00:00:001</span>
@@ -477,24 +399,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_ValidPayload
-        </td>
-      </tr>
-      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
+        <td>15:12:58</td>
         <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: BAD_PAYLOAD
+          Assertion Success Equal for Field: 201
         </td>
       </tr>
   </tbody>
@@ -505,10 +413,10 @@
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="11">e_QuerySecurityTypeNotDefined</div>
+            <div class="node" id="14">Moving Through: e_SaveService</div>
             <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
             <div class="node-time">
-              <span class='badge badge-default'>00:00:023</span>
+              <span class='badge badge-default'>00:00:076</span>
             </div>
             <div class="node-attr">
             </div>
@@ -521,30 +429,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
+        <td>15:12:58</td>
         <td>
-          Moving Through: e_QuerySecurityTypeNotDefined
+          Running : The API http://localhost:8443/serviceregistry/mgmt?direction=ASC&sort_field=id to get all saved Services
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
+        <td>15:12:58</td>
         <td>
-          Running : The API /serviceregistry/query with valid Payload and Not defined Security
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_ServiceQuerySecurityTypeNotDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 400
+          Responce Content = {"data":[{"id":7,"serviceDefinition":{"id":23,"serviceDefinition":"indoortemperatureuuuu","createdAt":"2021-06-25 09:46:44","updatedAt":"2021-06-25 09:46:44"},"provider":{"id":18,"systemName":"updateprovider","address":"192.168.0.2","port":4440,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-25 09:46:44","updatedAt":"2021-06-25 09:46:44"},"serviceUri":"temp","endOfValidity":"2021-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"update":"test"},"version":100,"interfaces":[{"id":6,"interfaceName":"HTTPS-SECURE-JSON","createdAt":"2021-06-25 09:49:36","updatedAt":"2021-06-25 09:49:36"}],"createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-25 09:46:43"},{"id":8,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":5,"systemName":"insecuretemperaturesensor_2021-37-14-02-37-32","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},{"id":9,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":6,"systemName":"insecuretemperaturesensor_2021-16-14-03-16-25","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-14 13:16:25","updatedAt":"2021-06-14 13:16:25"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-14 13:16:25","updatedAt":"2021-06-14 13:16:25"},{"id":10,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":7,"systemName":"insecuretemperaturesensor_2021-20-14-03-20-38","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-14 13:20:39","updatedAt":"2021-06-14 13:20:39"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-14 13:20:39","updatedAt":"2021-06-14 13:20:39"},{"id":29,"serviceDefinition":{"id":18,"serviceDefinition":"indoortemperatureee","createdAt":"2021-06-22 21:43:13","updatedAt":"2021-06-22 21:43:13"},"provider":{"id":4,"systemName":"insecuretemperaturesensor","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-22 21:43:13","updatedAt":"2021-06-22 21:43:13"},{"id":46,"serviceDefinition":{"id":19,"serviceDefinition":"indoortemperaturezz","createdAt":"2021-06-23 20:37:00","updatedAt":"2021-06-23 20:37:00"},"provider":{"id":4,"systemName":"insecuretemperaturesensor","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-23 20:37:00","updatedAt":"2021-06-23 20:37:00"},{"id":47,"serviceDefinition":{"id":20,"serviceDefinition":"tempsystem","createdAt":"2021-06-23 21:24:36","updatedAt":"2021-06-23 21:24:36"},"provider":{"id":4,"systemName":"insecuretemperaturesensor","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-23 21:24:36","updatedAt":"2021-06-23 21:24:36"},{"id":48,"serviceDefinition":{"id":20,"serviceDefinition":"tempsystem","createdAt":"2021-06-23 21:24:36","updatedAt":"2021-06-23 21:24:36"},"provider":{"id":14,"systemName":"insecuretemperaturesensor88","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-23 22:17:47","updatedAt":"2021-06-23 22:17:47"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-23 22:17:47","updatedAt":"2021-06-23 22:17:47"},{"id":65,"serviceDefinition":{"id":21,"serviceDefinition":"newservice","createdAt":"2021-06-24 11:42:03","updatedAt":"2021-06-24 11:42:03"},"provider":{"id":16,"systemName":"nwprovider","address":"192.168.0.2","port":7070,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-24 11:42:03","updatedAt":"2021-06-24 11:42:03"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-24 11:42:03","updatedAt":"2021-06-24 11:42:03"},{"id":66,"serviceDefinition":{"id":21,"serviceDefinition":"newservice","createdAt":"2021-06-24 11:42:03","updatedAt":"2021-06-24 11:42:03"},"provider":{"id":17,"systemName":"newprovider","address":"192.168.0.2","port":6565,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-24 12:54:11","updatedAt":"2021-06-24 12:54:11"},"serviceUri":"serviceuri","endOfValidity":"2022-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"kg"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-06-24 12:54:11","updatedAt":"2021-06-24 12:54:11"},{"id":85,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":4,"systemName":"insecuretemperaturesensor","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-13 21:05:30","updatedAt":"2021-07-13 21:05:30"},{"id":86,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":22,"systemName":"insecuretemperaturesensor_2021-05-13-11-05-29","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-13 21:05:30","updatedAt":"2021-07-13 21:05:30"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-13 21:05:30","updatedAt":"2021-07-13 21:05:30"},{"id":87,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":23,"systemName":"insecuretemperaturesensor_2021-31-13-11-31-12","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-13 21:31:13","updatedAt":"2021-07-13 21:31:13"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-13 21:31:13","updatedAt":"2021-07-13 21:31:13"},{"id":88,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":24,"systemName":"insecuretemperaturesensor_2021-46-13-11-46-36","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-13 21:46:37","updatedAt":"2021-07-13 21:46:37"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-13 21:46:37","updatedAt":"2021-07-13 21:46:37"},{"id":89,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":25,"systemName":"insecuretemperaturesensor_2021-54-13-11-54-41","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-13 21:54:41","updatedAt":"2021-07-13 21:54:41"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-13 21:54:41","updatedAt":"2021-07-13 21:54:41"},{"id":90,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":26,"systemName":"insecuretemperaturesensor_2021-28-17-09-28-26","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-17 19:28:26","updatedAt":"2021-07-17 19:28:26"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-17 19:28:26","updatedAt":"2021-07-17 19:28:26"},{"id":91,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":27,"systemName":"insecuretemperaturesensor_2021-05-17-11-05-49","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-17 21:05:50","updatedAt":"2021-07-17 21:05:50"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-17 21:05:50","updatedAt":"2021-07-17 21:05:50"},{"id":92,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":28,"systemName":"insecuretemperaturesensor_2021-26-18-12-26-54","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-17 22:26:55","updatedAt":"2021-07-17 22:26:55"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-17 22:26:55","updatedAt":"2021-07-17 22:26:55"},{"id":93,"serviceDefinition":{"id":1,"serviceDefinition":"service-register","createdAt":"2021-05-28 11:49:04","updatedAt":"2021-05-28 11:49:04"},"provider":{"id":29,"systemName":"service_registry","address":"127.0.0.1","port":8443,"createdAt":"2021-07-18 10:54:03","updatedAt":"2021-07-18 10:54:03"},"serviceUri":"/serviceregistry/register","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:09","updatedAt":"2021-07-18 10:54:09"},{"id":94,"serviceDefinition":{"id":2,"serviceDefinition":"service-unregister","createdAt":"2021-05-28 11:49:04","updatedAt":"2021-05-28 11:49:04"},"provider":{"id":29,"systemName":"service_registry","address":"127.0.0.1","port":8443,"createdAt":"2021-07-18 10:54:03","updatedAt":"2021-07-18 10:54:03"},"serviceUri":"/serviceregistry/unregister","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:14","updatedAt":"2021-07-18 10:54:14"},{"id":95,"serviceDefinition":{"id":9,"serviceDefinition":"event-publish","createdAt":"2021-06-22 20:39:22","updatedAt":"2021-06-22 20:39:22"},"provider":{"id":11,"systemName":"event_handler","address":"127.0.0.1","port":8455,"createdAt":"2021-06-22 20:39:22","updatedAt":"2021-06-22 20:39:22"},"serviceUri":"/eventhandler/publish","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:38","updatedAt":"2021-07-18 10:54:38"},{"id":96,"serviceDefinition":{"id":10,"serviceDefinition":"event-subscribe","createdAt":"2021-06-22 20:39:23","updatedAt":"2021-06-22 20:39:23"},"provider":{"id":11,"systemName":"event_handler","address":"127.0.0.1","port":8455,"createdAt":"2021-06-22 20:39:22","updatedAt":"2021-06-22 20:39:22"},"serviceUri":"/eventhandler/subscribe","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:40","updatedAt":"2021-07-18 10:54:40"},{"id":97,"serviceDefinition":{"id":4,"serviceDefinition":"authorization-control-intra","createdAt":"2021-06-22 20:38:43","updatedAt":"2021-06-22 20:38:43"},"provider":{"id":10,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2021-06-22 20:38:43","updatedAt":"2021-06-22 20:38:43"},"serviceUri":"/authorization/intracloud/check","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:40","updatedAt":"2021-07-18 10:54:40"},{"id":98,"serviceDefinition":{"id":11,"serviceDefinition":"event-unsubscribe","createdAt":"2021-06-22 20:39:23","updatedAt":"2021-06-22 20:39:23"},"provider":{"id":11,"systemName":"event_handler","address":"127.0.0.1","port":8455,"createdAt":"2021-06-22 20:39:22","updatedAt":"2021-06-22 20:39:22"},"serviceUri":"/eventhandler/unsubscribe","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:44","updatedAt":"2021-07-18 10:54:44"},{"id":99,"serviceDefinition":{"id":5,"serviceDefinition":"authorization-control-inter","createdAt":"2021-06-22 20:38:43","updatedAt":"2021-06-22 20:38:43"},"provider":{"id":10,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2021-06-22 20:38:43","updatedAt":"2021-06-22 20:38:43"},"serviceUri":"/authorization/intercloud/check","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:44","updatedAt":"2021-07-18 10:54:44"},{"id":100,"serviceDefinition":{"id":12,"serviceDefinition":"event-publish-auth-update","createdAt":"2021-06-22 20:39:23","updatedAt":"2021-06-22 20:39:23"},"provider":{"id":11,"systemName":"event_handler","address":"127.0.0.1","port":8455,"createdAt":"2021-06-22 20:39:22","updatedAt":"2021-06-22 20:39:22"},"serviceUri":"/eventhandler/publish/authupdate","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:44","updatedAt":"2021-07-18 10:54:44"},{"id":101,"serviceDefinition":{"id":6,"serviceDefinition":"token-generation","createdAt":"2021-06-22 20:38:44","updatedAt":"2021-06-22 20:38:44"},"provider":{"id":10,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2021-06-22 20:38:43","updatedAt":"2021-06-22 20:38:43"},"serviceUri":"/authorization/token","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:47","updatedAt":"2021-07-18 10:54:47"},{"id":102,"serviceDefinition":{"id":13,"serviceDefinition":"orchestration-service","createdAt":"2021-06-22 20:39:25","updatedAt":"2021-06-22 20:39:25"},"provider":{"id":12,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2021-06-22 20:39:25","updatedAt":"2021-06-22 20:39:25"},"serviceUri":"/orchestrator/orchestration","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:49","updatedAt":"2021-07-18 10:54:49"},{"id":103,"serviceDefinition":{"id":7,"serviceDefinition":"auth-public-key","createdAt":"2021-06-22 20:38:44","updatedAt":"2021-06-22 20:38:44"},"provider":{"id":10,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2021-06-22 20:38:43","updatedAt":"2021-06-22 20:38:43"},"serviceUri":"/authorization/publickey","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:50","updatedAt":"2021-07-18 10:54:50"},{"id":104,"serviceDefinition":{"id":14,"serviceDefinition":"orchestration-qos-enabled","createdAt":"2021-06-22 20:39:26","updatedAt":"2021-06-22 20:39:26"},"provider":{"id":12,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2021-06-22 20:39:25","updatedAt":"2021-06-22 20:39:25"},"serviceUri":"/orchestrator/qos_enabled","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:50","updatedAt":"2021-07-18 10:54:50"},{"id":105,"serviceDefinition":{"id":8,"serviceDefinition":"authorization-control-subscription","createdAt":"2021-06-22 20:38:44","updatedAt":"2021-06-22 20:38:44"},"provider":{"id":10,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2021-06-22 20:38:43","updatedAt":"2021-06-22 20:38:43"},"serviceUri":"/authorization/subscription/check","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:50","updatedAt":"2021-07-18 10:54:50"},{"id":106,"serviceDefinition":{"id":15,"serviceDefinition":"orchestration-qos-reservations","createdAt":"2021-06-22 20:39:26","updatedAt":"2021-06-22 20:39:26"},"provider":{"id":12,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2021-06-22 20:39:25","updatedAt":"2021-06-22 20:39:25"},"serviceUri":"/orchestrator/qos_reservations","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:50","updatedAt":"2021-07-18 10:54:50"},{"id":107,"serviceDefinition":{"id":16,"serviceDefinition":"orchestration-qos-temporary-lock","createdAt":"2021-06-22 20:39:26","updatedAt":"2021-06-22 20:39:26"},"provider":{"id":12,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2021-06-22 20:39:25","updatedAt":"2021-06-22 20:39:25"},"serviceUri":"/orchestrator/qos_temporary_lock","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:52","updatedAt":"2021-07-18 10:54:52"},{"id":108,"serviceDefinition":{"id":17,"serviceDefinition":"orchestration-qos-confirm-reservation","createdAt":"2021-06-22 20:39:26","updatedAt":"2021-06-22 20:39:26"},"provider":{"id":12,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2021-06-22 20:39:25","updatedAt":"2021-06-22 20:39:25"},"serviceUri":"/orchestrator/qos_reservations","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 10:54:55","updatedAt":"2021-07-18 10:54:55"},{"id":109,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":30,"systemName":"insecuretemperaturesensor_2021-03-18-01-03-45","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-18 11:03:45","updatedAt":"2021-07-18 11:03:45"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 11:03:45","updatedAt":"2021-07-18 11:03:45"},{"id":110,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":31,"systemName":"insecuretemperaturesensor_2021-22-18-01-22-31","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-18 11:22:31","updatedAt":"2021-07-18 11:22:31"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 11:22:31","updatedAt":"2021-07-18 11:22:31"},{"id":111,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":32,"systemName":"insecuretemperaturesensor_2021-12-18-03-12-58","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-18 13:12:58","updatedAt":"2021-07-18 13:12:58"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 13:12:58","updatedAt":"2021-07-18 13:12:58"}],"count":37}
         </td>
       </tr>
   </tbody>
@@ -555,428 +449,8 @@
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="12">e_QuerySecurtyDefined</div>
+            <div class="node" id="15">in Running: v_QueryService</div>
             <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:053</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: e_QuerySecurtyDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Running : The API /serviceregistry/query with valid Payload and  defined Security
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_FilterOnSecurity
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: serviceQueryData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: []
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: indoortemperature
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="13">e_back_ValidPayload</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:002</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_ValidPayload
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: BAD_PAYLOAD
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="14">e_QueryVersionNotDefined</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:057</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: e_QueryVersionNotDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Running : The API /serviceregistry/query with valid Payload and Not defined Version
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_ServiceQueryVersionNotDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: serviceQueryData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: []
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: indoortemperature
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="15">e_QueryVersionDefined</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:052</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: e_QueryVersionDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Running : The API /serviceregistry/query with valid Payload and  defined Version
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_FilterOnVersion
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: serviceQueryData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: []
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field Contains: indoortemperature
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="16">e_back_ValidPayload</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:002</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Validating in: v_ValidPayload
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:08</td>
-        <td>
-          Assertion Success for Field don ot Contain: BAD_PAYLOAD
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="17">e_QueryMetadatNotDefined</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:051</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Moving Through: e_QueryMetadatNotDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:08</td>
-        <td>
-          Running : The API /serviceregistry/query with valid Payload and Not defined MetaData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:09</td>
-        <td>
-          Validating in: v_ServiceQueryMetadataNotDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:09</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:09</td>
-        <td>
-          Assertion Success for Field Contains: serviceQueryData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:09</td>
-        <td>
-          Assertion Success for Field Contains: []
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:29:09</td>
-        <td>
-          Assertion Success for Field don ot Contain: indoortemperature
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="18">e_QueryMetadataDefined</div>
-            <div class="node-status float-right"><span class="badge fail-bg log ">Fail</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>00:00:070</span>
-            </div>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:09</td>
-        <td>
-          Moving Through: e_QueryMetadataDefined
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:09</td>
-        <td>
-          Running : The API /serviceregistry/query with valid Payload and defined MetaData
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>13:29:09</td>
-        <td>
-          Validating in: v_FilterOnMetadata
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
-        <td>
-          Assertion Failed for Equal : 2001
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="19">GraphWalker Result FAIL</div>
-            <div class="node-status float-right"><span class="badge fail-bg log ">Fail</span></div>
             <div class="node-time">
               <span class='badge badge-default'>00:00:000</span>
             </div>
@@ -984,66 +458,23 @@
             </div>
           </div>
         </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
-          Error in the Model : java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.graphwalker.core.machine.ExecutionContext.execute(ExecutionContext.java:265)
-	at org.graphwalker.core.machine.SimpleMachine.execute(SimpleMachine.java:285)
-	at org.graphwalker.core.machine.SimpleMachine.getNextStep(SimpleMachine.java:108)
-	at org.graphwalker.java.test.TestExecutor.execute(TestExecutor.java:249)
-	at Test_ServiceQuery.testExecutor(Test_ServiceQuery.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:61)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: com.mbtroads.CustomException: Expected Value: 2001 Actual Value: 200
-	at com.mbtroads.BasePage.assestEqual(BasePage.java:55)
-	at com.mbtroads.QueryService.v_FilterOnMetadata(QueryService.java:359)
-	... 45 more
-
+          Assertion Success Equal for Field: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success for Field Contains: "id":111,
         </td>
       </tr>
   </tbody>
@@ -1054,181 +485,309 @@ Caused by: com.mbtroads.CustomException: Expected Value: 2001 Actual Value: 200
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="20">GraphWalker Result Summery</div>
-            <div class="node-status float-right"><span class="badge fail-bg log ">Fail</span></div>
+            <div class="node" id="16">Moving Through: e_NewServiceExist</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
             <div class="node-time">
-              <span class='badge badge-default'>00:00:004</span>
+              <span class='badge badge-default'>00:00:017</span>
             </div>
             <div class="node-attr">
             </div>
           </div>
         </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
         <td>
-          
-  "totalFailedNumberOfModels": 1
+          Running : The API http://localhost:8443/serviceregistry/mgmt/111 To get specific service
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
+        <td>
+          Responce Content = {"id":111,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":32,"systemName":"insecuretemperaturesensor_2021-12-18-03-12-58","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-07-18 13:12:58","updatedAt":"2021-07-18 13:12:58"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-07-18 13:12:58","updatedAt":"2021-07-18 13:12:58"}
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="17">in Running: v_SucessMesssage</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:001</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success Equal for Field: 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="18">Moving Through: e_back_ValidPayload</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:000</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="19">in Running: v_ValidPayload</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:000</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success for Field don ot Contain: BAD_PAYLOAD
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="20">Moving Through: e_SerrviceDefinationtExist</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:027</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
+        <td>
+          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Exist
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>15:12:58</td>
+        <td>
+          Responce Content = {"errorMessage":"Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="21">in Running: v_end</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:001</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success Equal for Field: 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
+        <td>
+          Assertion Success for Field Contains: Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="22">GraphWalker Result PASS</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>00:00:002</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
   "totalNotExecutedNumberOfModels": 0
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "totalNumberOfUnvisitedVertices": 1
+  "totalNumberOfUnvisitedVertices": 0
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "verticesNotVisited": [{
-    "modelName": "SericeQuery"
+  "verticesNotVisited": []
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
-        <td>
-          
-    "vertexName": "v_QueryResponce" , 
-    "vertexId": "ff21a0f0-d733-11eb-bbb8-3323c8d50a5c"
-  }]
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
   "totalNumberOfModels": 1
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "totalCompletedNumberOfModels": 0
+  "totalCompletedNumberOfModels": 1
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "totalNumberOfVisitedEdges": 15
+  "totalNumberOfVisitedEdges": 9
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
   "totalIncompleteNumberOfModels": 0
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "edgesNotVisited": [
-    {
-      "modelName": "SericeQuery"
+  "edgesNotVisited": []
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-      "edgeId": "5f88b1f0-d733-11eb-bbb8-3323c8d50a5c" , 
-      "edgeName": "e_back_ValidPayload"
-    }
+  "vertexCoverage": 100
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-    {
-      "modelName": "SericeQuery"
+  "totalNumberOfEdges": 9
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-      "edgeId": "00bdebd0-d734-11eb-bbb8-3323c8d50a5c" , 
-      "edgeName": "e_PingProvider"
-    }
-  ]
+  "totalNumberOfVisitedVertices": 8
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "vertexCoverage": 92
+  "edgeCoverage": 100
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "totalNumberOfEdges": 17
+  "totalNumberOfVertices": 8
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>15:12:58</td>
         <td>
           
-  "totalNumberOfVisitedVertices": 12
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
-        <td>
-          
-  "edgeCoverage": 88
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
-        <td>
-          
-  "totalNumberOfVertices": 13
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>13:29:09</td>
-        <td>
-          
-  "totalNumberOfUnvisitedEdges": 2
+  "totalNumberOfUnvisitedEdges": 0
 }
         </td>
       </tr>
@@ -1255,25 +814,25 @@ Caused by: com.mbtroads.CustomException: Expected Value: 2001 Actual Value: 200
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 18, 2021 01:29:02 pm</h3>
+<h3>Jul 18, 2021 03:12:51 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 18, 2021 01:29:09 pm</h3>
+<h3>Jul 18, 2021 03:12:58 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -1289,12 +848,12 @@ Caused by: com.mbtroads.CustomException: Expected Value: 2001 Actual Value: 200
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1312,9 +871,9 @@ Caused by: com.mbtroads.CustomException: Expected Value: 2001 Actual Value: 200
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='83%'><b>15</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>20</b> steps passed</small></div>
 <div>
-<small data-tooltip='16%'><b>3</b> steps failed,
+<small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1332,10 +891,10 @@ Caused by: com.mbtroads.CustomException: Expected Value: 2001 Actual Value: 200
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='38%'><b>37</b> events passed</small></div>
+<div><small data-tooltip='65%'><b>26</b> events passed</small></div>
 <div>
-<small data-tooltip='21%'><b>21</b> events failed,
-<b data-tooltip='%'>38</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>14</b> others
 </small>
 </div>
 </div>
@@ -1351,7 +910,7 @@ Caused by: com.mbtroads.CustomException: Expected Value: 2001 Actual Value: 200
 </div></div>
 <script>
 var timeline = {
-"testExecutor":5.18
+"testExecutor":5.494
 };
 </script>
 <div class="row">
@@ -1378,13 +937,13 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 15,
-failChild: 3,
+passChild: 20,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
@@ -1395,11 +954,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 37,
-failEvents: 21,
+passEvents: 26,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 38
+infoEvents: 14
 };
 </script>        </div>
       </div>
