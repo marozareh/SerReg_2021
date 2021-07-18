@@ -356,7 +356,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     @Override
     public  void v_FilterOnMetadata(){
         infoReport("Validating in: v_FilterOnMetadata");
-        assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
+        assestEqual("2001", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
         assestdonotContains("[]", content);
         assestContains("indoortemperature", content);
@@ -392,9 +392,6 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         assestdonotContains("indoortemperature", content);
 
     }
-
-    @Override
-    public void e_NewEdge(){};
 
 
 }

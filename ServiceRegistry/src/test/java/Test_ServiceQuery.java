@@ -29,30 +29,34 @@ public class Test_ServiceQuery extends BaseClass {
       //driver.get("file:///D:/ArrowheadTest_Graphwalker/lib/index.html?wsURI=localhost:8887");
         Result result = executor.execute(true);
         if (result.hasErrors()) {
-            /*for (String error : result.getErrors()) {
+            for (String error : result.getErrors()) {
                 System.out.println(error);
                 ExtentReport.createAndGetNodeInstance("GraphWalker Result FAIL");
                 ExtentReport.node.fail("Error in the Model : " + error);
 
 
-            }*/
+            }
           //  System.out.println("Done: [" + result.getResults().toString(2) + "]");
-            ExtentReport.node.fail("Done: [" + result.getResults().toString(5) + "]");
+            ExtentReport.createAndGetNodeInstance("GraphWalker Result Summery");
+            StrSplit(result.getResults().toString(2),0);
+
+
+/*            ExtentReport.node.fail("Done: [" + result.getResults().toString(5) + "]");
             ExtentReport.createAndGetNodeInstance("GraphWalker Result");
             ExtentReport.node.fail("Graphwalker Result: [" + substringAfter(result.getResults().toString(5), "more\\n\"}],") + "]");
             ExtentReport.createAndGetNodeInstance("GraphWalker Summery");
-            ExtentReport.node.fail("Graphwalker Result: [vertexCoverage " + substringAfter(result.getResults().toString(5), "vertexCoverage") + "]");
+            ExtentReport.node.fail("Graphwalker Result: [vertexCoverage " + substringAfter(result.getResults().toString(5), "vertexCoverage") + "]");*/
            // ExtentReport.createAndGetNodeInstance("Service Registry Graph Coverage");
         //    ExtentReport.reportError();
         }
         else {
-            System.out.println("Done: [" + result.getResults().toString(2) + "]");
+           // System.out.println("Done: [" + result.getResults().toString(2) + "]");
             ExtentReport.createAndGetNodeInstance("GraphWalker Result PASS");
-            ExtentReport.node.pass("Done: [" + result.getResults().toString(5) + "]");
-            StrSplit(result.getResults().toString(2));
+           // ExtentReport.node.pass("Done: [" + result.getResults().toString(5) + "]");
+            StrSplit(result.getResults().toString(2),1);
           //  ExtentReport.reportImage();
         }
-        delayInMillis(9000);
+       // delayInMillis(9000);
         //server.stop();
     }
 
