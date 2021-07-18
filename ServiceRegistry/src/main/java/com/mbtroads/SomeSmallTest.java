@@ -205,10 +205,10 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
     assestContains("Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.", content);
   }
 
-  @Override
-  public void e_NewEdge()  {
-    System.out.println("Running: e_FirstAction");
-  }
+  //@Override
+  //public void e_NewEdge()  {
+    //System.out.println("Running: e_FirstAction");
+  //}
 
 
 

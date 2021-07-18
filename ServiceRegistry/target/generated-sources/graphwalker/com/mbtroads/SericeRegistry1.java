@@ -58,7 +58,4 @@ public interface SericeRegistry1 {
 
     @Edge()
     void e_SerrviceDefinationNotExist();
-
-    @Edge()
-    void e_NewEdge();
 }

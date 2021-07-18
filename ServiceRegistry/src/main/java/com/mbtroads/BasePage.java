@@ -7,12 +7,35 @@ import static org.junit.Assert.assertEquals;
 
 public class BasePage extends ExecutionContext {
 
-    public void  StrSplit(String strMain)
+    public void  StrSplit(String strMain,int result)
     {
         String[] arrSplit = strMain.split(",");
-        for (int i=0; i < arrSplit.length; i++)
+        int i = 1;
+        String temp;
+        while (i < arrSplit.length)
+
+     //   for (int i=1; i < arrSplit.length; i++)
         {
-            System.out.println(arrSplit[i]);
+            if (result ==1)
+                ExtentReport.node.pass(arrSplit[i]);
+            else
+                if (arrSplit[i].contains(("vertexName")))
+                {
+                    temp = arrSplit[i] + " , "+ arrSplit[i+1];
+                    ExtentReport.node.fail(temp);
+                    i++;
+                }
+                else  if (arrSplit[i].contains(("edgeId")))
+                {
+                    temp = arrSplit[i] + " , "+ arrSplit[i+1];
+                    ExtentReport.node.fail(temp);
+                    i++;
+                }
+                else
+                    ExtentReport.node.fail(arrSplit[i]);
+
+            i++;
+            //System.out.println(arrSplit[i]);
         }
     }
 
@@ -25,8 +48,9 @@ public class BasePage extends ExecutionContext {
             assertEquals(expectedvValue , actualValue);
             ExtentReport.node.pass("Assertion Success Equal for Field: "+ expectedvValue);
 
-        }catch(Error e)
+        }catch(AssertionError  e)
         {
+           // ExtentReport.reportError(e);
             ExtentReport.node.fail("Assertion Failed for Equal : "+expectedvValue);
             throw new CustomException("Expected Value: "+expectedvValue+" Actual Value: "+actualValue);
         }
@@ -44,10 +68,11 @@ public class BasePage extends ExecutionContext {
             ExtentReport.node.pass("Assertion Success for Field Contains: "+ expectedvValue);
 
 
-        }catch(Error e)
+        }catch(AssertionError e)
         {
              ExtentReport.node.fail("Assertion Failed for Contain: " + expectedvValue);
              throw new CustomException("Expected Value: "+ expectedvValue + " Actual Value: "+actualValue);
+
         }
     }
 
@@ -61,7 +86,7 @@ public class BasePage extends ExecutionContext {
             ExtentReport.node.pass("Assertion Success for Field don ot Contain: "+ expectedValue);
 
 
-        }catch(Error e)
+        }catch(AssertionError e)
         {
             ExtentReport.node.fail("Assertion Failed for do not Contain: "+ expectedValue);
             throw new CustomException("Expected Value: "+expectedValue+" Actual Value: "+actualValue);

@@ -88,7 +88,4 @@ public interface SericeQuery {
 
     @Vertex()
     void v_QueryResponce();
-
-    @Edge()
-    void e_NewEdge();
 }
