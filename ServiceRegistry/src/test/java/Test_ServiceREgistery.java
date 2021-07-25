@@ -60,7 +60,7 @@ public class Test_ServiceREgistery extends BaseClass {
     }
 
 
-//mvn -q clean graphwalker:generate-sources compile test -Dtest=Test_ServiceREgistery 
+//mvn -q clean graphwalker:generate-sources compile test -Dtest=Test_ServiceREgistery
 
 
 

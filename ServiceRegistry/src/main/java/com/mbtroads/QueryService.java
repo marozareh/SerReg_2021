@@ -4,9 +4,7 @@ package com.mbtroads;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
-import org.graphwalker.java.annotation.Edge;
 import org.graphwalker.java.annotation.GraphWalker;
-import org.graphwalker.java.annotation.Vertex;
 
 import java.io.IOException;
 
@@ -57,8 +55,6 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         extendReport("e_InvaledServiceQuerForm");
         infoReport("Moving Through: e_InvaledServiceQuerForm");
         infoReport("Running : The API /serviceregistry/query with invalid Payload");
-
-       // response =  httpClient.sendPost(InvaledServiceQuery,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(InvaledServiceQuery, "query");
 
         HttpEntity entity1 = response.getEntity();
@@ -94,8 +90,6 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
         infoReport("Moving Through: Moving Through: e_validServiceQueryForm");
         infoReport("Running : The API /serviceregistry/query with valid Payload");
-
-        //response =  httpClient.sendPost(ValidServiceQuery_Payload,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(ValidServiceQuery_Payload, "query");
         HttpEntity entity1 = response.getEntity();
         try {
@@ -121,15 +115,11 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
         infoReport("Moving Through: e_QueryInterfaceNotDefined");
         infoReport("Running : The API /serviceregistry/query with valid Payload and Not defined Interface");
-
-//        response =  httpClient.sendPost(InterfaceNotDefined,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(InterfaceNotDefined, "query");
 
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-           // infoReport("Responce Content = " + content);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -156,8 +146,6 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-         //   infoReport("Responce Content = " + content);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -184,15 +172,11 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
         infoReport("Moving Through: e_QuerySecurityTypeNotDefined");
         infoReport("Running : The API /serviceregistry/query with valid Payload and Not defined Security");
-
-//        response =  httpClient.sendPost(SecureNotDefined,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(SecureNotDefined, "query");
 
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-          //  infoReport("Responce Content = " + content);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -202,7 +186,6 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     @Override
     public void v_ServiceQuerySecurityTypeNotDefined(){
         infoReport("Validating in: v_ServiceQuerySecurityTypeNotDefined");
-
         assestEqual("400", String.valueOf(response.getStatusLine().getStatusCode()));
 
     }
@@ -213,14 +196,11 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
         infoReport("Moving Through: e_QuerySecurtyDefined");
         infoReport("Running : The API /serviceregistry/query with valid Payload and  defined Security");
-
-      //  response =  httpClient.sendPost(SecureDefined,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(SecureDefined, "query");
 
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-        //    infoReport("Responce Content = " + content);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -237,11 +217,6 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     };
 
-
-
-
-
-
     @Override
     public void e_QueryVersionNotDefined(){
         extendReport("e_QueryVersionNotDefined");
@@ -249,14 +224,11 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         infoReport("Moving Through: e_QueryVersionNotDefined");
         infoReport("Running : The API /serviceregistry/query with valid Payload and Not defined Version");
 
-      //  response =  httpClient.sendPost(VersionNotDefined,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(VersionNotDefined, "query");
 
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-      //      infoReport("Responce Content = " + content);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -320,8 +292,6 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-     //       infoReport("Responce Content = " + content);
-
         } catch (IOException e) {
             e.printStackTrace();
         }}
@@ -343,15 +313,11 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         infoReport("Moving Through: e_QueryMetadataDefined");
 
         infoReport("Running : The API /serviceregistry/query with valid Payload and defined MetaData");
-
-       // response =  httpClient.sendPost(MetaDataDefined,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(MetaDataDefined, "query");
 
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-     //       infoReport("Responce Content = " + content);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -374,15 +340,11 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         infoReport("Moving Through: e_PingProvider");
 
         infoReport("Running : The API /serviceregistry/query with valid Payload and Ping Providers TRUE");
-
-//        response =  httpClient.sendPost(PingProviders,"http://localhost:8443/serviceregistry/query");
         response =  httpClient.sendPost_Query(PingProviders, "query");
 
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
-     //       infoReport("Responce Content = " + content);
-
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -3,6 +3,7 @@ package com.mbtroads;
 import org.apache.http.*;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
@@ -38,6 +39,15 @@ public class HttpClient implements ISystemProperties {
         id = substringBefore(content, ",\"serviceDefinition");
         id = substringAfter(id, ":");
         return id;
+
+    }
+
+    public String Get_name(String content) {
+
+        String name;
+        name = substringBefore(content, "\",\"address");
+        name = substringAfter(name, "systemName\":\"");
+        return name;
 
     }
 
@@ -145,18 +155,6 @@ public class HttpClient implements ISystemProperties {
 
                 }
             }
-
-
-
-              //  HttpPost request = new HttpPost(URL);
-
-
-
-
-                //   HttpPost request = new HttpPost("http://localhost:8443/serviceregistry/mgmt");
-         //   HttpPost request = new HttpPost("http://128.130.39.42:8443/serviceregistry/mgmt/");
-
-          //  request.setHeader("Accept", "application/json");
             request.setHeader("Content-type", "application/json");
             request.setEntity(entity);
 
@@ -170,5 +168,43 @@ public class HttpClient implements ISystemProperties {
             return response;
 
     }
+
+
+
+    public HttpResponse DeleteServise(String payload)  {
+        HttpResponse response = null;
+
+        HttpDelete request= null;
+        try {
+
+            StringEntity entity = new StringEntity(payload);
+            CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+
+            if (OS.contains("Windows") || OS.contains("Mac")) {
+                System.out.println("http://localhost:8443/serviceregistry/unregister?"+payload);
+                    request = new HttpDelete("http://localhost:8443/serviceregistry/unregister?"+payload);
+                } else {
+                    request = new HttpDelete("http://128.130.39.42:8443/serviceregistry/unregister?"+payload);
+
+                }
+
+            request.setHeader("Content-type", "application/json");
+            //request.setEntity(entity);
+
+
+            response = httpClient.execute(request);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return response;
+
+    }
+
+
+
+
+
 
 }

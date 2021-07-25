@@ -53,9 +53,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   public void e_InvaledServiceRegisteryForm(){
     ExtentReport.createAndGetNodeInstance("Moving Through: e_InvaledServiceRegisteryForm");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with invalid Payload");
-
-       // response =  httpClient.sendPost(InvaledServiceRegistery, "http://localhost:8443/serviceregistry/mgmt");
-        response =  httpClient.sendPost_Query(InvaledServiceRegistery, "mgmt");
+    response =  httpClient.sendPost_Query(InvaledServiceRegistery, "mgmt");
 
       HttpEntity entity1 = response.getEntity();
         try {
@@ -87,7 +85,6 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   public void e_validServiceRegisteryForm() {
     ExtentReport.createAndGetNodeInstance("Moving Through: e_validServiceRegisteryForm");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload");
-   // response =  httpClient.sendPost(ValidServiceRegistery_Payload,"http://localhost:8443/serviceregistry/mgmt");
       response =  httpClient.sendPost_Query(ValidServiceRegistery_Payload,"mgmt");
 
       HttpEntity entity1 = response.getEntity();
@@ -116,7 +113,6 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
 
     ExtentReport.createAndGetNodeInstance("Moving Through: e_SerrviceDefinationNotExist");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist");
-//    response =  httpClient.sendPost(NewService,"http://localhost:8443/serviceregistry/mgmt");
       response =  httpClient.sendPost_Query(NewService,"mgmt");
 
       HttpEntity entity1 = response.getEntity();

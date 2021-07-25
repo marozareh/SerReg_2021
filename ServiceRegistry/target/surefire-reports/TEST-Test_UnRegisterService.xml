@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="Test_ServiceREgistery" time="6.625" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="Test_UnRegisterService" time="6.043" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12+33"/>
@@ -14,7 +14,7 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="test" value="Test_ServiceREgistery"/>
+    <property name="test" value="Test_UnRegisterService"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\ArrowheadTest_Graphwalker\ServiceRegistry"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
@@ -46,7 +46,7 @@
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="error"/>
     <property name="java.vm.specification.version" value="12"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -q clean graphwalker:generate-sources compile test -Dtest=Test_ServiceREgistery"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -q clean graphwalker:generate-sources compile test -Dtest=Test_UnRegisterService"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-12"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,5 +65,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Test_ServiceREgistery" name="testExecutor" time="6.625"/>
+  <testcase classname="Test_UnRegisterService" name="testExecutor" time="6.043"/>
 </testsuite>
