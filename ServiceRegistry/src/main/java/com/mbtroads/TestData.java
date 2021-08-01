@@ -32,6 +32,10 @@ public interface TestData {
     String MetaDataDefined ="{ \"metadataRequirements\": { \"unit\": \"celsius\" }, \"serviceDefinitionRequirement\": \"indoortemperature\"}";
 
     String PingProviders ="{ \"pingProviders\": true, \"serviceDefinitionRequirement\": \"indoortemperature\"}";
+
+    String UnregisterService = "address=192.168.0.2&port=8080&service_definition=indoortemperature&system_name=NOTEXIST";
+    String registerService = "address=192.168.0.2&port=8080&service_definition=indoortemperature&system_name=";
+
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_BLACK = "\u001B[30m";
 }
