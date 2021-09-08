@@ -28,7 +28,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   public void e_start() {
     ExtentReport.createAndGetNodeInstance("Moving Through: e_start");
     infoReport("Running ServiceAvailable API http://localhost:8443/serviceregistry/echo");
-    response =  httpClient.ServiceAvailable();
+    response =  httpClient.ServiceAvailable("serviceregistery");
     HttpEntity entity1 = response.getEntity();
     try {
       content = EntityUtils.toString(entity1);
@@ -135,8 +135,8 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   @Override
   public void e_SaveService()  {
     ExtentReport.createAndGetNodeInstance("Moving Through: e_SaveService");
-    infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt?direction=ASC&sort_field=id to get all saved Services");
-    response =  httpClient.sendGet_All();
+    infoReport("Running : The API /serviceregistry/mgmt?direction=ASC&sort_field=id to get all saved Services");
+    response =  httpClient.sendGet_All("serviceregistry");
     HttpEntity entity1 = response.getEntity();
     try {
       content = EntityUtils.toString(entity1);
@@ -160,7 +160,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
     ExtentReport.createAndGetNodeInstance("Moving Through: e_NewServiceExist");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt/"+id + " To get specific service");
 
-    response =  httpClient.sendGet(id);
+    response =  httpClient.sendGet(id, "serviceregistry");
     HttpEntity entity1 = response.getEntity();
     try {
       content = EntityUtils.toString(entity1);

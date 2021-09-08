@@ -61,10 +61,10 @@ public class UnregService extends BasePage implements UnregisterService , TestDa
         public void e_InvaledUnRegisterServiceForm(){
 
                 ExtentReport.createAndGetNodeInstance("Moving Through: e_InvaledUnRegisterServiceForm");
-                infoReport("Running : The API http://localhost:8443/serviceregistry/unregister with invalid Payload and Serrvice Defination Not Exist");
-                infoReport("http://localhost:8443/serviceregistry/unregister?"+UnregisterService);
+                infoReport("Running : The API /serviceregistry/unregister with invalid Payload and Serrvice Defination Not Exist");
+                infoReport("/serviceregistry/unregister?"+UnregisterService);
 
-                 response =  httpClient.DeleteServise(UnregisterService);
+                 response =  httpClient.DeleteServise(UnregisterService, "serviceregistry");
 
                 HttpEntity entity1 = response.getEntity();
                 try {
@@ -98,7 +98,7 @@ public class UnregService extends BasePage implements UnregisterService , TestDa
                 infoReport("Running : The API http://localhost:8443/serviceregistry/unregister with valid Payload and Serrvice Defination  Exist");
                 infoReport("http://localhost:8443/serviceregistry/unregister?"+registerService+ServiceName);
 
-                response =  httpClient.DeleteServise(registerService+ServiceName);
+                response =  httpClient.DeleteServise(registerService+ServiceName, "serviceregistry");
 
                 HttpEntity entity1 = response.getEntity();
                 try {
@@ -125,7 +125,7 @@ public class UnregService extends BasePage implements UnregisterService , TestDa
 
                 infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt/"+id + " To get specific service");
 
-                response =  httpClient.sendGet(id);
+                response =  httpClient.sendGet(id, "serviceregistry");
                 HttpEntity entity1 = response.getEntity();
                 try {
                         content = EntityUtils.toString(entity1);

@@ -42,6 +42,47 @@ public class HttpClient implements ISystemProperties {
 
     }
 
+    public String Get_id_p(String content, String type) {
+
+        String id;
+        String After_seprator = "";
+        String Before_seperator = "";
+        if (type.contains("provider"))
+        {
+            After_seprator = ",\"provider\":{\"id\":";
+            Before_seperator = ",\"systemName";
+
+        }
+        if (type.contains("serviceDefinition"))
+        {
+            After_seprator = ",\"serviceDefinition\":{\"id\":";
+            Before_seperator = ",\"serviceDefinition\":";
+
+        }
+        if (type.contains("interface"))
+        {
+            After_seprator = ",\"interfaces\":[{\"id\":";
+            Before_seperator = ",\"interfaceName";
+
+        }
+        if (type.contains("servicename"))
+        {
+            After_seprator = "\"systemName\":\"";
+            Before_seperator = "\",\"address";
+
+        }
+        if (type.contains("storeid"))
+        {
+            After_seprator = "data\":[{\"id\":";
+            Before_seperator = ",\"serviceDefinition\":{\"id";
+
+        }
+        id = substringAfter(content, After_seprator);
+        id = substringBefore(id, Before_seperator);
+        return id;
+
+    }
+
     public String Get_name(String content) {
 
         String name;
@@ -51,18 +92,39 @@ public class HttpClient implements ISystemProperties {
 
     }
 
-    public HttpResponse ServiceAvailable()  {
+    public HttpResponse ServiceAvailable(String serviceName)  {
 
 
         HttpResponse response = null;
-        HttpGet request;
+        HttpGet request= null;
             try {
                 CloseableHttpClient httpClient = HttpClientBuilder.create().build();
                 if (OS.contains("Windows") || OS.contains("Mac")) {
-                     request = new HttpGet("http://localhost:8443/serviceregistry/echo");
+                    if(serviceName.contains("serviceregistery"))
+                    {
+                        request = new HttpGet("http://localhost:8443/serviceregistry/echo");
+                    }
+                    if(serviceName.contains("authontication"))
+                    {
+                        request = new HttpGet("http://localhost:8445/authorization/echo");
+                    }
+                    if(serviceName.contains("orchestration"))
+                    {
+                        request = new HttpGet("http://localhost:8441/orchestrator/echo");
+                    }
                 }
                 else {
-                     request = new HttpGet("http://128.130.39.42:8443/serviceregistry/echo");
+                    if (serviceName.contains("serviceregistery")) {
+                        request = new HttpGet("http://128.130.39.42:8443/serviceregistry/echo");
+                    }
+                    if(serviceName.contains("authontication"))
+                    {
+                        request = new HttpGet("http://128.130.39.42:8445/authorization/echo");
+                    }
+                    if(serviceName.contains("orchestration"))
+                    {
+                        request = new HttpGet("http://128.130.39.42:8441/orchestrator/echo");
+                    }
                 }
                 request.setHeader("Accept", "application/json");
                 request.setHeader("Content-type", "application/json");
@@ -77,19 +139,29 @@ public class HttpClient implements ISystemProperties {
 
     }
 
-    public HttpResponse sendGet_All()  {
+    public HttpResponse sendGet_All(String type)  {
 
 
         HttpResponse response = null;
-        HttpGet request;
+        HttpGet request = null;
         try {
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-            if (OS.contains("Windows") || OS.contains("Mac")) {
-                request = new HttpGet("http://localhost:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
+
+            if (type.contains("serviceregistry")) {
+                if (OS.contains("Windows") || OS.contains("Mac")) {
+                    request = new HttpGet("http://localhost:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
+                } else {
+                    request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
+                }
             }
-            else {
-                request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
+            if (type.contains("storepriority")) {
+                if (OS.contains("Windows") || OS.contains("Mac")) {
+                    request = new HttpGet("http://localhost:8441/orchestrator/mgmt/store/all_top_priority?direction=ASC&sort_field=id");
+                } else {
+                    request = new HttpGet("http://128.130.39.42:8441/orchestrator/mgmt/store/all_top_priority?direction=ASC&sort_field=id");
+                }
             }
+
             request.setHeader("Accept", "application/json");
             request.setHeader("Content-type", "application/json");
             response = httpClient.execute(request);
@@ -103,19 +175,28 @@ public class HttpClient implements ISystemProperties {
 
     }
 
-    public HttpResponse sendGet(String id)  {
+    public HttpResponse sendGet(String id, String type)  {
 
 
         HttpResponse response = null;
-        HttpGet request;
+        HttpGet request= null;
 
         try {
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-            if (OS.contains("Windows") || OS.contains("Mac")) {
-             request = new HttpGet("http://localhost:8443/serviceregistry/mgmt/"+id);
+
+            if (type.contains("serviceregistry")) {
+                if (OS.contains("Windows") || OS.contains("Mac")) {
+                    request = new HttpGet("http://localhost:8443/serviceregistry/mgmt/" + id);
+                } else {
+                    request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt/" + id);
+                }
             }
-            else {
-                request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt/" + id);
+            if (type.contains("store")) {
+                if (OS.contains("Windows") || OS.contains("Mac")) {
+                    request = new HttpGet("http://localhost:8441/orchestrator/mgmt/store/" + id);
+                } else {
+                    request = new HttpGet("http://128.130.39.42:8441/orchestrator/mgmt/store/" + id);
+                }
             }
             request.setHeader("Accept", "application/json");
             request.setHeader("Content-type", "application/json");
@@ -155,6 +236,25 @@ public class HttpClient implements ISystemProperties {
 
                 }
             }
+            if (type.contains("requesrauth")) {
+                    if (OS.contains("Windows") || OS.contains("Mac")) {
+                        request = new HttpPost("http://localhost:8445/authorization/intracloud/check");
+                    } else {
+                        request = new HttpPost("http://128.130.39.42:8445/authorization/intracloud/check");
+
+                    }
+                }
+            if (type.contains("createstore")) {
+                if (OS.contains("Windows") || OS.contains("Mac")) {
+                    request = new HttpPost("http://localhost:8441/orchestrator/mgmt/store");
+                } else {
+                    request = new HttpPost("http://128.130.39.42:8441/orchestrator/mgmt/store");
+
+                }
+            }
+
+
+
             request.setHeader("Content-type", "application/json");
             request.setEntity(entity);
 
@@ -171,7 +271,7 @@ public class HttpClient implements ISystemProperties {
 
 
 
-    public HttpResponse DeleteServise(String payload)  {
+    public HttpResponse DeleteServise(String payload , String type)  {
         HttpResponse response = null;
 
         HttpDelete request= null;
@@ -180,14 +280,23 @@ public class HttpClient implements ISystemProperties {
             StringEntity entity = new StringEntity(payload);
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
-            if (OS.contains("Windows") || OS.contains("Mac")) {
-                System.out.println("http://localhost:8443/serviceregistry/unregister?"+payload);
-                    request = new HttpDelete("http://localhost:8443/serviceregistry/unregister?"+payload);
+            if (type.contains("serviceregistry")) {
+                if (OS.contains("Windows") || OS.contains("Mac")) {
+                    System.out.println("http://localhost:8443/serviceregistry/unregister?" + payload);
+                    request = new HttpDelete("http://localhost:8443/serviceregistry/unregister?" + payload);
                 } else {
-                    request = new HttpDelete("http://128.130.39.42:8443/serviceregistry/unregister?"+payload);
+                    request = new HttpDelete("http://128.130.39.42:8443/serviceregistry/unregister?" + payload);
 
                 }
+            }
+            if (type.contains("store")) {
+                if (OS.contains("Windows") || OS.contains("Mac")) {
+                    request = new HttpDelete("http://localhost:8441/orchestrator/mgmt/store/" + payload);
+                } else {
+                    request = new HttpDelete("http://128.130.39.42:8441/orchestrator/mgmt/store/" + payload);
 
+                }
+            }
             request.setHeader("Content-type", "application/json");
             //request.setEntity(entity);
 
