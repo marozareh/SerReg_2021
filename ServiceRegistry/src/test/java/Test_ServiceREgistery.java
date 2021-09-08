@@ -47,6 +47,8 @@ public class Test_ServiceREgistery extends BaseClass {
             //ExtentReport.node.fail("Graphwalker Result: [vertexCoverage " + substringAfter(result.getResults().toString(5), "vertexCoverage") + "]");
             //ExtentReport.createAndGetNodeInstance("Service Registry Graph Coverage");
       //      ExtentReport.reportError();
+             ExtentReport.reportError();
+
         }
         else {
            // System.out.println("Done: [" + result.getResults().toString(2) + "]");
