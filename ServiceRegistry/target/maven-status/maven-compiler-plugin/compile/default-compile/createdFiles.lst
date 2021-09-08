@@ -1,4 +1,5 @@
 com\mbtroads\BasePage.class
+com\mbtroads\OrchStore.class
 com\mbtroads\Runner.class
 com\mbtroads\SomeSmallTest.class
 com\mbtroads\SericeRegistry1.class
@@ -12,3 +13,4 @@ com\mbtroads\TestData.class
 com\mbtroads\ExtentReport.class
 com\mbtroads\HttpClient.class
 com\mbtroads\BaseClass.class
+com\mbtroads\OrchestrationStore.class

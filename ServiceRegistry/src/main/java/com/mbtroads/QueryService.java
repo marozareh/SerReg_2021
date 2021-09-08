@@ -30,7 +30,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
         extendReport("e_start");
         infoReport("Moving Through: e_start");
         infoReport("Running ServiceAvailable API http://localhost:8443/serviceregistry/echo");
-        response =  httpClient.ServiceAvailable();
+        response =  httpClient.ServiceAvailable("serviceregistery");
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
