@@ -115,15 +115,15 @@ public class HttpClient implements ISystemProperties {
                 }
                 else {
                     if (serviceName.contains("serviceregistery")) {
-                        request = new HttpGet("http://128.130.39.42:8443/serviceregistry/echo");
+                        request = new HttpGet("http://128.130.123.115:8443/serviceregistry/echo");
                     }
                     if(serviceName.contains("authontication"))
                     {
-                        request = new HttpGet("http://128.130.39.42:8445/authorization/echo");
+                        request = new HttpGet("http://128.130.123.115:8445/authorization/echo");
                     }
                     if(serviceName.contains("orchestration"))
                     {
-                        request = new HttpGet("http://128.130.39.42:8441/orchestrator/echo");
+                        request = new HttpGet("http://128.130.123.115:8441/orchestrator/echo");
                     }
                 }
                 request.setHeader("Accept", "application/json");
@@ -151,14 +151,14 @@ public class HttpClient implements ISystemProperties {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpGet("http://localhost:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
                 } else {
-                    request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
+                    request = new HttpGet("http://128.130.123.115:8443/serviceregistry/mgmt?direction=ASC&sort_field=id");
                 }
             }
             if (type.contains("storepriority")) {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpGet("http://localhost:8441/orchestrator/mgmt/store/all_top_priority?direction=ASC&sort_field=id");
                 } else {
-                    request = new HttpGet("http://128.130.39.42:8441/orchestrator/mgmt/store/all_top_priority?direction=ASC&sort_field=id");
+                    request = new HttpGet("http://128.130.123.115:8441/orchestrator/mgmt/store/all_top_priority?direction=ASC&sort_field=id");
                 }
             }
 
@@ -188,14 +188,14 @@ public class HttpClient implements ISystemProperties {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpGet("http://localhost:8443/serviceregistry/mgmt/" + id);
                 } else {
-                    request = new HttpGet("http://128.130.39.42:8443/serviceregistry/mgmt/" + id);
+                    request = new HttpGet("http://128.130.123.115:8443/serviceregistry/mgmt/" + id);
                 }
             }
             if (type.contains("store")) {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpGet("http://localhost:8441/orchestrator/mgmt/store/" + id);
                 } else {
-                    request = new HttpGet("http://128.130.39.42:8441/orchestrator/mgmt/store/" + id);
+                    request = new HttpGet("http://128.130.123.115:8441/orchestrator/mgmt/store/" + id);
                 }
             }
             request.setHeader("Accept", "application/json");
@@ -224,7 +224,7 @@ public class HttpClient implements ISystemProperties {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpPost("http://localhost:8443/serviceregistry/query");
                 } else {
-                    request = new HttpPost("http://128.130.39.42:8443/serviceregistry/query");
+                    request = new HttpPost("http://128.130.123.115:8443/serviceregistry/query");
 
                 }
             }
@@ -232,7 +232,7 @@ public class HttpClient implements ISystemProperties {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpPost("http://localhost:8443/serviceregistry/mgmt");
                 } else {
-                    request = new HttpPost("http://128.130.39.42:8443/serviceregistry/mgmt");
+                    request = new HttpPost("http://128.130.123.115:8443/serviceregistry/mgmt");
 
                 }
             }
@@ -240,7 +240,7 @@ public class HttpClient implements ISystemProperties {
                     if (OS.contains("Windows") || OS.contains("Mac")) {
                         request = new HttpPost("http://localhost:8445/authorization/intracloud/check");
                     } else {
-                        request = new HttpPost("http://128.130.39.42:8445/authorization/intracloud/check");
+                        request = new HttpPost("http://128.130.123.115:8445/authorization/intracloud/check");
 
                     }
                 }
@@ -248,7 +248,7 @@ public class HttpClient implements ISystemProperties {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpPost("http://localhost:8441/orchestrator/mgmt/store");
                 } else {
-                    request = new HttpPost("http://128.130.39.42:8441/orchestrator/mgmt/store");
+                    request = new HttpPost("http://128.130.123.115:8441/orchestrator/mgmt/store");
 
                 }
             }
@@ -282,10 +282,9 @@ public class HttpClient implements ISystemProperties {
 
             if (type.contains("serviceregistry")) {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
-                    System.out.println("http://localhost:8443/serviceregistry/unregister?" + payload);
                     request = new HttpDelete("http://localhost:8443/serviceregistry/unregister?" + payload);
                 } else {
-                    request = new HttpDelete("http://128.130.39.42:8443/serviceregistry/unregister?" + payload);
+                    request = new HttpDelete("http://128.130.123.115:8443/serviceregistry/unregister?" + payload);
 
                 }
             }
@@ -293,7 +292,7 @@ public class HttpClient implements ISystemProperties {
                 if (OS.contains("Windows") || OS.contains("Mac")) {
                     request = new HttpDelete("http://localhost:8441/orchestrator/mgmt/store/" + payload);
                 } else {
-                    request = new HttpDelete("http://128.130.39.42:8441/orchestrator/mgmt/store/" + payload);
+                    request = new HttpDelete("http://128.130.123.115:8441/orchestrator/mgmt/store/" + payload);
 
                 }
             }
