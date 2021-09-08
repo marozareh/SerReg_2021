@@ -45,7 +45,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     public void v_QueryService(){
         infoReport("Validating in:  v_QueryService");
       if (flag == true) {
-            assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
+            assestEqual("20011", String.valueOf(response.getStatusLine().getStatusCode()));
             assestContains("Got it!", content);
         }
     };
