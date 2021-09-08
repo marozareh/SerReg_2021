@@ -29,6 +29,7 @@ public class Test_UnRegisterService extends BaseClass {
             }
             ExtentReport.createAndGetNodeInstance("GraphWalker Result Summery");
             StrSplit(result.getResults().toString(2),0);
+            ExtentReport.reportError();
 
 
         }

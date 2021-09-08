@@ -47,7 +47,7 @@ public class Test_ServiceQuery extends BaseClass {
             ExtentReport.createAndGetNodeInstance("GraphWalker Summery");
             ExtentReport.node.fail("Graphwalker Result: [vertexCoverage " + substringAfter(result.getResults().toString(5), "vertexCoverage") + "]");*/
            // ExtentReport.createAndGetNodeInstance("Service Registry Graph Coverage");
-        //    ExtentReport.reportError();
+            ExtentReport.reportError();
         }
         else {
            // System.out.println("Done: [" + result.getResults().toString(2) + "]");

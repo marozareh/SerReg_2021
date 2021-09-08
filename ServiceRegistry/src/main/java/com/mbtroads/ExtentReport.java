@@ -33,8 +33,9 @@ public class ExtentReport implements ISystemProperties {
 
     public static void flushReport() { report.flush();}
 
-    public static void reportError(Exception e) {
+    public static void reportError() {
         try {
+
             node.fail( BaseClass.addBase64ScreenShotToReport());
         } catch (IOException newError) {
             newError.printStackTrace();

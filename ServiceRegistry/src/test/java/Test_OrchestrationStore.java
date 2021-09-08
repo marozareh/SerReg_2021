@@ -30,6 +30,7 @@ public class Test_OrchestrationStore extends BaseClass {
             }
             ExtentReport.createAndGetNodeInstance("GraphWalker Result Summery");
             StrSplit(result.getResults().toString(2),0);
+            ExtentReport.reportError();
 
         }
         else {
