@@ -36,6 +36,7 @@ public class ExtentReport implements ISystemProperties {
     public static void reportError() {
         try {
             node.fail( BaseClass.addBase64ScreenShotToReport());
+
         } catch (IOException newError) {
             newError.printStackTrace();
         } catch (Exception nodeError) {
