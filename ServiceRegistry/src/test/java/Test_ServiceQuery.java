@@ -35,6 +35,7 @@ public class Test_ServiceQuery extends BaseClass {
             ExtentReport.createAndGetNodeInstance("GraphWalker Result Summery");
             StrSplit(result.getResults().toString(2),0);
             ExtentReport.reportError();
+           // ExtentReport.test.fail("Testfail");
         }
         else {
             ExtentReport.createAndGetNodeInstance("GraphWalker Result PASS");

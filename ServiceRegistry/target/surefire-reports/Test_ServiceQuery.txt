@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: Test_ServiceQuery
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.272 sec <<< FAILURE!
-testExecutor(Test_ServiceQuery)  Time elapsed: 9.729 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.214 sec <<< FAILURE!
+testExecutor(Test_ServiceQuery)  Time elapsed: 10.09 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mbtroads.BaseClass.getScreenshotAsString(BaseClass.java:92)
 	at com.mbtroads.BaseClass.addBase64ScreenShotToReport(BaseClass.java:108)
-	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:38)
+	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:39)
 	at Test_ServiceQuery.testExecutor(Test_ServiceQuery.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
