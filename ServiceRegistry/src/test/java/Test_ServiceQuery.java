@@ -27,7 +27,8 @@ public class Test_ServiceQuery extends BaseClass {
             for (String error : result.getErrors()) {
                 System.out.println(error);
                 ExtentReport.createAndGetNodeInstance("GraphWalker Result FAIL");
-                ExtentReport.node.fail("Error in the Model : " + error);
+                //ExtentReport.node.fail("Error in the Model : " + error);
+                ExtentReport.node.fail("Error in the Model");
 
 
             }

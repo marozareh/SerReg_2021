@@ -131,7 +131,9 @@ public class HttpClient implements ISystemProperties {
                 response = httpClient.execute(request);
 
         } catch (Exception e) {
-            e.printStackTrace();
+                ExtentReport.node.fail("Service problem");
+
+                e.printStackTrace();
         }
 
         return response;

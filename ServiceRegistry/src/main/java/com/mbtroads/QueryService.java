@@ -29,12 +29,13 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     public void e_start(){
         extendReport("e_start");
         infoReport("Moving Through: e_start");
-        infoReport("Running ServiceAvailable API http://localhost:8443/serviceregistry/echo");
+        infoReport("Running ServiceAvailable /serviceregistry/echo");
         response =  httpClient.ServiceAvailable("serviceregistery");
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
         } catch (IOException e) {
+            ExtentReport.node.fail("Service probem");
             e.printStackTrace();
         }
 
@@ -45,7 +46,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     public void v_QueryService(){
         infoReport("Validating in:  v_QueryService");
       if (flag == true) {
-            assestEqual("20011", String.valueOf(response.getStatusLine().getStatusCode()));
+            assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
             assestContains("Got it!", content);
         }
     };
