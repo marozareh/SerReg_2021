@@ -169,6 +169,8 @@ public class HttpClient implements ISystemProperties {
             response = httpClient.execute(request);
 
         } catch (Exception e) {
+            ExtentReport.node.fail("Get All service error");
+
             e.printStackTrace();
         }
 
@@ -206,6 +208,8 @@ public class HttpClient implements ISystemProperties {
             response = httpClient.execute(request);
 
         } catch (Exception e) {
+            ExtentReport.node.fail("Get service error");
+
             e.printStackTrace();
         }
 
@@ -264,6 +268,8 @@ public class HttpClient implements ISystemProperties {
             response = httpClient.execute(request);
 
         } catch (Exception e) {
+            ExtentReport.node.fail("Post service error");
+
             e.printStackTrace();
         }
 
@@ -305,6 +311,8 @@ public class HttpClient implements ISystemProperties {
             response = httpClient.execute(request);
 
         } catch (Exception e) {
+            ExtentReport.node.fail("Delete service error");
+
             e.printStackTrace();
         }
 
