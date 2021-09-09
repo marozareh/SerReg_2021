@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="Test_ServiceQuery" time="10.09" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="Test_ServiceREgistery" time="11.295" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12+33"/>
@@ -14,7 +14,7 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="test" value="Test_ServiceQuery"/>
+    <property name="test" value="Test_ServiceREgistery"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\ArrowheadTest_Graphwalker\ServiceRegistry"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
@@ -46,7 +46,7 @@
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="error"/>
     <property name="java.vm.specification.version" value="12"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -q clean graphwalker:generate-sources compile test -Dtest=Test_ServiceQuery"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -q clean graphwalker:generate-sources compile test -Dtest=Test_ServiceREgistery"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-12"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,12 +65,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Test_ServiceQuery" name="testExecutor" time="10.09">
+  <testcase classname="Test_ServiceREgistery" name="testExecutor" time="11.295">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.mbtroads.BaseClass.getScreenshotAsString(BaseClass.java:92)
 	at com.mbtroads.BaseClass.addBase64ScreenShotToReport(BaseClass.java:108)
 	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:39)
-	at Test_ServiceQuery.testExecutor(Test_ServiceQuery.java:37)
+	at Test_ServiceREgistery.testExecutor(Test_ServiceREgistery.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,70 +108,22 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
-    <system-out>23:12:26.219 [main] DEBUG org.graphwalker.io.factory.json.JsonContextFactory - {&quot;models&quot;:[{&quot;edges&quot;:[{&quot;id&quot;:&quot;f6cef740-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;e_InvaledServiceQuerForm&quot;,&quot;sourceVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;guard&quot;:&quot;count==0;&quot;},{&quot;id&quot;:&quot;3373aec0-aa7f-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;e_back_QueryService&quot;,&quot;sourceVertexId&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;actions&quot;:[&quot;count=1;&quot;]},{&quot;id&quot;:&quot;17f59a80-aa8b-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;e_start&quot;,&quot;sourceVertexId&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;targetVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;},{&quot;id&quot;:&quot;5a9f8440-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_validServiceQueryForm&quot;,&quot;sourceVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;count&gt;0&quot;},{&quot;id&quot;:&quot;c2c3f300-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_QueryInterfaceNotDefined&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;count==1&quot;},{&quot;id&quot;:&quot;fcaf8370-b64d-11eb-9d08-91d0f4b6da7e&quot;,&quot;name&quot;:&quot;e_QuerySecurityTypeNotDefined&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;08351a40-aac1-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;count==2&quot;},{&quot;id&quot;:&quot;d7665480-d72d-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_QueryInterfaceDefined&quot;,&quot;sourceVertexId&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;b4a674c0-d72d-11eb-bbb8-3323c8d50a5c&quot;},{&quot;id&quot;:&quot;4a70b560-d72e-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_back_ValidPayload&quot;,&quot;sourceVertexId&quot;:&quot;b4a674c0-d72d-11eb-bbb8-3323c8d50a5c&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;},{&quot;id&quot;:&quot;bd7eadd0-d730-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_QuerySecurtyDefined&quot;,&quot;sourceVertexId&quot;:&quot;08351a40-aac1-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;bb8af420-d730-11eb-bbb8-3323c8d50a5c&quot;},{&quot;id&quot;:&quot;3c46bbd0-d731-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_back_ValidPayload&quot;,&quot;sourceVertexId&quot;:&quot;bb8af420-d730-11eb-bbb8-3323c8d50a5c&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;},{&quot;id&quot;:&quot;807b0f90-d731-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_QueryVersionNotDefined&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;72bfbdb0-d731-11eb-bbb8-3323c8d50a5c&quot;,&quot;guard&quot;:&quot;count==3&quot;},{&quot;id&quot;:&quot;11f92790-d732-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_QueryVersionDefined&quot;,&quot;sourceVertexId&quot;:&quot;72bfbdb0-d731-11eb-bbb8-3323c8d50a5c&quot;,&quot;targetVertexId&quot;:&quot;f51a6850-d731-11eb-bbb8-3323c8d50a5c&quot;},{&quot;id&quot;:&quot;7186d310-d732-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_back_ValidPayload&quot;,&quot;sourceVertexId&quot;:&quot;f51a6850-d731-11eb-bbb8-3323c8d50a5c&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;},{&quot;id&quot;:&quot;5caede00-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_QueryMetadatNotDefined&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;57eac640-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;guard&quot;:&quot;count==4&quot;},{&quot;id&quot;:&quot;5d5e57e0-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_QueryMetadataDefined&quot;,&quot;sourceVertexId&quot;:&quot;57eac640-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;targetVertexId&quot;:&quot;58c4d290-d733-11eb-bbb8-3323c8d50a5c&quot;},{&quot;id&quot;:&quot;5f88b1f0-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_back_ValidPayload&quot;,&quot;sourceVertexId&quot;:&quot;58c4d290-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;},{&quot;id&quot;:&quot;00bdebd0-d734-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;e_PingProvider&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;ff21a0f0-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;guard&quot;:&quot;count==5&quot;}],&quot;generator&quot;:&quot;random(vertex_coverage(100))&quot;,&quot;id&quot;:&quot;00913f00-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;SericeQuery&quot;,&quot;startElementId&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;vertices&quot;:[{&quot;id&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;v_QueryService&quot;,&quot;properties&quot;:{&quot;x&quot;:413.8227790918072,&quot;y&quot;:93.17186600970861}},{&quot;id&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;v_BadPayloadException&quot;,&quot;properties&quot;:{&quot;x&quot;:697,&quot;y&quot;:319},&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;v_Start&quot;,&quot;properties&quot;:{&quot;x&quot;:390.0192929578586,&quot;y&quot;:-37.570368075081404},&quot;actions&quot;:[&quot;count=0;&quot;]},{&quot;id&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_ValidPayload&quot;,&quot;properties&quot;:{&quot;x&quot;:-112.6042337809775,&quot;y&quot;:484.02968596853736}},{&quot;id&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_ServiceQueryInterfaceNotDefined&quot;,&quot;properties&quot;:{&quot;x&quot;:-633.2721733479668,&quot;y&quot;:225.90093745565997}},{&quot;id&quot;:&quot;08351a40-aac1-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_ServiceQuerySecurityTypeNotDefined&quot;,&quot;properties&quot;:{&quot;x&quot;:-689.6458737830284,&quot;y&quot;:973.8601971093766}},{&quot;id&quot;:&quot;b4a674c0-d72d-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;v_FilterOnInterface&quot;,&quot;properties&quot;:{&quot;x&quot;:-823.1552606285348,&quot;y&quot;:811.1848116609742},&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;bb8af420-d730-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;v_FilterOnSecurity&quot;,&quot;properties&quot;:{&quot;x&quot;:-1100.0547893221537,&quot;y&quot;:1046.9045895562997},&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;72bfbdb0-d731-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;v_ServiceQueryVersionNotDefined&quot;,&quot;properties&quot;:{&quot;x&quot;:-340.99641303454325,&quot;y&quot;:1165.2341036648927}},{&quot;id&quot;:&quot;f51a6850-d731-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;v_FilterOnVersion&quot;,&quot;properties&quot;:{&quot;x&quot;:-645.5028456025083,&quot;y&quot;:1262.2412730685594},&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;57eac640-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;v_ServiceQueryMetadataNotDefined&quot;,&quot;properties&quot;:{&quot;x&quot;:167.4120709810666,&quot;y&quot;:969.5840976984302}},{&quot;id&quot;:&quot;58c4d290-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;v_FilterOnMetadata&quot;,&quot;properties&quot;:{&quot;x&quot;:-94.87189033749144,&quot;y&quot;:1096.2622240833282},&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;ff21a0f0-d733-11eb-bbb8-3323c8d50a5c&quot;,&quot;name&quot;:&quot;v_QueryResponce&quot;,&quot;properties&quot;:{&quot;x&quot;:300.2900071399853,&quot;y&quot;:626.9059755435941}}],&quot;actions&quot;:[&quot;count=0;&quot;,&quot;&quot;]}],&quot;selectedModelIndex&quot;:0,&quot;selectedElementId&quot;:null}
-23:12:26.386 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count=0;&apos; in model: &apos;SericeQuery&apos;
-23:12:26.546 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;QueryService: com.mbtroads.QueryService@d750a, count: 0, &apos;
-23:12:26.546 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;&apos; in model: &apos;SericeQuery&apos;
-23:12:26.549 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;QueryService: com.mbtroads.QueryService@d750a, count: 0, &apos;
-23:12:26.553 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.QueryService@d750a
-23:12:26.554 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count=0;&apos; in model: &apos;SericeQuery&apos;
-23:12:26.557 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;QueryService: com.mbtroads.QueryService@d750a, count: 0, &apos;
-23:12:26.558 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_Start&apos; in model: &apos;SericeQuery&apos;
-23:12:26.562 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.QueryService@d750a
-23:12:26.563 [main] INFO org.graphwalker.core.generator.SingletonRandomGenerator - Seed: 15690506216800
-23:12:26.564 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;e_start&apos; in model: &apos;SericeQuery&apos;
-23:12:30.737 [main] ERROR org.graphwalker.core.machine.ExecutionContext - null
-23:12:30.738 [main] ERROR org.graphwalker.java.test.TestExecutor - java.lang.reflect.InvocationTargetException
-java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.graphwalker.core.machine.ExecutionContext.execute(ExecutionContext.java:265)
-	at org.graphwalker.core.machine.SimpleMachine.execute(SimpleMachine.java:285)
-	at org.graphwalker.core.machine.SimpleMachine.getNextStep(SimpleMachine.java:108)
-	at org.graphwalker.java.test.TestExecutor.execute(TestExecutor.java:249)
-	at Test_ServiceQuery.testExecutor(Test_ServiceQuery.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:61)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.lang.NullPointerException
-	at com.mbtroads.QueryService.e_start(QueryService.java:34)
-	... 45 more
-
+    <system-out>00:03:36.211 [main] DEBUG org.graphwalker.io.factory.json.JsonContextFactory - {&quot;models&quot;:[{&quot;edges&quot;:[{&quot;id&quot;:&quot;f6cef740-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;e_InvaledServiceRegisteryForm&quot;,&quot;sourceVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;guard&quot;:&quot;count==0;&quot;,&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;3373aec0-aa7f-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;e_back_RegisterService&quot;,&quot;sourceVertexId&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;},{&quot;id&quot;:&quot;17f59a80-aa8b-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;e_start&quot;,&quot;sourceVertexId&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;targetVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;},{&quot;id&quot;:&quot;5a9f8440-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_validServiceRegisteryForm&quot;,&quot;sourceVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;count&gt;0&quot;},{&quot;id&quot;:&quot;c2c3f300-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_SerrviceDefinationNotExist&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==true&quot;},{&quot;id&quot;:&quot;3504fe80-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_SaveService&quot;,&quot;sourceVertexId&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;1bc22ab0-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==true&quot;},{&quot;id&quot;:&quot;6f1cf910-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_NewServiceExist&quot;,&quot;sourceVertexId&quot;:&quot;1bc22ab0-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;5e212230-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==true&quot;},{&quot;id&quot;:&quot;112d0d20-aac0-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_back_ValidPayload&quot;,&quot;sourceVertexId&quot;:&quot;5e212230-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;actions&quot;:[&quot;reg=false;&quot;]},{&quot;id&quot;:&quot;fcaf8370-b64d-11eb-9d08-91d0f4b6da7e&quot;,&quot;name&quot;:&quot;e_SerrviceDefinationtExist&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;08351a40-aac1-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==false&quot;}],&quot;generator&quot;:&quot;random(vertex_coverage(100))&quot;,&quot;id&quot;:&quot;00913f00-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;SericeRegistry1&quot;,&quot;startElementId&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;vertices&quot;:[{&quot;id&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;v_RegisterService&quot;,&quot;properties&quot;:{&quot;x&quot;:413.8227790918072,&quot;y&quot;:93.17186600970861}},{&quot;id&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;v_BadPayloadException&quot;,&quot;properties&quot;:{&quot;x&quot;:697,&quot;y&quot;:319},&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;v_Start&quot;,&quot;properties&quot;:{&quot;x&quot;:390.0192929578586,&quot;y&quot;:-37.570368075081404},&quot;actions&quot;:[&quot;count=0;&quot;]},{&quot;id&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_ValidPayload&quot;,&quot;properties&quot;:{&quot;x&quot;:114.52826880416558,&quot;y&quot;:243.37739156285005}},{&quot;id&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_RegisteredService&quot;,&quot;properties&quot;:{&quot;x&quot;:-148.70832742073577,&quot;y&quot;:486.7310077679259}},{&quot;id&quot;:&quot;1bc22ab0-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_QueryService&quot;,&quot;properties&quot;:{&quot;x&quot;:261.6775294274787,&quot;y&quot;:485.3291140462718}},{&quot;id&quot;:&quot;5e212230-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_SucessMesssage&quot;,&quot;properties&quot;:{&quot;x&quot;:15.11151491637618,&quot;y&quot;:670.669120081831}},{&quot;id&quot;:&quot;08351a40-aac1-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_end&quot;,&quot;properties&quot;:{&quot;x&quot;:328.5994307049258,&quot;y&quot;:410.95177874410246}}],&quot;actions&quot;:[&quot;count=0;&quot;,&quot;reg=true;&quot;,&quot;&quot;]}],&quot;selectedModelIndex&quot;:0,&quot;selectedElementId&quot;:&quot;6f1cf910-aabe-11eb-a0b8-5dd0327fac9c&quot;}
+00:03:36.388 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count=0;&apos; in model: &apos;SericeRegistry1&apos;
+00:03:36.565 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@2ff89271, count: 0, &apos;
+00:03:36.566 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;reg=true;&apos; in model: &apos;SericeRegistry1&apos;
+00:03:36.572 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@2ff89271, count: 0, reg: true, &apos;
+00:03:36.573 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;&apos; in model: &apos;SericeRegistry1&apos;
+00:03:36.578 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@2ff89271, count: 0, reg: true, &apos;
+00:03:36.588 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@2ff89271
+00:03:36.591 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count=0;&apos; in model: &apos;SericeRegistry1&apos;
+00:03:36.598 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@2ff89271, count: 0, reg: true, &apos;
+00:03:36.599 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_Start&apos; in model: &apos;SericeRegistry1&apos;
+00:03:36.602 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@2ff89271
+00:03:36.603 [main] INFO org.graphwalker.core.generator.SingletonRandomGenerator - Seed: 18760553395200
+00:03:36.604 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;e_start&apos; in model: &apos;SericeRegistry1&apos;
+00:03:40.789 [main] ERROR org.graphwalker.core.machine.ExecutionContext - null
+00:03:40.789 [main] ERROR org.graphwalker.java.test.TestExecutor - java.lang.reflect.InvocationTargetException
 </system-out>
     <system-err>org.apache.http.conn.HttpHostConnectException: Connect to localhost:8443 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
@@ -185,7 +137,7 @@ Caused by: java.lang.NullPointerException
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
 	at com.mbtroads.HttpClient.ServiceAvailable(HttpClient.java:131)
-	at com.mbtroads.QueryService.e_start(QueryService.java:33)
+	at com.mbtroads.SomeSmallTest.e_start(SomeSmallTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,7 +146,7 @@ Caused by: java.lang.NullPointerException
 	at org.graphwalker.core.machine.SimpleMachine.execute(SimpleMachine.java:285)
 	at org.graphwalker.core.machine.SimpleMachine.getNextStep(SimpleMachine.java:108)
 	at org.graphwalker.java.test.TestExecutor.execute(TestExecutor.java:249)
-	at Test_ServiceQuery.testExecutor(Test_ServiceQuery.java:25)
+	at Test_ServiceREgistery.testExecutor(Test_ServiceREgistery.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -246,7 +198,7 @@ java.lang.NullPointerException
 	at com.mbtroads.BaseClass.getScreenshotAsString(BaseClass.java:92)
 	at com.mbtroads.BaseClass.addBase64ScreenShotToReport(BaseClass.java:108)
 	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:39)
-	at Test_ServiceQuery.testExecutor(Test_ServiceQuery.java:37)
+	at Test_ServiceREgistery.testExecutor(Test_ServiceREgistery.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
