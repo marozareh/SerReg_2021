@@ -1,0 +1,20 @@
+digraph OrchestratorStore{
+rankdir=TB
+node [style=filled] 
+"v_Start" -> "v_ServiceRegisteredProvider"  [ label="e_RegisterNewService_provider" ]
+"v_OrchestratorStoreRemoved" -> "v_End"  [ label="e_End" ]
+"v_CouldNotRemoveOrchestratorStore" -> "v_ReturnAllTopPriorityOrchestration"  [ label="e_BackPriority" ]
+"v_ReturnAllTopPriorityOrchestration" -> "v_CouldNotRemoveOrchestratorStore"  [ label="e_RemoveOrchestrationIdNotExist" ]
+"v_ReturnAllTopPriorityOrchestration" -> "v_OrchestratorStoreRemoved"  [ label="e_RemoveOrchestrationIdExist" ]
+"v_RequestedIdReturned" -> "v_ReturnAllTopPriorityOrchestration"  [ label="e_Query_AllTopPriority" ]
+"v_NoSuchOrchestratorStore" -> "v_OrchestratorStoresRequestedParametersCreated"  [ label="e_BackOrchestratorStores" ]
+"v_OrchestratorStoresRequestedParametersCreated" -> "v_NoSuchOrchestratorStore"  [ label="e_QueryOrchestratorStoreById_NotExists" ]
+"v_OrchestratorStoresRequestedParametersCreated" -> "v_RequestedIdReturned"  [ label="e_QueryOrchestratorStoreById" ]
+"v_BadPayloadException" -> "v_CoreServiceAvailable"  [ label="e_BackAuthorizationInterCloud" ]
+"v_CoreServiceAvailable" -> "v_BadPayloadException"  [ label="e_CreateStoreWithBadPayload" ]
+"v_CoreServiceAvailable" -> "v_OrchestratorStoresRequestedParametersCreated"  [ label="e_CreateStore" ]
+"v_AuthorizationInterCloudReturned" -> "v_CoreServiceAvailable"  [ label="e_OrchestrationCoreSystemAvailabilty" ]
+"v_AuthoenticationServiceAvailable" -> "v_AuthorizationInterCloudReturned"  [ label="e_RequestAuthroizationCliud" ]
+"v_ServiceRegisteredConsumer" -> "v_AuthoenticationServiceAvailable"  [ label="e_AuthoneticationSystemAvailabilty" ]
+"v_ServiceRegisteredProvider" -> "v_ServiceRegisteredConsumer"  [ label="e_RegisterNewService_Consumer" ]
+}

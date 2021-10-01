@@ -1,0 +1,19 @@
+    digraph bin_tree_5 { 
+      rankdir=BT 
+	  edge [dir="forward"]
+      node [style=filled fillcolor=blue] 
+      "1" [fillcolor=red] 
+      "2" [fillcolor=yellow] 
+      "3" [fillcolor=yellow] 
+      "4" [fillcolor=yellow] 
+      "5" [fillcolor=yellow] 
+      "1" -> "12"  [ label="e_RegisterNewService_Consumer" ]
+      "2" -> "12"  [ label="e_RegisterNewService_Consumer112345" ]
+      "3" -> "34" 
+      "4" -> "34" 
+      "12" -> "1234" 
+      "34" -> "1234" 
+      "1234" -> "12345" 
+      "5" -> "12345" 
+	  "a" -> "12" 
+    } 
