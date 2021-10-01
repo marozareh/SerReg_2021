@@ -1,4 +1,5 @@
 import com.mbtroads.BaseClass;
+import com.mbtroads.CreateDotFile;
 import com.mbtroads.ExtentReport;
 import com.mbtroads.UnregService;
 import org.graphwalker.java.test.Result;
@@ -17,6 +18,7 @@ public class Test_UnRegisterService extends BaseClass {
         TestExecutor executor = new TestExecutor(
                 UnregService.class
         );
+        CreateDotFile.ReadFile("UnregisterService");
 
         Result result = executor.execute(true);
         if (result.hasErrors()) {

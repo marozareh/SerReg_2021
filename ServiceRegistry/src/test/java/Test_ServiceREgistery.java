@@ -1,4 +1,5 @@
 
+import com.mbtroads.CreateDotFile;
 import com.mbtroads.SomeSmallTest;
 import org.graphwalker.java.test.Result;
 import org.graphwalker.java.test.TestExecutor;
@@ -18,14 +19,11 @@ public class Test_ServiceREgistery extends BaseClass {
     @Test
     public void testExecutor() throws IOException, InterruptedException {
         TestExecutor executor = new TestExecutor(
-                SomeSmallTest.class
-        );
+                SomeSmallTest.class);
 
-    //    WebSocketServer server = new WebSocketServer(8887, executor.getMachine());
-    //    server.start();
 
-       // driver.get("file:///users/marokrikoor/Desktop/ProjectFinal/lib/index.html?wsURI=localhost:8887");
-     //   driver.get("file:///D:/ArrowheadTest_Graphwalker/lib/index.html?wsURI=localhost:8887");
+       CreateDotFile.ReadFile("ServiceRegistry");
+
         Result result = executor.execute(true);
         if (result.hasErrors()) {
             for (String error : result.getErrors()) {
@@ -57,8 +55,6 @@ public class Test_ServiceREgistery extends BaseClass {
             StrSplit(result.getResults().toString(2),1);
            // ExtentReport.reportImage();
         }
-       // delayInMillis(9000);
-        //server.stop();
     }
 
 

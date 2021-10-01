@@ -1,5 +1,7 @@
 import com.mbtroads.BaseClass;
 import com.mbtroads.ExtentReport;
+import com.mbtroads.CreateDotFile;
+
 import com.mbtroads.OrchStore;
 import com.mbtroads.QueryService;
 import org.graphwalker.java.test.Result;
@@ -18,6 +20,8 @@ public class Test_OrchestrationStore extends BaseClass {
         TestExecutor executor = new TestExecutor(
                 OrchStore.class
         );
+        CreateDotFile.ReadFile("OrchestratorStore");
+      //  CreateDotFile.Createpng("OrchestratorStore");
 
         Result result = executor.execute(true);
         if (result.hasErrors()) {

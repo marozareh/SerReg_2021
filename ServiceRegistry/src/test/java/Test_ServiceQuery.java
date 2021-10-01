@@ -1,7 +1,4 @@
-import com.mbtroads.BaseClass;
-import com.mbtroads.ExtentReport;
-import com.mbtroads.QueryService;
-import com.mbtroads.SomeSmallTest;
+import com.mbtroads.*;
 import org.graphwalker.java.test.Result;
 import org.graphwalker.java.test.TestExecutor;
 import org.graphwalker.websocket.WebSocketServer;
@@ -21,6 +18,7 @@ public class Test_ServiceQuery extends BaseClass {
         TestExecutor executor = new TestExecutor(
                 QueryService.class
         );
+        CreateDotFile.ReadFile("QueryService");
 
         Result result = executor.execute(true);
         if (result.hasErrors()) {
@@ -45,6 +43,8 @@ public class Test_ServiceQuery extends BaseClass {
 
 
 //mvn -q clean graphwalker:generate-sources compile test -Dtest=Test_ServiceQuery
+
+
 
 
 
