@@ -90,8 +90,6 @@ public class BaseClass extends BasePage implements ISystemProperties{
 
     public static String getScreenshotAsString() throws IOException {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        //String fileName = currentDir + "/Reports/" + getCurrentDateTimeAsString() + ".png";
-        //FileUtils.copyFile(src, new File(fileName));
         byte[] fileContent = FileUtils.readFileToByteArray(src);
         return Base64.getEncoder().encodeToString(fileContent);
     }
