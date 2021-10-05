@@ -1,0 +1,1 @@
+dot -T png /home/jenkins/graphwalker/ServiceRegistry/Drivers/ServiceRegistry.dot > /home/jenkins/graphwalker/ServiceRegistry/Drivers/ServiceRegistry.png

@@ -1,0 +1,15 @@
+digraph OrchestratorStore{
+rankdir=TB
+ label="UnregisterService"
+labelloc=top
+labeljust=left
+fontcolor = blue
+node [style=filled] 
+ fontsize=30
+"v_ServiceNotExist" -> "v_End"  [ label="e_End"color="black"]
+"v_RemoveServiceRegisteryEntry" -> "v_ServiceNotExist"  [ label="e_QueeryRemovedService"color="black"]
+"v_RegisteredSuccessfully" -> "v_RemoveServiceRegisteryEntry"  [ label="e_ValedUnRegisterServiceForm"color="black"]
+"v_BadPayloadException" -> "v_RegisteredSuccessfully"  [ label="e_back_RegisterService"color="black"]
+"v_RegisteredSuccessfully" -> "v_BadPayloadException"  [ label="e_InvaledUnRegisterServiceForm"color="black"]
+"v_Start" -> "v_RegisteredSuccessfully"  [ label="e_RegisterNewService"color="black"]
+}

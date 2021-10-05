@@ -18,27 +18,21 @@ public class Test_ServiceQuery extends BaseClass {
         TestExecutor executor = new TestExecutor(
                 QueryService.class
         );
-        CreateDotFile.ReadFile("QueryService");
+
+        int failtest=0;
 
         Result result = executor.execute(true);
         if (result.hasErrors()) {
-            for (String error : result.getErrors()) {
-                System.out.println(error);
-                ExtentReport.createAndGetNodeInstance("GraphWalker Result FAIL");
-                //ExtentReport.node.fail("Error in the Model : " + error);
-                ExtentReport.node.fail("Error in the Model");
-
-
-            }
-            ExtentReport.createAndGetNodeInstance("GraphWalker Result Summery");
             StrSplit(result.getResults().toString(2),0);
+            failtest=1;
+            CreateDotFile.ReadFile("QueryService", failtest, result.getResults().toString(2) );
             ExtentReport.reportError();
-           // ExtentReport.test.fail("Testfail");
         }
         else {
-            ExtentReport.createAndGetNodeInstance("GraphWalker Result PASS");
             StrSplit(result.getResults().toString(2),1);
+            CreateDotFile.ReadFile("QueryService", failtest, result.getResults().toString(2) );
         }
+
     }
 
 

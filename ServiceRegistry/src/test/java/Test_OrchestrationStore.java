@@ -3,7 +3,6 @@ import com.mbtroads.ExtentReport;
 import com.mbtroads.CreateDotFile;
 
 import com.mbtroads.OrchStore;
-import com.mbtroads.QueryService;
 import org.graphwalker.java.test.Result;
 import org.graphwalker.java.test.TestExecutor;
 import org.junit.Test;
@@ -20,26 +19,18 @@ public class Test_OrchestrationStore extends BaseClass {
         TestExecutor executor = new TestExecutor(
                 OrchStore.class
         );
-        CreateDotFile.ReadFile("OrchestratorStore");
-      //  CreateDotFile.Createpng("OrchestratorStore");
-
+        int failtest=0;
         Result result = executor.execute(true);
         if (result.hasErrors()) {
-            for (String error : result.getErrors()) {
-                System.out.println(error);
-                ExtentReport.createAndGetNodeInstance("GraphWalker Result FAIL");
-                ExtentReport.node.fail("Error in the Model");
-
-
-            }
-            ExtentReport.createAndGetNodeInstance("GraphWalker Result Summery");
             StrSplit(result.getResults().toString(2),0);
+            failtest=1;
+            CreateDotFile.ReadFile("OrchestrationStore", failtest, result.getResults().toString(2) );
             ExtentReport.reportError();
-
         }
         else {
-            ExtentReport.createAndGetNodeInstance("GraphWalker Result PASS");
             StrSplit(result.getResults().toString(2),1);
+            CreateDotFile.ReadFile("OrchestratorStore", failtest, result.getResults().toString(2) );
+
         }
 
     }
