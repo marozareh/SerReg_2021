@@ -60,7 +60,7 @@ public class BaseClass extends BasePage implements ISystemProperties{
         try {
 
             FileUtils.cleanDirectory(new File(currentDir + pathSeperator + "Reports" + pathSeperator));
-
+            HttpClient.setValues();
             String headless = System.getProperty("Headless");
 
          //   System.setProperty("webdriver.chrome.driver", currentDir + pathSeperator + "Drivers" + pathSeperator + driverName);

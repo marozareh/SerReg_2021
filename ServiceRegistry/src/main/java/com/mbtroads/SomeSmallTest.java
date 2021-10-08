@@ -129,7 +129,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   @Override
   public void v_RegisteredService()  {
     ExtentReport.createAndGetNodeInstance("in Running: v_RegisteredService");
-    assestEqual("201", String.valueOf(response.getStatusLine().getStatusCode()));
+    assestEqual("2011", String.valueOf(response.getStatusLine().getStatusCode()));
   }
 
   @Override
