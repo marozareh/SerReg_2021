@@ -185,7 +185,7 @@ public class CreateDotFile implements ISystemProperties {
             }
             else
             {
-                Process p = Runtime.getRuntime().exec(currentDir + pathSeperator + "Drivers" + pathSeperator + filename + ".sh");
+                Process p = Runtime.getRuntime().exec("sh "+ currentDir + pathSeperator + "Drivers" + pathSeperator + filename + ".sh");
                 p.waitFor();
 
             }
