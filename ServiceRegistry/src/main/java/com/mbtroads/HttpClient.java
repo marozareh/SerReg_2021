@@ -26,6 +26,7 @@ import static org.apache.commons.lang3.StringUtils.substringBefore;
 
 
 public class HttpClient implements ISystemProperties {
+    public static String failCase_Test="false";
 
     private final CloseableHttpClient httpClient = HttpClients.createDefault();
 
@@ -321,7 +322,10 @@ public class HttpClient implements ISystemProperties {
     }
 
 
-
+    public static void setValues()
+    {
+        failCase_Test = System.getProperty("failcase");
+    }
 
 
 
