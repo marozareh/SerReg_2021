@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 8, 2021 10:37:46 pm</span></a>
+<a href="#"><span class="badge badge-primary">Oct 8, 2021 11:39:02 pm</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">testExecutor</p>
             <p class="text-sm">
-              <span>22:37:47</span> / <span>00:00:05:339</span>
+              <span>23:39:04</span> / <span>00:00:07:148</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">testExecutor</h5>
-<span class='badge badge-success'>10.08.2021 22:37:47</span>
-<span class='badge badge-danger'>10.08.2021 22:37:53</span>
-<span class='badge badge-default'>00:00:05:339</span>
+<span class='badge badge-success'>10.08.2021 23:39:04</span>
+<span class='badge badge-danger'>10.08.2021 23:39:11</span>
+<span class='badge badge-default'>00:00:07:148</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -109,13 +109,13 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:53</td>
+        <td>23:39:11</td>
         <td>
           <textarea readonly class="code-block">java.lang.NullPointerException
 	at com.mbtroads.BaseClass.getScreenshotAsString(BaseClass.java:92)
 	at com.mbtroads.BaseClass.addBase64ScreenShotToReport(BaseClass.java:106)
 	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:39)
-	at Test_UnRegisterService.testExecutor(Test_UnRegisterService.java:28)
+	at Test_ServiceREgistery.testExecutor(Test_ServiceREgistery.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -181,12 +181,12 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:141</span></li>
+              <li><span class='badge badge-default'>00:00:144</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="4"><span>Moving Through: e_RegisterNewService</span></a>
+            <a class="node " id="4"><span>Moving Through: e_start</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -198,23 +198,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist
+          Running ServiceAvailable API http://localhost:8443/serviceregistry/echo
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Responce Content = {"id":441,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":182,"systemName":"insecuretemperaturesensor_2021-37-08-10-37-52","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-10-08 20:37:52","updatedAt":"2021-10-08 20:37:52"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-10-08 20:37:52","updatedAt":"2021-10-08 20:37:52"}
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
-        <td>
-          New ServiceName >>>>>>>> insecuretemperaturesensor_2021-37-08-10-37-52
+          Responce Content = Got it!
         </td>
       </tr>
   </tbody>
@@ -244,9 +237,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Assertion Success Equal for Field: 201
+          Assertion Success Equal for Field: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>23:39:10</td>
+        <td>
+          Assertion Success for Field Contains: Got it!
         </td>
       </tr>
   </tbody>
@@ -259,12 +259,12 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:027</span></li>
+              <li><span class='badge badge-default'>00:00:070</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="6"><span>Moving Through: e_InvaledUnRegisterServiceForm</span></a>
+            <a class="node " id="6"><span>Moving Through: e_InvaledServiceRegisteryForm</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -276,44 +276,55 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Running : The API /serviceregistry/unregister with invalid Payload and Serrvice Defination Not Exist
+          Running : The API http://localhost:8443/serviceregistry/mgmt with invalid Payload
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          /serviceregistry/unregister?address=192.168.0.2&port=8080&service_definition=indoortemperature&system_name=NOTEXIST
+          Responce Content = {"errorMessage":"Service definition is null or blank","errorCode":400,"exceptionType":"BAD_PAYLOAD","origin":"/mgmt"}
         </td>
       </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
-        <td>
-          Responce Content = {"errorMessage":"No system with name: notexist, address: 192.168.0.2, port: 8080 exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
-        <td>
-          Validating in:  v_BadPayloadException
-        </td>
-      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="7"><span>in Running: v_BadPayloadException</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           Assertion Success Equal for Field: 400
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Assertion Success for Field Contains: INVALID_PARAMETER
+          Assertion Success for Field Contains: BAD_PAYLOAD
         </td>
       </tr>
   </tbody>
@@ -331,7 +342,7 @@
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="7"><span>Moving Through: e_back_RegisterService</span></a>
+            <a class="node " id="8"><span>Moving Through: e_back_RegisterService</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -342,12 +353,12 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="8"><span>in Running: v_RegisterService</span></a>
+            <a class="node " id="9"><span>in Running: v_RegisterService</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -358,12 +369,12 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:067</span></li>
+              <li><span class='badge badge-default'>00:00:062</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="9"><span>Moving Through: e_ValedUnRegisterServiceForm</span></a>
+            <a class="node " id="10"><span>Moving Through: e_validServiceRegisteryForm</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -375,23 +386,87 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Running : The API http://localhost:8443/serviceregistry/unregister with valid Payload and Serrvice Defination  Exist
+          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          http://localhost:8443/serviceregistry/unregister?address=192.168.0.2&port=8080&service_definition=indoortemperature&system_name=insecuretemperaturesensor_2021-37-08-10-37-52
+          Responce Content = {"errorMessage":"Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:003</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="11"><span>in Running: v_ValidPayload</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>23:39:10</td>
+        <td>
+          Assertion Success for Field don ot Contain: BAD_PAYLOAD
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:134</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="12"><span>Moving Through: e_SerrviceDefinationNotExist</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>23:39:10</td>
+        <td>
+          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Responce Content = 
+          Responce Content = {"id":442,"serviceDefinition":{"id":3,"serviceDefinition":"indoortemperature","createdAt":"2021-06-14 12:37:33","updatedAt":"2021-06-14 12:37:33"},"provider":{"id":183,"systemName":"insecuretemperaturesensor_2021-39-08-11-39-10","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2021-10-08 21:39:10","updatedAt":"2021-10-08 21:39:10"},"serviceUri":"temperature","endOfValidity":"2019-12-05 12:00:00","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2021-05-28 11:19:54","updatedAt":"2021-05-28 11:19:54"}],"createdAt":"2021-10-08 21:39:10","updatedAt":"2021-10-08 21:39:10"}
         </td>
       </tr>
   </tbody>
@@ -409,7 +484,7 @@
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="10"><span>in Running: v_RemoveServiceRegisteryEntry</span></a>
+            <a class="node " id="13"><span>in Running: v_RegisteredService</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -421,9 +496,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
-          Assertion Failed for Equal : 2001
+          Assertion Failed for Equal : 2011
         </td>
       </tr>
   </tbody>
@@ -436,12 +511,12 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge fail-bg log ">Fail</span></li>
-              <li><span class='badge badge-default'>00:00:003</span></li>
+              <li><span class='badge badge-default'>00:00:025</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="11"><span>GraphWalker Result Summery</span></a>
+            <a class="node " id="14"><span>GraphWalker Result Summery</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -453,70 +528,96 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           Error in the Model
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           =============> Failed Vercies <=============
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-      "vertexName": "v_ServiceNotExist"
+      "vertexName": "v_QueryService"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-      "vertexName": "v_End"
+      "vertexName": "v_SucessMesssage"
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
+        <td>
+          
+      "vertexName": "v_end"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>23:39:10</td>
         <td>
           =============> Failed Edges <=============
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-      "edgeName": "e_QueeryRemovedService"
+      "edgeName": "e_SaveService"
     
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-      "edgeName": "e_End"
+      "edgeName": "e_NewServiceExist"
+    
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>23:39:10</td>
+        <td>
+          
+      "edgeName": "e_back_ValidPayload"
+    
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>23:39:10</td>
+        <td>
+          
+      "edgeName": "e_SerrviceDefinationtExist"
     
   
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           =============> Failed Summery <=============
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
   totalNumberOfModels: 1
@@ -524,7 +625,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
   totalFailedNumberOfModels: 1
@@ -532,7 +633,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
   totalIncompleteNumberOfModels: 0
@@ -540,7 +641,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
   totalCompletedNumberOfModels: 0
@@ -548,7 +649,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
   totalNotExecutedNumberOfModels: 0
@@ -556,67 +657,67 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  totalNumberOfEdges: 6
+  totalNumberOfEdges: 9
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  totalNumberOfVisitedEdges: 4
+  totalNumberOfVisitedEdges: 5
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  totalNumberOfUnvisitedEdges: 2
+  totalNumberOfUnvisitedEdges: 4
 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  edgeCoverage: 66
+  edgeCoverage: 55
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  totalNumberOfVertices: 6
+  totalNumberOfVertices: 8
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  totalNumberOfVisitedVertices: 4
+  totalNumberOfVisitedVertices: 5
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  totalNumberOfUnvisitedVertices: 2
+  totalNumberOfUnvisitedVertices: 3
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:37:52</td>
+        <td>23:39:10</td>
         <td>
           
-  vertexCoverage: 66
+  vertexCoverage: 62
         </td>
       </tr>
   </tbody>
@@ -669,7 +770,7 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:37:47 pm</td>
+<td>23:39:04 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>testExecutor</a>
 </td>
@@ -691,13 +792,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 8, 2021 10:37:46 pm</h3>
+<h3>Oct 8, 2021 11:39:02 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 8, 2021 10:37:53 pm</h3>
+<h3>Oct 8, 2021 11:39:11 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -748,9 +849,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='77%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='83%'><b>10</b> steps passed</small></div>
 <div>
-<small data-tooltip='22%'><b>2</b> steps failed,
+<small data-tooltip='16%'><b>2</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -768,10 +869,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='8%'><b>3</b> events passed</small></div>
+<div><small data-tooltip='12%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='63%'><b>23</b> events failed,
-<b data-tooltip='%'>10</b> others
+<small data-tooltip='66%'><b>26</b> events failed,
+<b data-tooltip='%'>8</b> others
 </small>
 </div>
 </div>
@@ -787,7 +888,7 @@
 </div></div>
 <script>
 var timeline = {
-"testExecutor":5.339
+"testExecutor":7.148
 };
 </script>
 <div class="row">
@@ -819,7 +920,7 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 7,
+passChild: 10,
 failChild: 2,
 warningChild: 0,
 skipChild: 0,
@@ -831,11 +932,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 3,
-failEvents: 23,
+passEvents: 5,
+failEvents: 26,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 10
+infoEvents: 8
 };
 </script>        </div>
       </div>

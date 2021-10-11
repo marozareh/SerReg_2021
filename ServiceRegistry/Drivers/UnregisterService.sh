@@ -1,1 +1,2 @@
 dot -T png /home/jenkins/graphwalker/ServiceRegistry/Drivers/UnregisterService.dot > /home/jenkins/graphwalker/ServiceRegistry/Drivers/UnregisterService.png
+cp -rf /home/jenkins/graphwalker/ServiceRegistry/Drivers/UnregisterService.png /home/jenkins/workspace/UnregisterService/UnregisterService.png

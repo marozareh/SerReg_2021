@@ -114,7 +114,7 @@ public class UnregService extends BasePage implements UnregisterService , TestDa
         @Override()
         public void v_RemoveServiceRegisteryEntry(){
                 ExtentReport.createAndGetNodeInstance("in Running: v_RemoveServiceRegisteryEntry");
-                if(HttpClient.failCase_Test.equals("true"))
+                if(HttpClient.failCase_Test.equals("false"))
                         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
                 else
                         assestEqual("2001", String.valueOf(response.getStatusLine().getStatusCode()));

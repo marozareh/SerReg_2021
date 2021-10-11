@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="Test_ServiceREgistery" time="8.547" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="12+33"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\ArrowheadTest_Graphwalker\ServiceRegistry"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="Test_ServiceREgistery"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\ArrowheadTest_Graphwalker\ServiceRegistry"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="12+33"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\maro\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\apache-maven-3.6.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Java\jre1.8.0_201;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Git\cmd;C:\jq;C:\Program Files\Java\jdk-12\bin;D:\Graphviz\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\maro\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\maro\AppData\Local\Programs\Python\Python38-32\;C:\Users\maro\AppData\Local\Microsoft\WindowsApps;D:\python27;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;;D:\apache-maven-3.6.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1\bin;;C:\jq;C:\Users\maro\AppData\Local\GitHubDesktop\bin;D:\Graphviz;;."/>
+    <property name="maven.conf" value="D:\apache-maven-3.6.3\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="56.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\maro"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="user.name" value="maro"/>
+    <property name="java.class.path" value="D:\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="failcase" value="true"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="error"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -q clean compile test -Dtest=Test_ServiceREgistery -Dfailcase=true"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-12"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="12"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="maven.home" value="D:\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2019-03-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Test_ServiceREgistery" name="testExecutor" time="8.547">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mbtroads.BaseClass.getScreenshotAsString(BaseClass.java:92)
+	at com.mbtroads.BaseClass.addBase64ScreenShotToReport(BaseClass.java:106)
+	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:39)
+	at Test_ServiceREgistery.testExecutor(Test_ServiceREgistery.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:61)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>23:39:09.727 [main] DEBUG org.graphwalker.io.factory.json.JsonContextFactory - {&quot;models&quot;:[{&quot;edges&quot;:[{&quot;id&quot;:&quot;f6cef740-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;e_InvaledServiceRegisteryForm&quot;,&quot;sourceVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;guard&quot;:&quot;count==0;&quot;,&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;3373aec0-aa7f-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;e_back_RegisterService&quot;,&quot;sourceVertexId&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;},{&quot;id&quot;:&quot;17f59a80-aa8b-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;e_start&quot;,&quot;sourceVertexId&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;targetVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;},{&quot;id&quot;:&quot;5a9f8440-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_validServiceRegisteryForm&quot;,&quot;sourceVertexId&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;count&gt;0&quot;},{&quot;id&quot;:&quot;c2c3f300-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_SerrviceDefinationNotExist&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==true&quot;},{&quot;id&quot;:&quot;3504fe80-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_SaveService&quot;,&quot;sourceVertexId&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;1bc22ab0-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==true&quot;},{&quot;id&quot;:&quot;6f1cf910-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_NewServiceExist&quot;,&quot;sourceVertexId&quot;:&quot;1bc22ab0-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;5e212230-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==true&quot;},{&quot;id&quot;:&quot;112d0d20-aac0-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;e_back_ValidPayload&quot;,&quot;sourceVertexId&quot;:&quot;5e212230-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;actions&quot;:[&quot;reg=false;&quot;]},{&quot;id&quot;:&quot;fcaf8370-b64d-11eb-9d08-91d0f4b6da7e&quot;,&quot;name&quot;:&quot;e_SerrviceDefinationtExist&quot;,&quot;sourceVertexId&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;targetVertexId&quot;:&quot;08351a40-aac1-11eb-a0b8-5dd0327fac9c&quot;,&quot;guard&quot;:&quot;reg==false&quot;}],&quot;generator&quot;:&quot;random(vertex_coverage(100))&quot;,&quot;id&quot;:&quot;00913f00-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;SericeRegistry1&quot;,&quot;startElementId&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;vertices&quot;:[{&quot;id&quot;:&quot;3e07a6d0-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;v_RegisterService&quot;,&quot;properties&quot;:{&quot;x&quot;:413.8227790918072,&quot;y&quot;:93.17186600970861}},{&quot;id&quot;:&quot;8722dc90-a73b-11eb-a11f-33528a1ca80d&quot;,&quot;name&quot;:&quot;v_BadPayloadException&quot;,&quot;properties&quot;:{&quot;x&quot;:697,&quot;y&quot;:319},&quot;actions&quot;:[&quot;count++;&quot;]},{&quot;id&quot;:&quot;086588a0-aa8b-11eb-9777-814344e42d36&quot;,&quot;name&quot;:&quot;v_Start&quot;,&quot;properties&quot;:{&quot;x&quot;:390.0192929578586,&quot;y&quot;:-37.570368075081404},&quot;actions&quot;:[&quot;count=0;&quot;]},{&quot;id&quot;:&quot;46fd4580-aab8-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_ValidPayload&quot;,&quot;properties&quot;:{&quot;x&quot;:114.52826880416558,&quot;y&quot;:243.37739156285005}},{&quot;id&quot;:&quot;bee86680-aabb-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_RegisteredService&quot;,&quot;properties&quot;:{&quot;x&quot;:-148.70832742073577,&quot;y&quot;:486.7310077679259}},{&quot;id&quot;:&quot;1bc22ab0-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_QueryService&quot;,&quot;properties&quot;:{&quot;x&quot;:261.6775294274787,&quot;y&quot;:485.3291140462718}},{&quot;id&quot;:&quot;5e212230-aabe-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_SucessMesssage&quot;,&quot;properties&quot;:{&quot;x&quot;:15.11151491637618,&quot;y&quot;:670.669120081831}},{&quot;id&quot;:&quot;08351a40-aac1-11eb-a0b8-5dd0327fac9c&quot;,&quot;name&quot;:&quot;v_end&quot;,&quot;properties&quot;:{&quot;x&quot;:328.5994307049258,&quot;y&quot;:410.95177874410246}}],&quot;actions&quot;:[&quot;count=0;&quot;,&quot;reg=true;&quot;,&quot;&quot;]}],&quot;selectedModelIndex&quot;:0,&quot;selectedElementId&quot;:&quot;6f1cf910-aabe-11eb-a0b8-5dd0327fac9c&quot;}
+23:39:09.897 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count=0;&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.078 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@5b092600, count: 0, &apos;
+23:39:10.078 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;reg=true;&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.084 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@5b092600, count: 0, reg: true, &apos;
+23:39:10.084 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.089 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@5b092600, count: 0, reg: true, &apos;
+23:39:10.098 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.100 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count=0;&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.104 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@5b092600, count: 0, reg: true, &apos;
+23:39:10.105 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_Start&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.108 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.109 [main] INFO org.graphwalker.core.generator.SingletonRandomGenerator - Seed: 5856693364900
+23:39:10.110 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;e_start&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.150 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+23:39:10.166 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+23:39:10.167 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+23:39:10.192 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+23:39:10.195 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:8443
+23:39:10.204 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8443
+23:39:10.213 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:49799&lt;-&gt;127.0.0.1:8443
+23:39:10.214 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /serviceregistry/echo HTTP/1.1
+23:39:10.215 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+23:39:10.216 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+23:39:10.222 [main] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; GET /serviceregistry/echo HTTP/1.1
+23:39:10.222 [main] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept: application/json
+23:39:10.222 [main] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-type: application/json
+23:39:10.222 [main] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Host: localhost:8443
+23:39:10.222 [main] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+23:39:10.223 [main] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/12)
+23:39:10.223 [main] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+23:39:10.223 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;GET /serviceregistry/echo HTTP/1.1[\r][\n]&quot;
+23:39:10.223 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept: application/json[\r][\n]&quot;
+23:39:10.223 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-type: application/json[\r][\n]&quot;
+23:39:10.223 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: localhost:8443[\r][\n]&quot;
+23:39:10.224 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+23:39:10.225 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/12)[\r][\n]&quot;
+23:39:10.226 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+23:39:10.227 [main] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+23:39:10.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 [\r][\n]&quot;
+23:39:10.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-XSS-Protection: 1; mode=block[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Expires: 0[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Frame-Options: DENY[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/json;charset=UTF-8[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Length: 7[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Fri, 08 Oct 2021 21:39:10 GMT[\r][\n]&quot;
+23:39:10.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+23:39:10.232 [main] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Got it!&quot;
+23:39:10.235 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 
+23:39:10.236 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; X-Content-Type-Options: nosniff
+23:39:10.236 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; X-XSS-Protection: 1; mode=block
+23:39:10.237 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+23:39:10.237 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Pragma: no-cache
+23:39:10.237 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Expires: 0
+23:39:10.237 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; X-Frame-Options: DENY
+23:39:10.237 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/json;charset=UTF-8
+23:39:10.237 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Length: 7
+23:39:10.237 [main] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Date: Fri, 08 Oct 2021 21:39:10 GMT
+23:39:10.243 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+23:39:10.253 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}-&gt;http://localhost:8443] can be kept alive indefinitely
+23:39:10.254 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+23:39:10.254 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}-&gt;http://localhost:8443][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+23:39:10.256 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.257 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_RegisterService&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.259 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.260 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute guard: &apos;count==0;&apos; in edge e_InvaledServiceRegisteryForm, in model: &apos;SericeRegistry1&apos;
+23:39:10.285 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute guard: &apos;count&gt;0&apos; in edge e_validServiceRegisteryForm, in model: &apos;SericeRegistry1&apos;
+23:39:10.291 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count++;&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.318 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@5b092600, count: 1, reg: true, &apos;
+23:39:10.319 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;e_InvaledServiceRegisteryForm&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.326 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+23:39:10.329 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+23:39:10.330 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+23:39:10.331 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+23:39:10.331 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:8443
+23:39:10.331 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8443
+23:39:10.333 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:49800&lt;-&gt;127.0.0.1:8443
+23:39:10.335 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /serviceregistry/mgmt HTTP/1.1
+23:39:10.336 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+23:39:10.336 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+23:39:10.336 [main] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; POST /serviceregistry/mgmt HTTP/1.1
+23:39:10.337 [main] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Content-type: application/json
+23:39:10.337 [main] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Content-Length: 333
+23:39:10.337 [main] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Host: localhost:8443
+23:39:10.337 [main] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Connection: Keep-Alive
+23:39:10.338 [main] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/12)
+23:39:10.338 [main] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip,deflate
+23:39:10.339 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;POST /serviceregistry/mgmt HTTP/1.1[\r][\n]&quot;
+23:39:10.339 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-type: application/json[\r][\n]&quot;
+23:39:10.339 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Length: 333[\r][\n]&quot;
+23:39:10.340 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: localhost:8443[\r][\n]&quot;
+23:39:10.340 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+23:39:10.340 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/12)[\r][\n]&quot;
+23:39:10.341 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+23:39:10.341 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+23:39:10.344 [main] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;{ &quot;providerSystem&quot;: { &quot;systemName&quot;: &quot;InsecureTemperatureSensor&quot;, &quot;address&quot;: &quot;192.168.0.2&quot;, &quot;port&quot;: 8080, &quot;authenticationInfo&quot;: &quot;eyJhbGciOiJIUzI1Ni...&quot;}, &quot;serviceUri&quot;: &quot;temperature&quot;, &quot;endOfValidity&quot;: &quot;2019-12-05 12:00:00&quot;, &quot;secure&quot;: &quot;NOT_SECURE&quot;, &quot;metadata&quot;: { &quot;unit&quot;: &quot;celsius&quot;}, &quot;version&quot;: 1, &quot;interfaces&quot;: [ &quot;HTTP-INSECURE-JSON&quot; ]}&quot;
+23:39:10.365 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 400 [\r][\n]&quot;
+23:39:10.365 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+23:39:10.365 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-XSS-Protection: 1; mode=block[\r][\n]&quot;
+23:39:10.365 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]&quot;
+23:39:10.365 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Expires: 0[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Frame-Options: DENY[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Fri, 08 Oct 2021 21:39:10 GMT[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Connection: close[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;75[\r][\n]&quot;
+23:39:10.366 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;{&quot;errorMessage&quot;:&quot;Service definition is null or blank&quot;,&quot;errorCode&quot;:400,&quot;exceptionType&quot;:&quot;BAD_PAYLOAD&quot;,&quot;origin&quot;:&quot;/mgmt&quot;}[\r][\n]&quot;
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 400 
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-XSS-Protection: 1; mode=block
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Pragma: no-cache
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Expires: 0
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Frame-Options: DENY
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Content-Type: application/json
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Transfer-Encoding: chunked
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Date: Fri, 08 Oct 2021 21:39:10 GMT
+23:39:10.367 [main] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Connection: close
+23:39:10.372 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;0[\r][\n]&quot;
+23:39:10.373 [main] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+23:39:10.373 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Close connection
+23:39:10.375 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+23:39:10.388 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+23:39:10.390 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.390 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute action: &apos;count++;&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.392 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Data: &apos;SomeSmallTest: com.mbtroads.SomeSmallTest@5b092600, count: 2, reg: true, &apos;
+23:39:10.393 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_BadPayloadException&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.397 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.397 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;e_back_RegisterService&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.399 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.399 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_RegisterService&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.400 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.401 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute guard: &apos;count==0;&apos; in edge e_InvaledServiceRegisteryForm, in model: &apos;SericeRegistry1&apos;
+23:39:10.401 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute guard: &apos;count&gt;0&apos; in edge e_validServiceRegisteryForm, in model: &apos;SericeRegistry1&apos;
+23:39:10.402 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;e_validServiceRegisteryForm&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.406 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+23:39:10.406 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+23:39:10.406 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+23:39:10.406 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+23:39:10.406 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:8443
+23:39:10.407 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8443
+23:39:10.409 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:49801&lt;-&gt;127.0.0.1:8443
+23:39:10.410 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /serviceregistry/mgmt HTTP/1.1
+23:39:10.410 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+23:39:10.410 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+23:39:10.411 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; POST /serviceregistry/mgmt HTTP/1.1
+23:39:10.411 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-type: application/json
+23:39:10.411 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-Length: 375
+23:39:10.411 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Host: localhost:8443
+23:39:10.411 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Connection: Keep-Alive
+23:39:10.412 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/12)
+23:39:10.412 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Accept-Encoding: gzip,deflate
+23:39:10.412 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;POST /serviceregistry/mgmt HTTP/1.1[\r][\n]&quot;
+23:39:10.425 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-type: application/json[\r][\n]&quot;
+23:39:10.425 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-Length: 375[\r][\n]&quot;
+23:39:10.425 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Host: localhost:8443[\r][\n]&quot;
+23:39:10.425 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+23:39:10.426 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/12)[\r][\n]&quot;
+23:39:10.426 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+23:39:10.426 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;[\r][\n]&quot;
+23:39:10.426 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;{ &quot;serviceDefinition&quot;: &quot;IndoorTemperature&quot;, &quot;providerSystem&quot;: { &quot;systemName&quot;: &quot;InsecureTemperatureSensor&quot;, &quot;address&quot;: &quot;192.168.0.2&quot;, &quot;port&quot;: 8080, &quot;authenticationInfo&quot;: &quot;eyJhbGciOiJIUzI1Ni...&quot;}, &quot;serviceUri&quot;: &quot;temperature&quot;, &quot;endOfValidity&quot;: &quot;2019-12-05 12:00:00&quot;, &quot;secure&quot;: &quot;NOT_SECURE&quot;, &quot;metadata&quot;: { &quot;unit&quot;: &quot;celsius&quot;}, &quot;version&quot;: 1, &quot;interfaces&quot;: [ &quot;HTTP-INSECURE-JSON&quot; ]}&quot;
+23:39:10.460 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;HTTP/1.1 400 [\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;X-XSS-Protection: 1; mode=block[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Expires: 0[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;X-Frame-Options: DENY[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Date: Fri, 08 Oct 2021 21:39:10 GMT[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Connection: close[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;d4[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;{&quot;errorMessage&quot;:&quot;Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.&quot;,&quot;errorCode&quot;:400,&quot;exceptionType&quot;:&quot;INVALID_PARAMETER&quot;}[\r][\n]&quot;
+23:39:10.461 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; HTTP/1.1 400 
+23:39:10.461 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; X-Content-Type-Options: nosniff
+23:39:10.461 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; X-XSS-Protection: 1; mode=block
+23:39:10.461 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+23:39:10.462 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Pragma: no-cache
+23:39:10.462 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Expires: 0
+23:39:10.462 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; X-Frame-Options: DENY
+23:39:10.462 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Content-Type: application/json
+23:39:10.462 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Transfer-Encoding: chunked
+23:39:10.462 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Date: Fri, 08 Oct 2021 21:39:10 GMT
+23:39:10.462 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Connection: close
+23:39:10.464 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;0[\r][\n]&quot;
+23:39:10.464 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
+23:39:10.464 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: Close connection
+23:39:10.465 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+23:39:10.465 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+23:39:10.466 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.467 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_ValidPayload&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.470 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.470 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute guard: &apos;reg==true&apos; in edge e_SerrviceDefinationNotExist, in model: &apos;SericeRegistry1&apos;
+23:39:10.473 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute guard: &apos;reg==false&apos; in edge e_SerrviceDefinationtExist, in model: &apos;SericeRegistry1&apos;
+23:39:10.476 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;e_SerrviceDefinationNotExist&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.482 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+23:39:10.482 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+23:39:10.482 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+23:39:10.482 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}-&gt;http://localhost:8443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+23:39:10.482 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:8443
+23:39:10.482 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8443
+23:39:10.482 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:49802&lt;-&gt;127.0.0.1:8443
+23:39:10.484 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /serviceregistry/mgmt HTTP/1.1
+23:39:10.484 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+23:39:10.484 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+23:39:10.484 [main] DEBUG org.apache.http.headers - http-outgoing-3 &gt;&gt; POST /serviceregistry/mgmt HTTP/1.1
+23:39:10.484 [main] DEBUG org.apache.http.headers - http-outgoing-3 &gt;&gt; Content-type: application/json
+23:39:10.484 [main] DEBUG org.apache.http.headers - http-outgoing-3 &gt;&gt; Content-Length: 394
+23:39:10.484 [main] DEBUG org.apache.http.headers - http-outgoing-3 &gt;&gt; Host: localhost:8443
+23:39:10.484 [main] DEBUG org.apache.http.headers - http-outgoing-3 &gt;&gt; Connection: Keep-Alive
+23:39:10.484 [main] DEBUG org.apache.http.headers - http-outgoing-3 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/12)
+23:39:10.484 [main] DEBUG org.apache.http.headers - http-outgoing-3 &gt;&gt; Accept-Encoding: gzip,deflate
+23:39:10.484 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;POST /serviceregistry/mgmt HTTP/1.1[\r][\n]&quot;
+23:39:10.484 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;Content-type: application/json[\r][\n]&quot;
+23:39:10.484 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;Content-Length: 394[\r][\n]&quot;
+23:39:10.485 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;Host: localhost:8443[\r][\n]&quot;
+23:39:10.485 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+23:39:10.485 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/12)[\r][\n]&quot;
+23:39:10.485 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+23:39:10.485 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;[\r][\n]&quot;
+23:39:10.485 [main] DEBUG org.apache.http.wire - http-outgoing-3 &gt;&gt; &quot;{ &quot;serviceDefinition&quot;: &quot;IndoorTemperature&quot;, &quot;providerSystem&quot;: { &quot;systemName&quot;: &quot;InsecureTemperatureSensor_2021-39-08-11-39-10&quot;,&quot;address&quot;: &quot;192.168.0.2&quot;, &quot;port&quot;: 8080, &quot;authenticationInfo&quot;: &quot;eyJhbGciOiJIUzI1Ni...&quot;}, &quot;serviceUri&quot;: &quot;temperature&quot;, &quot;endOfValidity&quot;: &quot;2019-12-05 12:00:00&quot;, &quot;secure&quot;: &quot;NOT_SECURE&quot;, &quot;metadata&quot;: { &quot;unit&quot;: &quot;celsius&quot;}, &quot;version&quot;: 1, &quot;interfaces&quot;: [ &quot;HTTP-INSECURE-JSON&quot; ]}&quot;
+23:39:10.604 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;HTTP/1.1 201 [\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;X-XSS-Protection: 1; mode=block[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;Expires: 0[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;X-Frame-Options: DENY[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;Content-Type: application/json;charset=UTF-8[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;Date: Fri, 08 Oct 2021 21:39:10 GMT[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;2c1[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;{&quot;id&quot;:442,&quot;serviceDefinition&quot;:{&quot;id&quot;:3,&quot;serviceDefinition&quot;:&quot;indoortemperature&quot;,&quot;createdAt&quot;:&quot;2021-06-14 12:37:33&quot;,&quot;updatedAt&quot;:&quot;2021-06-14 12:37:33&quot;},&quot;provider&quot;:{&quot;id&quot;:183,&quot;systemName&quot;:&quot;insecuretemperaturesensor_2021-39-08-11-39-10&quot;,&quot;address&quot;:&quot;192.168.0.2&quot;,&quot;port&quot;:8080,&quot;authenticationInfo&quot;:&quot;eyJhbGciOiJIUzI1Ni...&quot;,&quot;createdAt&quot;:&quot;2021-10-08 21:39:10&quot;,&quot;updatedAt&quot;:&quot;2021-10-08 21:39:10&quot;},&quot;serviceUri&quot;:&quot;temperature&quot;,&quot;endOfValidity&quot;:&quot;2019-12-05 12:00:00&quot;,&quot;secure&quot;:&quot;NOT_SECURE&quot;,&quot;metadata&quot;:{&quot;unit&quot;:&quot;celsius&quot;},&quot;version&quot;:1,&quot;interfaces&quot;:[{&quot;id&quot;:2,&quot;interfaceName&quot;:&quot;HTTP-INSECURE-JSON&quot;,&quot;createdAt&quot;:&quot;2021-05-28 11:19:54&quot;,&quot;updatedAt&quot;:&quot;2021-05-28 11:19:54&quot;}],&quot;createdAt&quot;:&quot;2021-10-08 21:39:10&quot;,&quot;updatedAt&quot;:&quot;2021-10-08 21:39:10&quot;}[\r][\n]&quot;
+23:39:10.605 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; HTTP/1.1 201 
+23:39:10.605 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; X-Content-Type-Options: nosniff
+23:39:10.605 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; X-XSS-Protection: 1; mode=block
+23:39:10.605 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+23:39:10.605 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; Pragma: no-cache
+23:39:10.606 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; Expires: 0
+23:39:10.606 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; X-Frame-Options: DENY
+23:39:10.606 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; Content-Type: application/json;charset=UTF-8
+23:39:10.606 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; Transfer-Encoding: chunked
+23:39:10.606 [main] DEBUG org.apache.http.headers - http-outgoing-3 &lt;&lt; Date: Fri, 08 Oct 2021 21:39:10 GMT
+23:39:10.606 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+23:39:10.606 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;0[\r][\n]&quot;
+23:39:10.606 [main] DEBUG org.apache.http.wire - http-outgoing-3 &lt;&lt; &quot;[\r][\n]&quot;
+23:39:10.606 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 3][route: {}-&gt;http://localhost:8443] can be kept alive indefinitely
+23:39:10.607 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 0
+23:39:10.609 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}-&gt;http://localhost:8443][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+23:39:10.616 [main] DEBUG org.graphwalker.core.machine.SimpleMachine - Context: com.mbtroads.SomeSmallTest@5b092600
+23:39:10.616 [main] DEBUG org.graphwalker.core.machine.ExecutionContext - Execute method: &apos;v_RegisteredService&apos; in model: &apos;SericeRegistry1&apos;
+23:39:10.617 [main] ERROR org.graphwalker.core.machine.ExecutionContext - null
+23:39:10.617 [main] ERROR org.graphwalker.java.test.TestExecutor - java.lang.reflect.InvocationTargetException
+	&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;  vertex &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 
+
+  &quot;totalFailedNumberOfModels&quot;: 1
+
+  &quot;totalNotExecutedNumberOfModels&quot;: 0
+
+  &quot;totalNumberOfUnvisitedVertices&quot;: 3
+
+  &quot;verticesNotVisited&quot;: [
+    {
+      &quot;modelName&quot;: &quot;SericeRegistry1&quot;
+VERTEX &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; v_QueryService
+
+    {
+      &quot;modelName&quot;: &quot;SericeRegistry1&quot;
+VERTEX &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; v_SucessMesssage
+
+    {
+      &quot;modelName&quot;: &quot;SericeRegistry1&quot;
+VERTEX &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; v_end
+
+  &quot;totalNumberOfModels&quot;: 1
+
+  &quot;totalCompletedNumberOfModels&quot;: 0
+
+  &quot;totalNumberOfVisitedEdges&quot;: 5
+
+  &quot;totalIncompleteNumberOfModels&quot;: 0
+
+  &quot;edgesNotVisited&quot;: [
+    {
+      &quot;modelName&quot;: &quot;SericeRegistry1&quot;
+Edge &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; e_SaveService
+    
+
+    {
+      &quot;modelName&quot;: &quot;SericeRegistry1&quot;
+Edge &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; e_NewServiceExist
+    
+
+    {
+      &quot;modelName&quot;: &quot;SericeRegistry1&quot;
+Edge &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; e_back_ValidPayload
+    
+
+    {
+      &quot;modelName&quot;: &quot;SericeRegistry1&quot;
+Edge &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; e_SerrviceDefinationtExist
+    
+  
+
+  &quot;vertexCoverage&quot;: 62
+
+  &quot;totalNumberOfEdges&quot;: 9
+
+  &quot;totalNumberOfVisitedVertices&quot;: 5
+
+  &quot;edgeCoverage&quot;: 55
+
+  &quot;totalNumberOfVertices&quot;: 8
+
+  &quot;totalNumberOfUnvisitedEdges&quot;: 4
+}
+</system-out>
+    <system-err>java.lang.NullPointerException
+	at com.mbtroads.BaseClass.getScreenshotAsString(BaseClass.java:92)
+	at com.mbtroads.BaseClass.addBase64ScreenShotToReport(BaseClass.java:106)
+	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:39)
+	at Test_ServiceREgistery.testExecutor(Test_ServiceREgistery.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:61)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-err>
+  </testcase>
+</testsuite>
