@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
-Test set: Test_UnRegisterService
+Test set: Test_ServiceREgistery
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.717 sec <<< FAILURE!
-testExecutor(Test_UnRegisterService)  Time elapsed: 6.455 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.282 sec <<< FAILURE!
+testExecutor(Test_ServiceREgistery)  Time elapsed: 8.547 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mbtroads.BaseClass.getScreenshotAsString(BaseClass.java:92)
 	at com.mbtroads.BaseClass.addBase64ScreenShotToReport(BaseClass.java:106)
 	at com.mbtroads.ExtentReport.reportError(ExtentReport.java:39)
-	at Test_UnRegisterService.testExecutor(Test_UnRegisterService.java:28)
+	at Test_ServiceREgistery.testExecutor(Test_ServiceREgistery.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
