@@ -6,13 +6,10 @@ labeljust=left
 fontcolor = blue
 node [style=filled] 
  fontsize=30
-"v_QueryService"  [fillcolor=red]
-"v_SucessMesssage"  [fillcolor=red]
-"v_end"  [fillcolor=red]
-"v_ValidPayload" -> "v_end"  [ label="e_SerrviceDefinationtExist"color="red"]
-"v_SucessMesssage" -> "v_ValidPayload"  [ label="e_back_ValidPayload"color="red"]
-"v_QueryService" -> "v_SucessMesssage"  [ label="e_NewServiceExist"color="red"]
-"v_RegisteredService" -> "v_QueryService"  [ label="e_SaveService"color="red"]
+"v_ValidPayload" -> "v_end"  [ label="e_SerrviceDefinationtExist"color="black"]
+"v_SucessMesssage" -> "v_ValidPayload"  [ label="e_back_ValidPayload"color="black"]
+"v_QueryService" -> "v_SucessMesssage"  [ label="e_NewServiceExist"color="black"]
+"v_RegisteredService" -> "v_QueryService"  [ label="e_SaveService"color="black"]
 "v_ValidPayload" -> "v_RegisteredService"  [ label="e_SerrviceDefinationNotExist"color="black"]
 "v_RegisterService" -> "v_ValidPayload"  [ label="e_validServiceRegisteryForm"color="black"]
 "v_Start" -> "v_RegisterService"  [ label="e_start"color="black"]

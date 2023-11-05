@@ -179,12 +179,14 @@ public class CreateDotFile implements ISystemProperties {
 
     public  static void Createpng(String filename)  {
         try{
-            if (OS.contains("Windows") || OS.contains("Mac")) {
+            if (OS.contains("Windows")) {
                 Process p = Runtime.getRuntime().exec(currentDir + pathSeperator + "Drivers" + pathSeperator + filename + ".bat");
                 p.waitFor();
             }
             else
             {
+
+                System.out.println(currentDir + pathSeperator + "Drivers" + pathSeperator + filename);
                 Process p = Runtime.getRuntime().exec("sh "+ currentDir + pathSeperator + "Drivers" + pathSeperator + filename + ".sh");
                 p.waitFor();
 

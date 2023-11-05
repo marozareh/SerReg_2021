@@ -39,7 +39,8 @@ public class BaseClass extends BasePage implements ISystemProperties{
            }
        }
 
-       ExtentReport.createTestInstance(testName.getMethodName());
+      // ExtentReport.createTestInstance(testName.getMethodName());
+        ExtentReport.createTestInstance(System.getProperty("test"));
 
 
 
@@ -54,7 +55,7 @@ public class BaseClass extends BasePage implements ISystemProperties{
             driverName = "chromedriver.exe";
         }
        */
-        ExtentReport.createReportInstance(currentDir + pathSeperator + "Reports" + pathSeperator + "Report.html");
+        ExtentReport.createReportInstance(currentDir + pathSeperator + "Reports" + pathSeperator + "Report_1.html");
         ExtentReport.createTestInstance("Test Environment Preparation");
 
         try {

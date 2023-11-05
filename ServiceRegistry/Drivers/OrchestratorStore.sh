@@ -1,2 +1,2 @@
-dot -T png /home/jenkins/graphwalker/ServiceRegistry/Drivers/OrchestratorStore.dot > /home/jenkins/graphwalker/ServiceRegistry/Drivers/OrchestratorStore.png
-cp -rf /home/jenkins/graphwalker/ServiceRegistry/Drivers/OrchestratorStore.png /home/jenkins/workspace/OrchestrationStore/OrchestratorStore.png
+dot -T png /Users/marokrikoor/Documents/Graphwalker/ServiceRegistry/Drivers/OrchestratorStore.dot > /Users/marokrikoor/Documents/Graphwalker/ServiceRegistry/Drivers/OrchestratorStore.png
+cp -rf     /Users/marokrikoor/Documents/Graphwalker/ServiceRegistry/Drivers/OrchestratorStore.png   /Users/marokrikoor/Documents/Graphwalker/ServiceRegistry/Drivers/OrchestratorStore.png

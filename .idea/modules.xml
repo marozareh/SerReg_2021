@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ArrowheadGraphwalker_NEW.iml" filepath="$PROJECT_DIR$/.idea/ArrowheadGraphwalker_NEW.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ServiceRegistry/graphwalker-maven-archetype.iml" filepath="$PROJECT_DIR$/ServiceRegistry/graphwalker-maven-archetype.iml" />
     </modules>
   </component>
 </project>

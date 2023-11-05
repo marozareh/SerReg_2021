@@ -157,7 +157,7 @@ public class BasePage extends ExecutionContext {
         try
         {
             Assert.assertFalse(actualValue.contains(expectedValue));
-            ExtentReport.node.pass("Assertion Success for Field don ot Contain: "+ expectedValue);
+            ExtentReport.node.pass("Assertion Success for Field don not Contain: "+ expectedValue);
 
 
         }catch(AssertionError e)

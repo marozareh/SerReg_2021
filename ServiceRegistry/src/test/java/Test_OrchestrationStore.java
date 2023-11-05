@@ -24,8 +24,9 @@ public class Test_OrchestrationStore extends BaseClass {
         if (result.hasErrors()) {
             StrSplit(result.getResults().toString(2),0);
             failtest=1;
-            CreateDotFile.ReadFile("OrchestrationStore", failtest, result.getResults().toString(2) );
-            ExtentReport.reportError();
+            CreateDotFile.ReadFile("OrchestratorStore", failtest, result.getResults().toString(2) );
+             //ExtentReport.reportError();
+
         }
         else {
             StrSplit(result.getResults().toString(2),1);

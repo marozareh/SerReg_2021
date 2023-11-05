@@ -20,6 +20,8 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
         String content_p = null;
         String content_c = null;
         String content = null;
+
+        String provider_name = null;
         String id_p = null;
         String id_c = null;
         String id_ser = null;
@@ -49,8 +51,9 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
                         e.printStackTrace();
                 }
                 id_p = httpClient.Get_id_p(content_p, "provider");
+                provider_name  = httpClient.Get_id_p(content_p , "servicename");;
                 infoReport("id : " + id_p);
-
+                infoReport("provider name : " + provider_name);
 
 
         }
@@ -89,7 +92,7 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
                 infoReport("id interface: " + id_interface);
 
                 service_name = httpClient.Get_id_p(content_c , "servicename");
-                infoReport("id interface: " + service_name);
+                infoReport("id service_name: " + service_name);
 
         }
 
@@ -128,13 +131,11 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
 
         @Override()
         public void e_RequestAuthroizationCliud(){
-                ExtentReport.createAndGetNodeInstance("Moving Through: e_RequestAuthroizationCliud");
-                infoReport("Running ServiceAvailable API /authorization/intracloud/check");
+                ExtentReport.createAndGetNodeInstance("Moving Through: e_RequestAuthroizationCloud");
+                infoReport("Running ServiceAvailable API /authorization/intracloud");
 
-
-                consumer_request = "{ \"consumer\": { \"address\": \"192.168.0.2\", \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\", \"port\": 8080, \"systemName\": \"" + service_name + "\" }, \"providerIdsWithInterfaceIds\": [ { \"id\": " + id_c +", \"idList\": [ "+ id_interface+ " ] } ], \"serviceDefinitionId\": " + id_ser+ "}";
-                //consumer_request =   "{ \"consumer\": { \"address\": \"192.168.0.2\", \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\", \"port\": 8080, \"systemName\": \"insecuretemperaturesensorconsumer_2021-53-30-12-53-19\" }, \"providerIdsWithInterfaceIds\": [ { \"id\": 85, \"idList\": [ 2 ] } ], \"serviceDefinitionId\": 3}";
-                infoReport("Running : The API authorization/intracloud/check");
+                consumer_request ="{ \"consumerId\": "+ id_c + ", \"interfaceIds\": [ "+ id_interface + " ], \"providerIds\": [ " + id_p + " ], \"serviceDefinitionIds\": [ " + id_ser +" ]}";
+                infoReport("Running : The API authorization/intracloud");
                 infoReport(consumer_request);
 
                 response =  httpClient.sendPost_Query(consumer_request, "requesrauth");
@@ -142,6 +143,10 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
                 HttpEntity entity1 = response.getEntity();
                 try {
                         content = EntityUtils.toString(entity1);
+                        infoReport("Responce Content = " + content);
+                        infoReport("Responce Content = " + String.valueOf(response.getStatusLine().getStatusCode()));
+
+
                 } catch (IOException e) {
                         e.printStackTrace();
                 }
@@ -152,7 +157,7 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
         @Override()
         public void v_AuthorizationInterCloudReturned(){
                 ExtentReport.createAndGetNodeInstance("in Running: v_AuthorizationInterCloudReturned");
-                assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
+                assestEqual("201", String.valueOf(response.getStatusLine().getStatusCode()));
                 assestContains("consumer", content);
                 assestContains(id_c, content);
         }
@@ -190,12 +195,13 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
 
 
                 store_request = "[ { \"cloud\": { \"authenticationInfo\": null, \"gatekeeperRelayIds\": [ 0 ], \"gatewayRelayIds\": [ 0 ], \"name\": \"default_insecure_cloud\", \"neighbor\": true, \"operator\": \"default_operator\", \"secure\": true }, \"consumerSystemId\": , \"priority\": 10, \"providerSystem\": { \"address\": \"192.168.0.2\", \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\", \"port\": 8080, \"systemName\": \"insecuretemperaturesensor\" }, \"serviceDefinitionName\": \"indoortemperature\", \"serviceInterfaceName\": \"HTTP-INSECURE-JSON\" }]";
-
+                infoReport(" store_request = " + store_request);
                 response =  httpClient.sendPost_Query(store_request, "createstore");
 
                 HttpEntity entity1 = response.getEntity();
                 try {
                         content = EntityUtils.toString(entity1);
+                        infoReport("Responce Content = " + content);
                 } catch (IOException e) {
                         e.printStackTrace();
                 }
@@ -222,14 +228,18 @@ public class OrchStore extends BasePage implements OrchestrationStore , TestData
                 infoReport("Running ServiceAvailable API &orchestrator/mgmt/store");
 
 
-                store_request = "[ { \"cloud\": { \"authenticationInfo\": null, \"gatekeeperRelayIds\": [ 0 ], \"gatewayRelayIds\": [ 0 ], \"name\": \"default_insecure_cloud\", \"neighbor\": true, \"operator\": \"default_operator\", \"secure\": true }, \"consumerSystemId\": " + id_c + ", \"priority\": 10, \"providerSystem\": { \"address\": \"192.168.0.2\", \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\", \"port\": 8080, \"systemName\": \"insecuretemperaturesensor\" }, \"serviceDefinitionName\": \"indoortemperature\", \"serviceInterfaceName\": \"HTTP-INSECURE-JSON\" }]";
-
+                store_request =      "[ { \"cloud\": { \"authenticationInfo\": \"default-insecure-cloud\", \"gatekeeperRelayIds\": [ 0 ], \"gatewayRelayIds\": [ 0 ], \"name\": \"default-insecure-cloud\", \"neighbor\": false, \"operator\": \"default-operator\", \"secure\": false }, \"consumerSystemId\":" + id_c + ", \"priority\": 10, \"providerSystem\": { \"address\": \"192.168.0.2\", \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\", \"metadata\": { \"unit\": \"celsius\" }, \"port\": 8080, \"systemName\": \""+provider_name +"\" }, \"serviceDefinitionName\": \"indoortemperature\", \"serviceInterfaceName\": \"HTTP-INSECURE-JSON\" }]";
+                infoReport("store_request " + store_request);
+                infoReport("store_request " + store_request);
+                infoReport("=========================================== " );
                 response =  httpClient.sendPost_Query(store_request, "createstore");
 
                 HttpEntity entity1 = response.getEntity();
                 try {
                         content = EntityUtils.toString(entity1);
                         infoReport("Store Content" + content);
+                        infoReport("Responce Content = " + String.valueOf(response.getStatusLine().getStatusCode()));
+
                 } catch (IOException e) {
                         e.printStackTrace();
                 }

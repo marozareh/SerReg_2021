@@ -37,6 +37,9 @@ public class UnregService extends BasePage implements UnregisterService , TestDa
                 try {
                         content = EntityUtils.toString(entity1);
                         infoReport("Responce Content = " + content);
+                        infoReport("NewService = " + NewService);
+
+
 
                 } catch (IOException e) {
                         e.printStackTrace();
@@ -114,10 +117,11 @@ public class UnregService extends BasePage implements UnregisterService , TestDa
         @Override()
         public void v_RemoveServiceRegisteryEntry(){
                 ExtentReport.createAndGetNodeInstance("in Running: v_RemoveServiceRegisteryEntry");
+                infoReport("Responce codeeee    Content = " + HttpClient.failCase_Test);
                 if(HttpClient.failCase_Test.equals("false"))
                         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
                 else
-                        assestEqual("2001", String.valueOf(response.getStatusLine().getStatusCode()));
+                        assestEqual("201", String.valueOf(response.getStatusLine().getStatusCode()));
 
         }
 
@@ -133,6 +137,7 @@ public class UnregService extends BasePage implements UnregisterService , TestDa
                 try {
                         content = EntityUtils.toString(entity1);
                         infoReport("Responce Content = " + content);
+                        System.out.println(">>>>>>>>>>>>hallo ");
                 } catch (IOException e) {
                         e.printStackTrace();
                 }

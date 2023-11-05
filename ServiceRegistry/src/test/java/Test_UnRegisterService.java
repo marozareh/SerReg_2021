@@ -16,7 +16,7 @@ public class Test_UnRegisterService extends BaseClass {
     @Test
     public void testExecutor() throws IOException, InterruptedException {
         TestExecutor executor = new TestExecutor(
-                UnregService.class
+                    UnregService.class
         );
         int failtest=0;
 
@@ -39,6 +39,6 @@ public class Test_UnRegisterService extends BaseClass {
 //mvn -q clean graphwalker:generate-sources compile test -Dtest=Test_UnRegisterService
 
 
-
+//mvn -q clean graphwalker:generate-sources compile test -Dtest=Test_UnRegisterService -Dfailcase=true
 
 }

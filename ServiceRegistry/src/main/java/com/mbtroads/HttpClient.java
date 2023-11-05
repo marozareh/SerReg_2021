@@ -245,9 +245,10 @@ public class HttpClient implements ISystemProperties {
             }
             if (type.contains("requesrauth")) {
                     if (OS.contains("Windows") || OS.contains("Mac")) {
-                        request = new HttpPost("http://localhost:8445/authorization/intracloud/check");
+                        request = new HttpPost("http://localhost:8445/authorization/mgmt/intracloud");
                     } else {
                         request = new HttpPost("http://128.130.123.115:8445/authorization/intracloud/check");
+                      //  request = new HttpPost("http://128.130.123.115:8445/authorization/intracloud");
 
                     }
                 }

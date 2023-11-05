@@ -10,18 +10,18 @@ public interface TestData {
 
 
 //Service Register
-    String InvaledServiceRegistery = "{ \"providerSystem\": { \"systemName\": \"InsecureTemperatureSensor\", \"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2019-12-05 12:00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
-    String ValidServiceRegistery_Payload = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"InsecureTemperatureSensor\", \"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2019-12-05 12:00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
+    String InvaledServiceRegistery = "{ \"providerSystem\": { \"systemName\": \"insecuretemperaturesensor\", \"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2024-12-05T05:53:00+00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
+    String ValidServiceRegistery_Payload = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"insecuretemperaturesensornew\", \"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2024-12-05T05:53:00+00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
 
     Date date = Calendar.getInstance().getTime();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd-hh-mm-ss");
     String strDate = dateFormat.format(date);
-    String NewService = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"InsecureTemperatureSensor_"+ strDate + "\",\"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2019-12-05 12:00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
-    String NewServiceNotExist = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"InsecureTemperatureSensorNX_"+ strDate + "\",\"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2019-12-05 12:00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
+    String NewService ="{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"insecuretemperaturesensor-"+ strDate + "\",\"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2024-12-05T05:53:00+00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
+    String NewServiceNotExist = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"insecuretemperaturesensorNX_"+ strDate + "\",\"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2024-12-05T05:53:00+00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
 
-    String NewServiceConsumer = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"InsecureTemperatureSensorConsumer_"+ strDate + "\",\"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2019-12-05 12:00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
+    String NewServiceConsumer = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"insecuretemperaturesensorConsumer-"+ strDate + "\",\"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2024-12-05T05:53:00+00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
 
-    String EXISTService = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"InsecureTemperatureSensor\", \"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2019-12-05 12:00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
+    String EXISTService = "{ \"serviceDefinition\": \"IndoorTemperature\", \"providerSystem\": { \"systemName\": \"insecuretemperaturesensor\", \"address\": \"192.168.0.2\", \"port\": 8080, \"authenticationInfo\": \"eyJhbGciOiJIUzI1Ni...\"}, \"serviceUri\": \"temperature\", \"endOfValidity\": \"2024-12-05T05:53:00+00:00\", \"secure\": \"NOT_SECURE\", \"metadata\": { \"unit\": \"celsius\"}, \"version\": 1, \"interfaces\": [ \"HTTP-INSECURE-JSON\" ]}";
 
     //Query Service
     String InvaledServiceQuery = "{ }";
@@ -39,8 +39,9 @@ public interface TestData {
 
     String PingProviders ="{ \"pingProviders\": true, \"serviceDefinitionRequirement\": \"indoortemperature\"}";
 
-    String UnregisterService = "address=192.168.0.2&port=8080&service_definition=indoortemperature&system_name=NOTEXIST";
-    String registerService = "address=192.168.0.2&port=8080&service_definition=indoortemperature&system_name=";
+    String UnregisterService = "address=192.168.0.2&port=8080&service_definition=indoortemperature&service_uri=temperature&system_name=NOTEXIST";
+
+    String registerService = "address=192.168.0.2&port=8080&service_definition=indoortemperature&service_uri=temperature&system_name=";
 
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_BLACK = "\u001B[30m";

@@ -10,8 +10,5 @@
         <module name="graphwalker-maven-archetype" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="graphwalker-maven-archetype" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

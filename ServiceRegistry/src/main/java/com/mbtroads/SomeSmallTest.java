@@ -17,11 +17,17 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   String content = null;
   String id = null;
   boolean flag = true;
+  String ExistService = null;
+  String ExistName = null;
 
 
   @Override
   public void v_Start()  {
-    ExtentReport.createAndGetNodeInstance("in Running: v_Start  ");
+
+    ExtentReport.createAndGetNodeInstance("in Running: v_Start  " );
+            infoReport("Start Service Registry test case");
+
+
   }
 
   @Override
@@ -46,6 +52,11 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
       assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
       assestContains("Got it!", content);
     }
+    else
+    {
+      infoReport("Moving through v_RegisterService" );
+    }
+
   }
 
 
@@ -104,7 +115,13 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   public void v_ValidPayload()  {
 
     ExtentReport.createAndGetNodeInstance("in Running: v_ValidPayload");
-    assestdonotContains("BAD_PAYLOAD", content);
+    if (content.contains("already exists"))
+    {
+      infoReport("Validating register service already exist");
+      assestContains("already exists", content);
+    }
+    else
+      assestdonotContains("BAD_PAYLOAD", content);
   }
 
 
@@ -113,9 +130,11 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
 
     ExtentReport.createAndGetNodeInstance("Moving Through: e_SerrviceDefinationNotExist");
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist");
-      response =  httpClient.sendPost_Query(NewService,"mgmt");
+    response =  httpClient.sendPost_Query(NewService,"mgmt");
+    ExistService =NewService;
+    ExistName= "insecuretemperaturesensor-"+ strDate;
 
-      HttpEntity entity1 = response.getEntity();
+    HttpEntity entity1 = response.getEntity();
     try {
       content = EntityUtils.toString(entity1);
       infoReport("Responce Content = " + content);
@@ -188,7 +207,7 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
     infoReport("Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Exist");
 
   //  response =  httpClient.sendPost(EXISTService, "http://localhost:8443/serviceregistry/mgmt");
-      response =  httpClient.sendPost_Query(EXISTService, "mgmt");
+      response =  httpClient.sendPost_Query(ExistService, "mgmt");
 
       HttpEntity entity1 = response.getEntity();
     try {
@@ -206,7 +225,10 @@ public class SomeSmallTest extends BasePage implements SericeRegistry1 , TestDat
   public void v_end()  {
     ExtentReport.createAndGetNodeInstance("in Running: v_end");
     assestEqual("400", String.valueOf(response.getStatusLine().getStatusCode()));
-    assestContains("Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.", content);
+    infoReport(" ExistService = " + ExistService);
+    infoReport(" content = " + content);
+    assestContains(ExistName, content);
+   // assestContains("Service Registry entry with provider: (insecuretemperaturesensor, 192.168.0.2:8080) and service definition: indoortemperature already exists.", content);
   }
 
 

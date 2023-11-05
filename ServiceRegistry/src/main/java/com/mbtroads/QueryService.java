@@ -21,21 +21,24 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
 
     @Override
-    public void v_Start(){
+    public void v_Start()
+    {
+
         extendReport("v_Start");
+        infoReport("Start Service Query test case");
     }
 
     @Override
     public void e_start(){
         extendReport("e_start");
         infoReport("Moving Through: e_start");
-        infoReport("Running ServiceAvailable /serviceregistry/echo");
+        infoReport("Running Service Available /serviceregistry/echo");
         response =  httpClient.ServiceAvailable("serviceregistery");
         HttpEntity entity1 = response.getEntity();
         try {
             content = EntityUtils.toString(entity1);
         } catch (IOException e) {
-            ExtentReport.node.fail("Service probem");
+            ExtentReport.node.fail("Service has a problem");
             e.printStackTrace();
         }
 
@@ -44,6 +47,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_QueryService(){
+        extendReport("v_QueryService");
         infoReport("Validating in:  v_QueryService");
       if (flag == true) {
             assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
@@ -69,7 +73,8 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_BadPayloadException(){
-       infoReport("Validating in: v_BadPayloadException");
+        extendReport("v_BadPayloadException");
+        infoReport("Validating in: v_BadPayloadException");
         assestEqual("400", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("BAD_PAYLOAD", content);
 
@@ -89,7 +94,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     public void e_validServiceQueryForm(){
         extendReport("e_validServiceQueryForm");
 
-        infoReport("Moving Through: Moving Through: e_validServiceQueryForm");
+       // infoReport("Moving Through: e_validServiceQueryForm");
         infoReport("Running : The API /serviceregistry/query with valid Payload");
         response =  httpClient.sendPost_Query(ValidServiceQuery_Payload, "query");
         HttpEntity entity1 = response.getEntity();
@@ -103,6 +108,8 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_ValidPayload(){
+        extendReport("v_ValidPayload");
+
         infoReport("Validating in: v_ValidPayload");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestdonotContains("BAD_PAYLOAD", content);
@@ -128,6 +135,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_ServiceQueryInterfaceNotDefined(){
+        extendReport("v_ServiceQueryInterfaceNotDefined");
         infoReport("Validating in: v_ServiceQueryInterfaceNotDefined");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
@@ -158,6 +166,8 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_FilterOnInterface(){
+        extendReport("v_FilterOnInterface");
+
         infoReport("Validating in: v_FilterOnInterface");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
@@ -186,8 +196,9 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_ServiceQuerySecurityTypeNotDefined(){
+        extendReport("v_ServiceQuerySecurityTypeNotDefined");
         infoReport("Validating in: v_ServiceQuerySecurityTypeNotDefined");
-        assestEqual("400", String.valueOf(response.getStatusLine().getStatusCode()));
+        assestEqual("StatusCode 400", String.valueOf(response.getStatusLine().getStatusCode()));
 
     }
 
@@ -210,6 +221,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_FilterOnSecurity(){
+        extendReport("v_FilterOnSecurity");
         infoReport("Validating in: v_FilterOnSecurity");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
@@ -237,6 +249,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_ServiceQueryVersionNotDefined(){
+        extendReport("v_ServiceQueryVersionNotDefined");
         infoReport("Validating in: v_ServiceQueryVersionNotDefined");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
@@ -267,6 +280,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public void v_FilterOnVersion(){
+        extendReport("v_FilterOnVersion");
         infoReport("Validating in: v_FilterOnVersion");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
@@ -278,7 +292,8 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     @Override
     public void e_back_ValidPayload()
     {
-        extendReport(  "e_back_ValidPayload");  }
+        extendReport(  "e_back_ValidPayload");
+    }
 
     @Override
     public void e_QueryMetadatNotDefined(){
@@ -299,6 +314,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public  void v_ServiceQueryMetadataNotDefined(){
+        extendReport("v_ServiceQueryMetadataNotDefined");
         infoReport("Validating in: v_ServiceQueryMetadataNotDefined");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
@@ -326,6 +342,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public  void v_FilterOnMetadata(){
+        extendReport("v_FilterOnMetadata");
         infoReport("Validating in: v_FilterOnMetadata");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
@@ -354,6 +371,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
 
     @Override
     public  void v_QueryResponce(){
+        extendReport("v_QueryResponce");
         infoReport("Validating in: v_QueryResponce");
         assestEqual("200", String.valueOf(response.getStatusLine().getStatusCode()));
         assestContains("serviceQueryData", content);
