@@ -29,7 +29,7 @@ public class Test_ServiceREgistery extends BaseClass {
             failtest=1;
             CreateDotFile.ReadFile("ServiceRegistry", failtest, result.getResults().toString(2) );
 
-           // ExtentReport.reportError();
+             ExtentReport.reportError();
 
 
 
