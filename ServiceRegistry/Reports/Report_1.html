@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 5, 2023 12:32:16 pm</span></a>
+<a href="#"><span class="badge badge-primary">Nov 6, 2023 09:31:44 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,9 +79,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Test_ServiceREgistery</p>
+            <p class="name">Test_UnRegisterService</p>
             <p class="text-sm">
-              <span>12:32:16</span> / <span>00:00:02:951</span>
+              <span>21:31:45</span> / <span>00:00:02:854</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +89,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Test_ServiceREgistery</h5>
-<span class='badge badge-success'>11.05.2023 12:32:16</span>
-<span class='badge badge-danger'>11.05.2023 12:32:19</span>
-<span class='badge badge-default'>00:00:02:951</span>
+<h5 class="test-status text-pass">Test_UnRegisterService</h5>
+<span class='badge badge-success'>11.06.2023 21:31:45</span>
+<span class='badge badge-danger'>11.06.2023 21:31:48</span>
+<span class='badge badge-default'>00:00:02:854</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,7 +104,7 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:002</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
               <li></li>
             </ul>
           </div>
@@ -114,34 +114,18 @@
             </div>
           </div>
         </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Start Service Registry test case
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
       </div>
       <div class="card">
         <div class="card-header">
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:071</span></li>
+              <li><span class='badge badge-default'>00:00:198</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="4"><span>Moving Through: e_start</span></a>
+            <a class="node " id="4"><span>Moving Through: e_RegisterNewService</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -153,16 +137,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
+        <td>21:31:47</td>
         <td>
-          Running ServiceAvailable API http://localhost:8443/serviceregistry/echo
+          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
-          Responce Content = Got it!
+          Responce Content = {"id":782,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":163,"systemName":"insecuretemperaturesensor-2023-31-06-09-31-47","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-11-06T20:31:47.927393Z","updatedAt":"2023-11-06T20:31:47.927393Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-06T20:31:47.957506Z","updatedAt":"2023-11-06T20:31:47.957506Z"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          NewService = { "serviceDefinition": "IndoorTemperature", "providerSystem": { "systemName": "insecuretemperaturesensor-2023-31-06-09-31-47","address": "192.168.0.2", "port": 8080, "authenticationInfo": "eyJhbGciOiJIUzI1Ni..."}, "serviceUri": "temperature", "endOfValidity": "2024-12-05T05:53:00+00:00", "secure": "NOT_SECURE", "metadata": { "unit": "celsius"}, "version": 1, "interfaces": [ "HTTP-INSECURE-JSON" ]}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          New ServiceName >>>>>>>> insecuretemperaturesensor-2023-31-06-09-31-47
         </td>
       </tr>
   </tbody>
@@ -175,7 +173,7 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
               <li></li>
             </ul>
           </div>
@@ -192,289 +190,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success for Field Contains: Got it!
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:020</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="6"><span>Moving Through: e_InvaledServiceRegisteryForm</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Running : The API http://localhost:8443/serviceregistry/mgmt with invalid Payload
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Responce Content = {"errorMessage":"Service definition is null or blank","errorCode":400,"exceptionType":"BAD_PAYLOAD","origin":"/mgmt"}
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="7"><span>in Running: v_BadPayloadException</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success Equal for Field: 400
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success for Field Contains: BAD_PAYLOAD
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="8"><span>Moving Through: e_back_RegisterService</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="9"><span>in Running: v_RegisterService</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Moving through v_RegisterService
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:040</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="10"><span>Moving Through: e_validServiceRegisteryForm</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Responce Content = {"errorMessage":"Service Registry entry with provider: (insecuretemperaturesensornew, 192.168.0.2:8080), service definition: indoortemperature and service URI: temperature already exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="11"><span>in Running: v_ValidPayload</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Validating register service already exist
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success for Field Contains: already exists
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:030</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="12"><span>Moving Through: e_SerrviceDefinationNotExist</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Not Exist
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Responce Content = {"id":758,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":157,"systemName":"insecuretemperaturesensor-2023-32-05-12-32-19","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-11-05T11:32:19.330505Z","updatedAt":"2023-11-05T11:32:19.330505Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:32:19.334556Z","updatedAt":"2023-11-05T11:32:19.334556Z"}
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="13"><span>in Running: v_RegisteredService</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           Assertion Success Equal for Field: 201
         </td>
@@ -489,12 +205,12 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:290</span></li>
+              <li><span class='badge badge-default'>00:00:042</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="14"><span>Moving Through: e_SaveService</span></a>
+            <a class="node " id="6"><span>Moving Through: e_InvaledUnRegisterServiceForm</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -506,266 +222,44 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
-          Running : The API /serviceregistry/mgmt?direction=ASC&sort_field=id to get all saved Services
+          Running : The API /serviceregistry/unregister with invalid Payload and Serrvice Defination Not Exist
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
-          Responce Content = {"data":[{"id":203,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":16,"systemName":"indoortemperature","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},{"id":204,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":17,"systemName":"insecuretemperaturesensor","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T21:39:58Z","updatedAt":"2023-10-08T21:39:58Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T21:39:58Z","updatedAt":"2023-10-08T21:39:58Z"},{"id":206,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":19,"systemName":"insecuretemperaturesensor-2023-53-08-11-53-25","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T21:53:26Z","updatedAt":"2023-10-08T21:53:26Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T21:53:26Z","updatedAt":"2023-10-08T21:53:26Z"},{"id":207,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":20,"systemName":"insecuretemperaturesensor-2023-58-08-11-58-25","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T21:58:25Z","updatedAt":"2023-10-08T21:58:25Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T21:58:25Z","updatedAt":"2023-10-08T21:58:25Z"},{"id":209,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":22,"systemName":"insecuretemperaturesensor-2023-02-09-12-02-55","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T22:02:56Z","updatedAt":"2023-10-08T22:02:56Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T22:02:56Z","updatedAt":"2023-10-08T22:02:56Z"},{"id":210,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":23,"systemName":"insecuretemperaturesensor-2023-03-09-12-03-55","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T22:03:55Z","updatedAt":"2023-10-08T22:03:55Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T22:03:55Z","updatedAt":"2023-10-08T22:03:55Z"},{"id":211,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":24,"systemName":"insecuretemperaturesensor-2023-06-09-12-06-07","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T22:06:07Z","updatedAt":"2023-10-08T22:06:07Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T22:06:07Z","updatedAt":"2023-10-08T22:06:07Z"},{"id":212,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":25,"systemName":"insecuretemperaturesensor-2023-07-09-12-07-53","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T22:07:53Z","updatedAt":"2023-10-08T22:07:53Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T22:07:53Z","updatedAt":"2023-10-08T22:07:53Z"},{"id":213,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":26,"systemName":"insecuretemperaturesensor-2023-10-09-12-10-35","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T22:10:35Z","updatedAt":"2023-10-08T22:10:35Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T22:10:35Z","updatedAt":"2023-10-08T22:10:35Z"},{"id":214,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":27,"systemName":"insecuretemperaturesensor-2023-16-09-12-16-36","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T22:16:36Z","updatedAt":"2023-10-08T22:16:36Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T22:16:36Z","updatedAt":"2023-10-08T22:16:36Z"},{"id":216,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":29,"systemName":"insecuretemperaturesensor-2023-21-09-12-21-57","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-08T22:21:58Z","updatedAt":"2023-10-08T22:21:58Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-08T22:21:58Z","updatedAt":"2023-10-08T22:21:58Z"},{"id":295,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":34,"systemName":"insecuretemperaturesensor-2023-02-11-12-02-55","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-11T10:02:55Z","updatedAt":"2023-10-11T10:02:55Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-11T10:02:55Z","updatedAt":"2023-10-11T10:02:55Z"},{"id":339,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":38,"systemName":"insecuretemperaturesensor-2023-48-19-10-48-00","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-19T08:48:01Z","updatedAt":"2023-10-19T08:48:01Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-19T08:48:01Z","updatedAt":"2023-10-19T08:48:01Z"},{"id":362,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":39,"systemName":"insecuretemperaturesensor-2023-03-19-11-03-52","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-19T09:03:52Z","updatedAt":"2023-10-19T09:03:52Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-19T09:03:52Z","updatedAt":"2023-10-19T09:03:52Z"},{"id":363,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":40,"systemName":"insecuretemperaturesensor-2023-56-19-11-56-29","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-19T09:56:30Z","updatedAt":"2023-10-19T09:56:30Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-19T09:56:30Z","updatedAt":"2023-10-19T09:56:30Z"},{"id":383,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":42,"systemName":"insecuretemperaturesensor-2023-12-20-11-12-11","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-20T21:12:12Z","updatedAt":"2023-10-20T21:12:12Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-20T21:12:12Z","updatedAt":"2023-10-20T21:12:12Z"},{"id":384,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":43,"systemName":"insecuretemperaturesensor-2023-14-20-11-14-36","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-20T21:14:37Z","updatedAt":"2023-10-20T21:14:37Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-20T21:14:37Z","updatedAt":"2023-10-20T21:14:37Z"},{"id":385,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":44,"systemName":"insecuretemperaturesensor-2023-54-20-11-54-21","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-20T21:54:22Z","updatedAt":"2023-10-20T21:54:22Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-20T21:54:22Z","updatedAt":"2023-10-20T21:54:22Z"},{"id":386,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":45,"systemName":"insecuretemperaturesensor-2023-55-20-11-55-19","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-20T21:55:20Z","updatedAt":"2023-10-20T21:55:20Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-20T21:55:20Z","updatedAt":"2023-10-20T21:55:20Z"},{"id":387,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":46,"systemName":"insecuretemperaturesensor-2023-52-21-12-52-33","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-20T22:52:34Z","updatedAt":"2023-10-20T22:52:34Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-20T22:52:34Z","updatedAt":"2023-10-20T22:52:34Z"},{"id":412,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":51,"systemName":"insecuretemperaturesensor-2023-22-21-03-22-42","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T13:22:42Z","updatedAt":"2023-10-21T13:22:42Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T15:25:40Z","updatedAt":"2023-10-21T15:25:40Z"},{"id":437,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":54,"systemName":"insecuretemperaturesensor-2023-37-21-05-37-21","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T15:37:21Z","updatedAt":"2023-10-21T15:37:21Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T15:37:21Z","updatedAt":"2023-10-21T15:37:21Z"},{"id":447,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":64,"systemName":"insecuretemperaturesensor-2023-52-21-10-52-18","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T20:52:19Z","updatedAt":"2023-10-21T20:52:19Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T20:52:19Z","updatedAt":"2023-10-21T20:52:19Z"},{"id":448,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":65,"systemName":"insecuretemperaturesensor-2023-10-21-11-10-19","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T21:10:19Z","updatedAt":"2023-10-21T21:10:19Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T21:10:19Z","updatedAt":"2023-10-21T21:10:19Z"},{"id":449,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":66,"systemName":"insecuretemperaturesensor-2023-08-22-12-08-22","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T22:08:23Z","updatedAt":"2023-10-21T22:08:23Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T22:08:23Z","updatedAt":"2023-10-21T22:08:23Z"},{"id":450,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":67,"systemName":"insecuretemperaturesensor-2023-14-22-12-14-55","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T22:14:56Z","updatedAt":"2023-10-21T22:14:56Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T22:14:56Z","updatedAt":"2023-10-21T22:14:56Z"},{"id":451,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":68,"systemName":"insecuretemperaturesensor-2023-15-22-12-15-43","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T22:15:43Z","updatedAt":"2023-10-21T22:15:43Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T22:15:43Z","updatedAt":"2023-10-21T22:15:43Z"},{"id":452,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":69,"systemName":"insecuretemperaturesensor-2023-17-22-12-17-04","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-21T22:17:04Z","updatedAt":"2023-10-21T22:17:04Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-21T22:17:04Z","updatedAt":"2023-10-21T22:17:04Z"},{"id":491,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":72,"systemName":"insecuretemperaturesensor-2023-52-22-10-52-06","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T20:52:07Z","updatedAt":"2023-10-22T20:52:07Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T20:52:07Z","updatedAt":"2023-10-22T20:52:07Z"},{"id":492,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":73,"systemName":"insecuretemperaturesensor-2023-34-22-11-34-59","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T21:35:00Z","updatedAt":"2023-10-22T21:35:00Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T21:35:00Z","updatedAt":"2023-10-22T21:35:00Z"},{"id":493,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":74,"systemName":"insecuretemperaturesensorconsumer-2023-34-22-11-34-59","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T21:35:00Z","updatedAt":"2023-10-22T21:35:00Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T21:35:00Z","updatedAt":"2023-10-22T21:35:00Z"},{"id":494,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":75,"systemName":"insecuretemperaturesensor-2023-39-22-11-39-35","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T21:39:36Z","updatedAt":"2023-10-22T21:39:36Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T21:39:36Z","updatedAt":"2023-10-22T21:39:36Z"},{"id":495,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":76,"systemName":"insecuretemperaturesensorconsumer-2023-39-22-11-39-35","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T21:39:36Z","updatedAt":"2023-10-22T21:39:36Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T21:39:36Z","updatedAt":"2023-10-22T21:39:36Z"},{"id":500,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":81,"systemName":"insecuretemperaturesensor-2023-59-22-11-59-00","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T21:59:00Z","updatedAt":"2023-10-22T21:59:00Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T21:59:00Z","updatedAt":"2023-10-22T21:59:00Z"},{"id":501,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":82,"systemName":"insecuretemperaturesensorconsumer-2023-59-22-11-59-00","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T21:59:00Z","updatedAt":"2023-10-22T21:59:00Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T21:59:00Z","updatedAt":"2023-10-22T21:59:00Z"},{"id":502,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":83,"systemName":"insecuretemperaturesensor-2023-00-23-12-00-12","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:00:13Z","updatedAt":"2023-10-22T22:00:13Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:00:13Z","updatedAt":"2023-10-22T22:00:13Z"},{"id":503,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":84,"systemName":"insecuretemperaturesensorconsumer-2023-00-23-12-00-12","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:00:13Z","updatedAt":"2023-10-22T22:00:13Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:00:13Z","updatedAt":"2023-10-22T22:00:13Z"},{"id":504,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":85,"systemName":"insecuretemperaturesensor-2023-00-23-12-00-56","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:00:56Z","updatedAt":"2023-10-22T22:00:56Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:00:56Z","updatedAt":"2023-10-22T22:00:56Z"},{"id":505,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":86,"systemName":"insecuretemperaturesensorconsumer-2023-00-23-12-00-56","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:00:56Z","updatedAt":"2023-10-22T22:00:56Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:00:56Z","updatedAt":"2023-10-22T22:00:56Z"},{"id":506,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":87,"systemName":"insecuretemperaturesensor-2023-08-23-12-08-27","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:08:28Z","updatedAt":"2023-10-22T22:08:28Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:08:28Z","updatedAt":"2023-10-22T22:08:28Z"},{"id":507,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":88,"systemName":"insecuretemperaturesensorconsumer-2023-08-23-12-08-27","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:08:28Z","updatedAt":"2023-10-22T22:08:28Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:08:28Z","updatedAt":"2023-10-22T22:08:28Z"},{"id":508,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":89,"systemName":"insecuretemperaturesensor-2023-09-23-12-09-36","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:09:37Z","updatedAt":"2023-10-22T22:09:37Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:09:37Z","updatedAt":"2023-10-22T22:09:37Z"},{"id":509,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":90,"systemName":"insecuretemperaturesensorconsumer-2023-09-23-12-09-36","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:09:37Z","updatedAt":"2023-10-22T22:09:37Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:09:37Z","updatedAt":"2023-10-22T22:09:37Z"},{"id":510,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":91,"systemName":"insecuretemperaturesensor-2023-24-23-12-24-37","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:24:37Z","updatedAt":"2023-10-22T22:24:37Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:24:37Z","updatedAt":"2023-10-22T22:24:37Z"},{"id":511,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":92,"systemName":"insecuretemperaturesensorconsumer-2023-24-23-12-24-37","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:24:37Z","updatedAt":"2023-10-22T22:24:37Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:24:37Z","updatedAt":"2023-10-22T22:24:37Z"},{"id":512,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":93,"systemName":"insecuretemperaturesensor-2023-53-23-12-53-11","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:53:11Z","updatedAt":"2023-10-22T22:53:11Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:53:11Z","updatedAt":"2023-10-22T22:53:11Z"},{"id":513,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":94,"systemName":"insecuretemperaturesensorconsumer-2023-53-23-12-53-11","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-22T22:53:11Z","updatedAt":"2023-10-22T22:53:11Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-22T22:53:11Z","updatedAt":"2023-10-22T22:53:11Z"},{"id":564,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":96,"systemName":"insecuretemperaturesensor-2023-14-23-11-14-29","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T21:14:29Z","updatedAt":"2023-10-23T21:14:29Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T21:14:29Z","updatedAt":"2023-10-23T21:14:29Z"},{"id":565,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":97,"systemName":"insecuretemperaturesensorconsumer-2023-14-23-11-14-29","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T21:14:29Z","updatedAt":"2023-10-23T21:14:29Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T21:14:29Z","updatedAt":"2023-10-23T21:14:29Z"},{"id":566,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":98,"systemName":"insecuretemperaturesensor-2023-29-23-11-29-03","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T21:29:04Z","updatedAt":"2023-10-23T21:29:04Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T21:29:04Z","updatedAt":"2023-10-23T21:29:04Z"},{"id":567,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":99,"systemName":"insecuretemperaturesensorconsumer-2023-29-23-11-29-03","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T21:29:04Z","updatedAt":"2023-10-23T21:29:04Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T21:29:04Z","updatedAt":"2023-10-23T21:29:04Z"},{"id":568,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":100,"systemName":"insecuretemperaturesensor-2023-32-23-11-32-31","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T21:32:31Z","updatedAt":"2023-10-23T21:32:31Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T21:32:31Z","updatedAt":"2023-10-23T21:32:31Z"},{"id":569,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":101,"systemName":"insecuretemperaturesensorconsumer-2023-32-23-11-32-31","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T21:32:31Z","updatedAt":"2023-10-23T21:32:31Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T21:32:31Z","updatedAt":"2023-10-23T21:32:31Z"},{"id":635,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":106,"systemName":"insecuretemperaturesensor-2023-20-24-12-20-10","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T22:20:11Z","updatedAt":"2023-10-23T22:20:11Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T22:20:11Z","updatedAt":"2023-10-23T22:20:11Z"},{"id":636,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":107,"systemName":"insecuretemperaturesensorconsumer-2023-20-24-12-20-10","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T22:20:11Z","updatedAt":"2023-10-23T22:20:11Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T22:20:11Z","updatedAt":"2023-10-23T22:20:11Z"},{"id":637,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":108,"systemName":"insecuretemperaturesensor-2023-22-24-12-22-00","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T22:22:01Z","updatedAt":"2023-10-23T22:22:01Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T22:22:01Z","updatedAt":"2023-10-23T22:22:01Z"},{"id":638,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":109,"systemName":"insecuretemperaturesensorconsumer-2023-22-24-12-22-00","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-23T22:22:01Z","updatedAt":"2023-10-23T22:22:01Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-23T22:22:01Z","updatedAt":"2023-10-23T22:22:01Z"},{"id":658,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":111,"systemName":"insecuretemperaturesensor-2023-34-24-10-34-54","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-24T20:34:54Z","updatedAt":"2023-10-24T20:34:54Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-24T20:34:54Z","updatedAt":"2023-10-24T20:34:54Z"},{"id":659,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":112,"systemName":"insecuretemperaturesensorconsumer-2023-34-24-10-34-54","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-24T20:34:54Z","updatedAt":"2023-10-24T20:34:54Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-24T20:34:54Z","updatedAt":"2023-10-24T20:34:54Z"},{"id":660,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":113,"systemName":"insecuretemperaturesensor-2023-33-24-11-33-08","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-24T21:33:08Z","updatedAt":"2023-10-24T21:33:08Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-24T21:33:08Z","updatedAt":"2023-10-24T21:33:08Z"},{"id":661,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":114,"systemName":"insecuretemperaturesensorconsumer-2023-33-24-11-33-08","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-24T21:33:08Z","updatedAt":"2023-10-24T21:33:08Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-24T21:33:08Z","updatedAt":"2023-10-24T21:33:08Z"},{"id":681,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":116,"systemName":"insecuretemperaturesensor-2023-17-26-03-17-50","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T13:17:51Z","updatedAt":"2023-10-26T13:17:51Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T13:17:51Z","updatedAt":"2023-10-26T13:17:51Z"},{"id":682,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":117,"systemName":"insecuretemperaturesensorconsumer-2023-17-26-03-17-50","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T13:17:51Z","updatedAt":"2023-10-26T13:17:51Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T13:17:51Z","updatedAt":"2023-10-26T13:17:51Z"},{"id":683,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":118,"systemName":"insecuretemperaturesensor-2023-04-26-06-04-57","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T16:04:58Z","updatedAt":"2023-10-26T16:04:58Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T16:04:58Z","updatedAt":"2023-10-26T16:04:58Z"},{"id":684,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":119,"systemName":"insecuretemperaturesensorconsumer-2023-04-26-06-04-57","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T16:04:58Z","updatedAt":"2023-10-26T16:04:58Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T16:04:58Z","updatedAt":"2023-10-26T16:04:58Z"},{"id":685,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":120,"systemName":"insecuretemperaturesensor-2023-13-26-07-13-06","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:13:07Z","updatedAt":"2023-10-26T17:13:07Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:13:07Z","updatedAt":"2023-10-26T17:13:07Z"},{"id":686,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":121,"systemName":"insecuretemperaturesensorconsumer-2023-13-26-07-13-06","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:13:07Z","updatedAt":"2023-10-26T17:13:07Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:13:07Z","updatedAt":"2023-10-26T17:13:07Z"},{"id":687,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":122,"systemName":"insecuretemperaturesensor-2023-16-26-07-16-50","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:16:50Z","updatedAt":"2023-10-26T17:16:50Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:16:50Z","updatedAt":"2023-10-26T17:16:50Z"},{"id":688,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":123,"systemName":"insecuretemperaturesensorconsumer-2023-16-26-07-16-50","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:16:50Z","updatedAt":"2023-10-26T17:16:50Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:16:50Z","updatedAt":"2023-10-26T17:16:50Z"},{"id":689,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":124,"systemName":"insecuretemperaturesensor-2023-18-26-07-18-25","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:18:26Z","updatedAt":"2023-10-26T17:18:26Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:18:26Z","updatedAt":"2023-10-26T17:18:26Z"},{"id":690,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":125,"systemName":"insecuretemperaturesensorconsumer-2023-18-26-07-18-25","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:18:26Z","updatedAt":"2023-10-26T17:18:26Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:18:26Z","updatedAt":"2023-10-26T17:18:26Z"},{"id":691,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":126,"systemName":"insecuretemperaturesensor-2023-19-26-07-19-31","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:19:32Z","updatedAt":"2023-10-26T17:19:32Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:19:32Z","updatedAt":"2023-10-26T17:19:32Z"},{"id":692,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":127,"systemName":"insecuretemperaturesensorconsumer-2023-19-26-07-19-31","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:19:32Z","updatedAt":"2023-10-26T17:19:32Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:19:32Z","updatedAt":"2023-10-26T17:19:32Z"},{"id":693,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":128,"systemName":"insecuretemperaturesensor-2023-32-26-07-32-52","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:32:52Z","updatedAt":"2023-10-26T17:32:52Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:32:52Z","updatedAt":"2023-10-26T17:32:52Z"},{"id":694,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":129,"systemName":"insecuretemperaturesensorconsumer-2023-32-26-07-32-52","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T17:32:52Z","updatedAt":"2023-10-26T17:32:52Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T17:32:52Z","updatedAt":"2023-10-26T17:32:52Z"},{"id":695,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":130,"systemName":"insecuretemperaturesensor-2023-09-26-08-09-37","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:09:38Z","updatedAt":"2023-10-26T18:09:38Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:09:38Z","updatedAt":"2023-10-26T18:09:38Z"},{"id":696,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":131,"systemName":"insecuretemperaturesensorconsumer-2023-09-26-08-09-37","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:09:38Z","updatedAt":"2023-10-26T18:09:38Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:09:38Z","updatedAt":"2023-10-26T18:09:38Z"},{"id":697,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":132,"systemName":"insecuretemperaturesensor-2023-11-26-08-11-40","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:11:40Z","updatedAt":"2023-10-26T18:11:40Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:11:40Z","updatedAt":"2023-10-26T18:11:40Z"},{"id":698,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":133,"systemName":"insecuretemperaturesensorconsumer-2023-11-26-08-11-40","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:11:40Z","updatedAt":"2023-10-26T18:11:40Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:11:40Z","updatedAt":"2023-10-26T18:11:40Z"},{"id":699,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":134,"systemName":"insecuretemperaturesensor-2023-19-26-08-19-13","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:19:14Z","updatedAt":"2023-10-26T18:19:14Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:19:14Z","updatedAt":"2023-10-26T18:19:14Z"},{"id":700,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":135,"systemName":"insecuretemperaturesensorconsumer-2023-19-26-08-19-13","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:19:14Z","updatedAt":"2023-10-26T18:19:14Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:19:14Z","updatedAt":"2023-10-26T18:19:14Z"},{"id":701,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":136,"systemName":"insecuretemperaturesensor-2023-40-26-08-40-52","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:40:52Z","updatedAt":"2023-10-26T18:40:52Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:40:52Z","updatedAt":"2023-10-26T18:40:52Z"},{"id":702,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":137,"systemName":"insecuretemperaturesensorconsumer-2023-40-26-08-40-52","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:40:53Z","updatedAt":"2023-10-26T18:40:53Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:40:53Z","updatedAt":"2023-10-26T18:40:53Z"},{"id":703,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":138,"systemName":"insecuretemperaturesensor-2023-46-26-08-46-30","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:46:31Z","updatedAt":"2023-10-26T18:46:31Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:46:31Z","updatedAt":"2023-10-26T18:46:31Z"},{"id":704,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":139,"systemName":"insecuretemperaturesensorconsumer-2023-46-26-08-46-30","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:46:31Z","updatedAt":"2023-10-26T18:46:31Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:46:31Z","updatedAt":"2023-10-26T18:46:31Z"},{"id":705,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":140,"systemName":"insecuretemperaturesensor-2023-53-26-08-53-11","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:53:11Z","updatedAt":"2023-10-26T18:53:11Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:53:11Z","updatedAt":"2023-10-26T18:53:11Z"},{"id":706,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":141,"systemName":"insecuretemperaturesensorconsumer-2023-53-26-08-53-11","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:53:11Z","updatedAt":"2023-10-26T18:53:11Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:53:11Z","updatedAt":"2023-10-26T18:53:11Z"},{"id":707,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":142,"systemName":"insecuretemperaturesensor-2023-55-26-08-55-31","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:55:31Z","updatedAt":"2023-10-26T18:55:31Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:55:31Z","updatedAt":"2023-10-26T18:55:31Z"},{"id":708,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":143,"systemName":"insecuretemperaturesensorconsumer-2023-55-26-08-55-31","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:55:31Z","updatedAt":"2023-10-26T18:55:31Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:55:31Z","updatedAt":"2023-10-26T18:55:31Z"},{"id":709,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":144,"systemName":"insecuretemperaturesensor-2023-58-26-08-58-35","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:58:35Z","updatedAt":"2023-10-26T18:58:35Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:58:35Z","updatedAt":"2023-10-26T18:58:35Z"},{"id":710,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":145,"systemName":"insecuretemperaturesensorconsumer-2023-58-26-08-58-35","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T18:58:35Z","updatedAt":"2023-10-26T18:58:35Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T18:58:35Z","updatedAt":"2023-10-26T18:58:35Z"},{"id":711,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":146,"systemName":"insecuretemperaturesensor-2023-01-26-09-01-09","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T19:01:10Z","updatedAt":"2023-10-26T19:01:10Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T19:01:10Z","updatedAt":"2023-10-26T19:01:10Z"},{"id":712,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":147,"systemName":"insecuretemperaturesensorconsumer-2023-01-26-09-01-09","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T19:01:10Z","updatedAt":"2023-10-26T19:01:10Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T19:01:10Z","updatedAt":"2023-10-26T19:01:10Z"},{"id":713,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":148,"systemName":"insecuretemperaturesensor-2023-39-26-11-39-29","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T21:39:30Z","updatedAt":"2023-10-26T21:39:30Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T21:39:30Z","updatedAt":"2023-10-26T21:39:30Z"},{"id":714,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":149,"systemName":"insecuretemperaturesensorconsumer-2023-39-26-11-39-29","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T21:39:30Z","updatedAt":"2023-10-26T21:39:30Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T21:39:30Z","updatedAt":"2023-10-26T21:39:30Z"},{"id":715,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":150,"systemName":"insecuretemperaturesensor-2023-40-26-11-40-55","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T21:40:55Z","updatedAt":"2023-10-26T21:40:55Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T21:40:55Z","updatedAt":"2023-10-26T21:40:55Z"},{"id":716,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":151,"systemName":"insecuretemperaturesensor-2023-45-26-11-45-15","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T21:45:15Z","updatedAt":"2023-10-26T21:45:15Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T21:45:15Z","updatedAt":"2023-10-26T21:45:15Z"},{"id":717,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":152,"systemName":"insecuretemperaturesensor-2023-08-27-12-08-14","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T22:08:14Z","updatedAt":"2023-10-26T22:08:14Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T22:08:14Z","updatedAt":"2023-10-26T22:08:14Z"},{"id":718,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":153,"systemName":"insecuretemperaturesensornew","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T22:10:36Z","updatedAt":"2023-10-26T22:10:36Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T22:10:36Z","updatedAt":"2023-10-26T22:10:36Z"},{"id":719,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":154,"systemName":"insecuretemperaturesensor-2023-10-27-12-10-36","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-10-26T22:10:36Z","updatedAt":"2023-10-26T22:10:36Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-10-26T22:10:36Z","updatedAt":"2023-10-26T22:10:36Z"},{"id":753,"serviceDefinition":{"id":1,"serviceDefinition":"service-register","createdAt":"2023-09-29T22:31:40Z","updatedAt":"2023-09-29T22:31:40Z"},"provider":{"id":156,"systemName":"serviceregistry","address":"127.0.0.1","port":8443,"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},"serviceUri":"/serviceregistry/register","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},{"id":754,"serviceDefinition":{"id":2,"serviceDefinition":"service-unregister","createdAt":"2023-09-29T22:31:40Z","updatedAt":"2023-09-29T22:31:40Z"},"provider":{"id":156,"systemName":"serviceregistry","address":"127.0.0.1","port":8443,"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},"serviceUri":"/serviceregistry/unregister","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},{"id":755,"serviceDefinition":{"id":3,"serviceDefinition":"register-system","createdAt":"2023-09-29T22:31:40Z","updatedAt":"2023-09-29T22:31:40Z"},"provider":{"id":156,"systemName":"serviceregistry","address":"127.0.0.1","port":8443,"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},"serviceUri":"/serviceregistry/register-system","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},{"id":756,"serviceDefinition":{"id":4,"serviceDefinition":"unregister-system","createdAt":"2023-09-29T22:31:40Z","updatedAt":"2023-09-29T22:31:40Z"},"provider":{"id":156,"systemName":"serviceregistry","address":"127.0.0.1","port":8443,"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},"serviceUri":"/serviceregistry/unregister-system","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},{"id":757,"serviceDefinition":{"id":5,"serviceDefinition":"pull-systems","createdAt":"2023-09-29T22:31:40Z","updatedAt":"2023-09-29T22:31:40Z"},"provider":{"id":156,"systemName":"serviceregistry","address":"127.0.0.1","port":8443,"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},"serviceUri":"/serviceregistry/pull-systems","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:31:31Z","updatedAt":"2023-11-05T11:31:31Z"},{"id":758,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":157,"systemName":"insecuretemperaturesensor-2023-32-05-12-32-19","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-11-05T11:32:19Z","updatedAt":"2023-11-05T11:32:19Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:32:19Z","updatedAt":"2023-11-05T11:32:19Z"}],"count":106}
+          /serviceregistry/unregister?address=192.168.0.2&port=8080&service_definition=indoortemperature&service_uri=temperature&system_name=NOTEXIST
         </td>
       </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="15"><span>in Running: v_QueryService</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
         <td>
-          Assertion Success Equal for Field: 200
+          Responce Content = {"errorMessage":"No system with name: notexist, address: 192.168.0.2, port: 8080 exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          Validating in:  v_BadPayloadException
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success for Field Contains: "id":758,
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:038</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="16"><span>Moving Through: e_NewServiceExist</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Running : The API http://localhost:8443/serviceregistry/mgmt/758 To get specific service
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Responce Content = {"id":758,"serviceDefinition":{"id":28,"serviceDefinition":"indoortemperature","createdAt":"2023-10-08T21:34:15Z","updatedAt":"2023-10-08T21:34:15Z"},"provider":{"id":157,"systemName":"insecuretemperaturesensor-2023-32-05-12-32-19","address":"192.168.0.2","port":8080,"authenticationInfo":"eyJhbGciOiJIUzI1Ni...","createdAt":"2023-11-05T11:32:19Z","updatedAt":"2023-11-05T11:32:19Z"},"serviceUri":"temperature","endOfValidity":"2024-12-05T05:53:00Z","secure":"NOT_SECURE","metadata":{"unit":"celsius"},"version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-09-29T21:42:51Z","updatedAt":"2023-09-29T21:42:51Z"}],"createdAt":"2023-11-05T11:32:19Z","updatedAt":"2023-11-05T11:32:19Z"}
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="17"><span>in Running: v_SucessMesssage</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success Equal for Field: 200
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="18"><span>Moving Through: e_back_ValidPayload</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="19"><span>in Running: v_ValidPayload</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
-        <td>
-          Assertion Success for Field don not Contain: BAD_PAYLOAD
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:034</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="20"><span>Moving Through: e_SerrviceDefinationtExist</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Running : The API http://localhost:8443/serviceregistry/mgmt with valid Payload and Serrvice Defination Exist
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-          Responce Content = {"errorMessage":"Service Registry entry with provider: (insecuretemperaturesensor-2023-32-05-12-32-19, 192.168.0.2:8080), service definition: indoortemperature and service URI: temperature already exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="21"><span>in Running: v_end</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           Assertion Success Equal for Field: 400
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-           ExistService = { "serviceDefinition": "IndoorTemperature", "providerSystem": { "systemName": "insecuretemperaturesensor-2023-32-05-12-32-19","address": "192.168.0.2", "port": 8080, "authenticationInfo": "eyJhbGciOiJIUzI1Ni..."}, "serviceUri": "temperature", "endOfValidity": "2024-12-05T05:53:00+00:00", "secure": "NOT_SECURE", "metadata": { "unit": "celsius"}, "version": 1, "interfaces": [ "HTTP-INSECURE-JSON" ]}
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:32:19</td>
-        <td>
-           content = {"errorMessage":"Service Registry entry with provider: (insecuretemperaturesensor-2023-32-05-12-32-19, 192.168.0.2:8080), service definition: indoortemperature and service URI: temperature already exists.","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
-        </td>
-      </tr>
-      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
-          Assertion Success for Field Contains: insecuretemperaturesensor-2023-32-05-12-32-19
+          Assertion Success for Field Contains: INVALID_PARAMETER
         </td>
       </tr>
   </tbody>
@@ -778,12 +272,168 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>00:00:002</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="22"><span>GraphWalker Result PASS</span></a>
+            <a class="node " id="7"><span>Moving Through: e_back_RegisterService</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="8"><span>in Running: v_RegisterService</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:169</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>Moving Through: e_ValedUnRegisterServiceForm</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          Running : The API http://localhost:8443/serviceregistry/unregister with valid Payload and Serrvice Defination  Exist
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          http://localhost:8443/serviceregistry/unregister?address=192.168.0.2&port=8080&service_definition=indoortemperature&service_uri=temperature&system_name=insecuretemperaturesensor-2023-31-06-09-31-47
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          Responce Content = 
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="10"><span>in Running: v_RemoveServiceRegisteryEntry</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          Responce codeeee    Content = false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:31:48</td>
+        <td>
+          Assertion Success Equal for Field: 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:065</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="11"><span>Moving Through: e_QueeryRemovedService</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          Running : The API http://localhost:8443/serviceregistry/mgmt/782 To get specific service
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>21:31:48</td>
+        <td>
+          Responce Content = {"errorMessage":"Service Registry with id of '782' does not exist","errorCode":400,"exceptionType":"INVALID_PARAMETER"}
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="12"><span>in Running: v_ServiceNotExist</span></a>
             <div class="node-attr">
             </div>
           </div>
@@ -795,7 +445,78 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
+        <td>
+          Assertion Success Equal for Field: 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:31:48</td>
+        <td>
+          Assertion Success for Field Contains: does not exist
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="13"><span>Moving Through: e_End</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="14"><span>in Running: v_End</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="15"><span>GraphWalker Result PASS</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>21:31:48</td>
         <td>
           
   "totalNotExecutedNumberOfModels": 0
@@ -803,7 +524,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "totalNumberOfUnvisitedVertices": 0
@@ -811,7 +532,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "verticesNotVisited": []
@@ -819,7 +540,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "totalNumberOfModels": 1
@@ -827,7 +548,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "totalCompletedNumberOfModels": 1
@@ -835,15 +556,15 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
-  "totalNumberOfVisitedEdges": 9
+  "totalNumberOfVisitedEdges": 6
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "totalIncompleteNumberOfModels": 0
@@ -851,7 +572,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "edgesNotVisited": []
@@ -859,7 +580,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "vertexCoverage": 100
@@ -867,23 +588,23 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
-  "totalNumberOfEdges": 9
+  "totalNumberOfEdges": 6
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
-  "totalNumberOfVisitedVertices": 8
+  "totalNumberOfVisitedVertices": 6
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "edgeCoverage": 100
@@ -891,15 +612,15 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
-  "totalNumberOfVertices": 8
+  "totalNumberOfVertices": 6
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:32:19</td>
+        <td>21:31:48</td>
         <td>
           
   "totalNumberOfUnvisitedEdges": 0
@@ -929,13 +650,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 5, 2023 12:32:16 pm</h3>
+<h3>Nov 6, 2023 09:31:44 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 5, 2023 12:32:20 pm</h3>
+<h3>Nov 6, 2023 09:31:48 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -986,7 +707,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>20</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>13</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -1006,10 +727,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='57%'><b>26</b> events passed</small></div>
+<div><small data-tooltip='58%'><b>20</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>19</b> others
+<b data-tooltip='%'>14</b> others
 </small>
 </div>
 </div>
@@ -1025,7 +746,7 @@
 </div></div>
 <script>
 var timeline = {
-"Test_ServiceREgistery":2.951
+"Test_UnRegisterService":2.854
 };
 </script>
 <div class="row">
@@ -1057,7 +778,7 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 20,
+passChild: 13,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
@@ -1069,11 +790,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 26,
+passEvents: 20,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 19
+infoEvents: 14
 };
 </script>        </div>
       </div>

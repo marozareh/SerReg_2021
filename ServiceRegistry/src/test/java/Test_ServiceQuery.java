@@ -26,7 +26,7 @@ public class Test_ServiceQuery extends BaseClass {
             StrSplit(result.getResults().toString(2),0);
             failtest=1;
             CreateDotFile.ReadFile("QueryService", failtest, result.getResults().toString(2) );
-         //   ExtentReport.reportError();
+             ExtentReport.reportError();
         }
         else {
             StrSplit(result.getResults().toString(2),1);

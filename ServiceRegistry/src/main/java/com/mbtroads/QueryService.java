@@ -198,7 +198,7 @@ public class QueryService extends BasePage implements SericeQuery , TestData, IS
     public void v_ServiceQuerySecurityTypeNotDefined(){
         extendReport("v_ServiceQuerySecurityTypeNotDefined");
         infoReport("Validating in: v_ServiceQuerySecurityTypeNotDefined");
-        assestEqual("StatusCode 400", String.valueOf(response.getStatusLine().getStatusCode()));
+        assestEqual("400", String.valueOf(response.getStatusLine().getStatusCode()));
 
     }
 
